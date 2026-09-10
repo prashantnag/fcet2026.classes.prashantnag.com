@@ -14,6 +14,7 @@ format:
 
 ```{r packages-data, include=FALSE}
 library(dplyr)
+library(kableExtra)
 library(knitr)
 library(purrr)
 
@@ -48,12 +49,17 @@ You can subscribe to this calendar URL in Outlook, Google Calendar, or Apple Cal
 show_table <- function(group_id) {
   cat(glue::glue("\n\n<div class=\"schedule-group\"><div class=\"schedule-group-title\"><h3>{schedule_nested$group[[group_id]]}</h3></div>\n"))
 
-  tbl <- knitr::kable(
-    schedule_nested$data[[group_id]],
+  tbl <- schedule_nested$data[[group_id]] |>
+    kableExtra::kbl(
+    format = "html",
     escape = FALSE,
     align = "rlccccc",
     table.attr = 'class="schedule-table"'
-  )
+  ) |>
+    kableExtra::kable_styling() |>
+    kableExtra::column_spec(1, width = "18%", extra_css = "padding-right: 20px; white-space: nowrap;") |>
+    kableExtra::column_spec(2, width = "42%") |>
+    kableExtra::column_spec(3:7, width = "8%")
 
   cat(tbl)
   cat("</div>")

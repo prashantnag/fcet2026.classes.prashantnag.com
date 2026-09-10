@@ -114,7 +114,7 @@ build_schedule_for_page <- function(schedule_file) {
     ) |>
     select(
       group,
-      ` ` = col_date,
+      Date = col_date,
       Topic = col_title,
       Quiz = col_quiz,
       Lecture = col_lecture,
