@@ -1,0 +1,123 @@
+---
+title: Syllabus
+---
+
+## Course Description
+
+Fundamental of Computers & Emerging Technologies (BMC101) is a foundational course designed for MCA students to build understanding of computer fundamentals, problem-solving, digital systems, operating systems, networks, internet technologies, and modern IT trends. The course introduces students to the core concepts of computer architecture, language processing, the internet, IoT, blockchain, cloud computing, and emerging technologies shaping the future of Information Technology.
+
+## Course Code & Credits
+
+- **Course Code:** BMC101
+- **Course Name:** Fundamental of Computers & Emerging Technologies
+- **Credits:** 3
+- **Course Structure:** 3 Lectures - 0 Tutorial - 0 Practical per week
+- **Total Teaching Period:** 40 lectures per semester
+
+## Course Outcomes
+
+At the end of the course, the student will be able to:
+
+<style>
+.course-outcomes table {
+  width: 100%;
+  table-layout: fixed;
+}
+
+.course-outcomes th:nth-child(1),
+.course-outcomes td:nth-child(1) {
+  width: 10%;
+}
+
+.course-outcomes th:nth-child(2),
+.course-outcomes td:nth-child(2) {
+  width: 80%;
+}
+
+.course-outcomes th:nth-child(3),
+.course-outcomes td:nth-child(3) {
+  width: 10%;
+}
+</style>
+
+::: {.course-outcomes}
+
+| CO# | Course Outcome | Bloom's Knowledge Level |
+|-----|---------------|--------------------------|
+| CO 1 | Demonstrate the knowledge of the basic structure, components, features and generations of computers. | K1, K2 |
+| CO 2 | Describe the concept of computer languages, language translators and construct algorithms to solve problems using programming concepts. | K2, K3 |
+| CO 3 | Compare and contrast features, functioning & types of operating system and computer networks. | K4 |
+| CO 4 | Demonstrate architecture, functioning & services of the Internet and basics of multimedia. | K2 |
+| CO 5 | Illustrate the emerging trends and technologies in the field of Information Technology. | K1, K2 |
+
+:::
+
+## Detailed Syllabus
+
+### Unit I: Introduction to Computer and Problem Solving (8 Periods)
+
+**Topics Covered:**
+- Definition of computer
+- Computer hardware and computer software
+- Hardware components: input devices, output devices, CPU, memory (primary and secondary)
+- Software: system software and application software
+- Computer languages and concept of compiler, interpreter, and assembler
+- Problem-solving concept and algorithms
+- Characteristics and limitations of algorithms
+- Conditions in pseudo-code and loops in pseudo-code
+
+---
+
+### Unit II: Operating System and Computer Network (8 Periods)
+
+**Topics Covered:**
+- Definition, functions, types, and classification of operating systems
+- Elements of command-based and GUI-based operating systems
+- Overview of computer networks
+- Types of networks: LAN, WAN, and MAN
+- Data communication
+- Network topologies
+
+---
+
+### Unit III: Internet and Internet of Things (8 Periods)
+
+**Topics Covered:**
+- Overview, architecture, and functioning of the Internet
+- Basic services like WWW, FTP, Telnet, Gopher, search engines, email, web browsers
+- Internet of Things (IoT): definition, sensors, types, and features
+- Smart Cities
+- Industrial Internet of Things (IIoT)
+
+---
+
+### Unit IV: Blockchain, Cryptocurrencies and Cloud Computing (8 Periods)
+
+**Topics Covered:**
+- Blockchain: introduction, overview, features, limitations, and application areas
+- Cryptocurrencies: introduction, applications, and use cases
+- Cloud Computing: nature and benefits
+- Cloud service providers: AWS, Google, Microsoft, and IBM
+
+---
+
+### Unit V: Emerging Technologies (8 Periods)
+
+**Topics Covered:**
+- Introduction, overview, features, limitations, and application areas of:
+  - Augmented Reality
+  - Virtual Reality
+  - Grid Computing
+  - Green Computing
+  - Big Data Analytics
+  - Quantum Computing
+  - Brain-Computer Interface
+
+## Suggested Readings
+
+1. Rajaraman V., "Fundamentals of Computers", Prentice-Hall of India.
+2. Norton P., "Introduction to Computers", McGraw Hill Education.
+3. Goel A., "Computer Fundamentals", Pearson.
+4. Balagurusamy E., "Fundamentals of Computers", McGraw Hill.
+5. Thareja R., "Fundamentals of Computers", Oxford University Press.
+6. Bindra J., "The Tech Whisperer- on Digital Transformation and the Technologies that Enable it", Penguin Books.

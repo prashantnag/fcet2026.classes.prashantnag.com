@@ -1,0 +1,136 @@
+---
+title: "Assignment 1: Fundamentals of Computers and Computer Systems"
+date: "2026-09-10"
+due: "As announced by the instructor"
+---
+
+## Overview
+
+This assignment applies the concepts from Lecture 1: **Introduction to Computers and Computer Systems**. Analyze a real-world computer-based system and explain how its technical and human components work together.
+
+**Course:** BMC101 - Fundamental of Computers & Emerging Technologies  
+**Course Outcome:** CO1 - Demonstrate knowledge of the basic structure, components, features, and generations of computers.  
+**Bloom's levels:** K1 - Remember, K2 - Understand  
+**Points:** 100
+
+## Learning Objectives
+
+By completing this assignment, you will:
+
+- explain the input-process-output cycle using a practical system;
+- identify the functional units of a computer system;
+- distinguish hardware, software, data, peopleware, procedures, and connectivity;
+- apply the GIGO principle to data-processing situations;
+- connect foundational concepts to modern computer applications.
+
+## Task: Analyze One Computer-Based System
+
+Choose **one** of the following systems:
+
+- ATM withdrawal or balance inquiry
+- Student result processing system
+- Online shopping transaction
+- Online banking payment
+- Hospital patient registration system
+- Any comparable system approved by the instructor
+
+Prepare a structured analysis of the selected system.
+
+## Question 1: System Description
+
+Describe the selected system in approximately 300-400 words.
+
+Include:
+
+- the purpose of the system;
+- its users and stakeholders;
+- the problem it solves;
+- the information produced by the system;
+- one modern application or service that uses a similar system.
+
+## Question 2: IPO and Control Analysis
+
+Explain the system using the IPO model.
+
+| Stage | Your analysis |
+|---|---|
+| Input | Data, commands, devices, and sources of input |
+| Processing | Calculations, validation, decisions, and transformations |
+| Output | Information, messages, documents, or actions produced |
+| Storage | Data and records saved for future use |
+| Control | Rules, sequence, permissions, and error handling |
+
+Explain why each stage matters. Do not only list examples.
+
+## Question 3: Functional Organization Diagram
+
+Create a labelled block diagram showing how the following units interact in your selected system:
+
+- Input Unit
+- Memory or Storage Unit
+- Control Unit
+- Arithmetic Logic Unit
+- Output Unit
+- Communication or network connection, where applicable
+
+Use arrows to show the movement of data and control signals. The diagram may be created digitally or drawn neatly and scanned.
+
+## Question 4: Computer-System Components
+
+Explain how each component contributes to your selected system:
+
+- hardware;
+- software;
+- data;
+- peopleware or users;
+- procedures;
+- communication and connectivity.
+
+For each component, provide at least one system-specific example and explain what could happen if it fails.
+
+## Question 5: Characteristics and Limitations
+
+Discuss:
+
+- two characteristics that make the system useful, such as speed, accuracy, automation, storage, reliability, or multitasking;
+- two limitations or risks, such as GIGO, incorrect instructions, lack of human judgement, power failure, hardware failure, or network failure;
+- one way that AI could improve the system;
+- one limitation that AI would not eliminate.
+
+## Submission Format
+
+Submit one PDF or DOCX report containing:
+
+1. title page with your name, roll number, course, and selected system;
+2. system description;
+3. IPO and control table;
+4. functional organization diagram;
+5. computer-system component analysis;
+6. characteristics, limitations, and AI discussion;
+7. references, if any.
+
+Use clear headings, labelled diagrams, and original explanations. Recommended length: **1,500-2,000 words**, excluding the title page and references.
+
+## Evaluation Criteria
+
+| Criterion | Points | Description |
+|---|---:|---|
+| System description | 15 | Purpose, users, context, and relevance |
+| IPO and control analysis | 25 | Correct and well-explained input, processing, output, storage, and control |
+| Functional diagram | 20 | Correct components, labels, arrows, and interaction |
+| System components | 20 | Hardware, software, data, peopleware, procedures, and connectivity |
+| Characteristics and limitations | 15 | Accurate examples and meaningful discussion of GIGO and AI |
+| Presentation and references | 5 | Organization, clarity, originality, and citation |
+| **Total** | **100** | |
+
+## Submission Guidelines
+
+- Use your own words and cite external sources.
+- Label every figure and table.
+- Check that the diagram is readable when exported.
+- Do not include private passwords, account numbers, or personal records in examples.
+- Submit through the channel and by the date announced by the instructor.
+
+## Questions?
+
+Review the [course overview](../course-overview.qmd), [syllabus](../syllabus.qmd), and [Lecture 1](../lectures/lecture-01.qmd). For clarification, contact [Dr. Prashant Kumar Nag](mailto:prashantkumar.nag@galgotiacollege.edu).

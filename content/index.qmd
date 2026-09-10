@@ -1,0 +1,20 @@
+---
+title: "Course Content"
+---
+
+This course currently focuses on the first week and the first assignment only.
+
+## Quick Access
+
+| Week | Content Page | Lecture |
+|------|--------------|---------|
+| Week 1 | [Introduction to Computer and Problem Solving](/content/week-01.qmd) | [Lecture 1](/lectures/lecture-01.qmd) |
+
+## Course Materials
+
+- [Lecture 1: Introduction to Computer and Problem Solving](/lectures/lecture-01.qmd)
+- [Assignment 1: Fundamentals of Computers & Emerging Technologies](/assignment/01-assignment.qmd)
+
+## Notes
+
+The site has been trimmed to remove lab work, demo files, quizzes, and additional lectures in order to keep the course aligned with the current MCA Semester-I curriculum and to avoid Jupyter-specific dependencies.

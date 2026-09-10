@@ -1,0 +1,113 @@
+project:
+  type: website
+  output-dir: _site
+  resources:
+    - CNAME
+  render:
+    - "*.qmd"
+    - "content/"
+    - "assignment/"
+    - "lectures/"
+
+# Add extensions for icons and advanced features
+extensions:
+  - quarto-ext/fontawesome
+
+website:
+  page-navigation: true
+  bread-crumbs: true
+  title: "Fundamental of Computers & Emerging Technologies - BMC101"
+  description: "Website for BMC101 Fundamental of Computers & Emerging Technologies (MCA Semester I) at GCET, following the MCA curriculum"
+  site-url: "https://fcet2026.classes.prashantnag.com"
+
+  repo-url: "https://github.com/prashantnag/fcet2026.classes.prashantnag.com.git"
+  repo-actions: [edit, issue]
+
+  open-graph:
+    title: "Fundamental of Computers & Emerging Technologies - BMC101"
+    description: "Course website for BMC101 Fundamental of Computers & Emerging Technologies (MCA Semester I) at GCET. Covers computer fundamentals, operating systems, networks, internet, IoT, blockchain, cloud computing, and emerging technologies."
+    image: "files/og-image.png"
+    image-width: 1200
+    image-height: 630
+    locale: "en_US"
+    site-name: "BMC101 Fundamental of Computers & Emerging Technologies — GCET"
+  twitter-card:
+    creator: "@prashantnag"
+    site: "@prashantnag"
+  google-analytics:
+    tracking-id: "G-J39XDHGG85"
+    anonymize-ip: true
+  cookie-consent:
+    type: implied
+    style: simple
+    palette: light
+  announcement:
+    content: "📢 Supplementary course website — official activities on Moodle. Content is updated regularly. Feedback welcome!"
+    type: primary
+    position: below-navbar
+
+  sidebar:
+    style: docked
+    background: "#2C3E50"
+    logo: files/favicon.png
+    tools:
+      - icon: github
+        href: "https://github.com/prashantnag/fcet2026.classes.prashantnag.com"
+        text: "GitHub"
+    search: true
+    collapse-level: 1
+    contents:
+      - section: "Course information"
+        contents:
+          - course-overview.qmd
+          - syllabus.qmd
+          - text: "Schedule"
+            file: index.qmd
+      - section: "Assignments"
+        contents:
+          - assignment/index.qmd
+
+  page-footer:
+    left: |
+      Content © 2026 by [Dr. Prashant Kumar Nag](https://prashantnag.com)
+
+format:
+  html:
+    theme:
+      light:
+        - cosmo
+        - html/custom.scss
+      dark:
+        - darkly
+        - html/custom-dark.scss
+    css:
+      - html/styles.css
+    toc: true
+    code-copy: true
+    code-overflow: scroll
+    mainfont: "Open Sans"
+    highlight-style: github
+    code-line-numbers: true
+
+execute:
+  freeze: auto
+
+# Course-specific variables - NESTED (not flattened)
+course:
+  number: "BMC101"
+  title: "Fundamental of Computers & Emerging Technologies"
+  semester: "MCA Semester I"
+  year: "2026-27"
+  credits: "3 (3-0-0)"
+  curriculum: "MCA (Master of Computer Applications) First Year Syllabus"
+  copyright_year: "2026"
+  github: "https://github.com/prashantnag/fcet2026.classes.prashantnag.com"
+  institution: "Galgotias College of Engineering & Technology"
+
+instructor:
+  name: "Dr. Prashant Kumar Nag"
+  name_no_title: "Prashant Kumar Nag"
+  title: "Assistant Professor"
+  email: "prashantkumar.nag@galgotiacollege.edu"
+  url: "https://prashantnag.com"
+  office: "Department of Computer Applications"

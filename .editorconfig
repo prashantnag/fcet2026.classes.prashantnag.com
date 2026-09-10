@@ -1,0 +1,6 @@
+root = true
+
+[*.{qmd,md,yml,yaml,R,html,css,scss,js,json,csv}]
+charset = utf-8
+end_of_line = crlf
+insert_final_newline = true

@@ -1,0 +1,22 @@
+﻿---
+title: "Assignments"
+---
+
+This course currently includes one assignment for the semester.
+
+## Assignment Dashboard
+
+::: {.assignment-cards}
+
+::: {.assignment-card}
+[Assignment 1: Fundamentals of Computers & Emerging Technologies]{.assignment-title}
+
+[**Due:** As announced by the instructor]{.assignment-due}
+
+[Introductory assignment covering core concepts from the course syllabus.]{.assignment-desc}
+
+[View Assignment ->](/assignment/01-assignment.html){.card-link}
+:::
+
+:::
+

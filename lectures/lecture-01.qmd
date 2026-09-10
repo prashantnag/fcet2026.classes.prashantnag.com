@@ -1,0 +1,649 @@
+---
+title: "Lecture 01: Introduction to Computers and Computer Systems"
+subtitle: "{{< meta course.number >}} - {{< meta course.title >}}"
+author: "{{< meta instructor.name >}}"
+date: "September 10, 2026"
+---
+
+## {#title-slide data-menu-title="Title" background="#053660"}
+
+<div class="custom-title">
+
+[Lecture 01]{.baby-blue-text}
+
+</div>
+
+<div class="custom-subtitle">
+
+[Introduction to Computers and Computer Systems]{.white-text}
+
+</div>
+
+<div class="custom-subtitle3">
+
+Unit I | Introduction to Computer and Problem Solving<br>
+{{< meta course.number >}} - {{< meta course.title >}}<br>
+{{< meta instructor.name >}}, {{< meta instructor.title >}}<br>
+{{< meta instructor.office >}}<br>
+{{< meta course.institution >}}
+
+</div>
+
+---
+
+## {data-menu-title="Lecture Map"}
+
+[Lecture Map]{.slide-title}
+
+<hr>
+
+::: {.body-text-m}
+- **Unit:** Unit I - Introduction to Computer and Problem Solving
+- **Course Outcome:** CO1 - Demonstrate knowledge of the basic structure, components, features, and generations of computers
+- **Bloom's Levels:** K1 - Remember; K2 - Understand
+- **Central Question:** What is a computer, what makes it a computer system, and how does it transform data into useful information?
+:::
+
+---
+
+## {data-menu-title="Learning Objectives"}
+
+[Learning Objectives]{.slide-title}
+
+<hr>
+
+::: {.body-text-m}
+By the end of this lecture, students will be able to:
+
+- define a computer and distinguish data from information;
+- explain the basic functions of a computer using the IPO model;
+- identify the major functional units of a computer system;
+- distinguish hardware from software at an introductory level;
+- explain major characteristics and limitations of computers;
+- summarize the evolution and generations of computers;
+- identify major application areas of computers.
+:::
+
+---
+
+## {data-menu-title="Think About It"}
+
+[Think About It]{.slide-title}
+
+<hr>
+
+::: {.body-text-m}
+- When you withdraw cash from an ATM, where does the machine get your balance from?
+- Is a photograph stored on a phone **data**, **information**, or both?
+- Can a computer produce a wrong answer even when it performs calculations accurately?
+- Why can the same laptop be used for coding, entertainment, communication, and data analysis?
+:::
+
+---
+
+## {data-menu-title="What Is a Computer?"}
+
+[What Is a Computer?]{.slide-title}
+
+<hr>
+
+::: {.body-text-m}
+- The word **computer** is derived from the Latin *computare*, meaning **to calculate**.
+- Early computing devices were designed mainly for arithmetic and counting.
+- Modern computers process text, images, audio, video, sensor readings, and network data.
+- A computer is useful because it is **programmable**: the same hardware can perform different tasks when different instructions are supplied.
+:::
+
+---
+
+## {data-menu-title="Formal Definition"}
+
+[Formal Definition of a Computer]{.slide-title2}
+
+<hr>
+
+::: {.body-text-m}
+A **computer** is an electronic, programmable device that:
+
+- accepts **data** and **instructions** as input;
+- processes the data according to stored instructions;
+- produces meaningful results as output;
+- stores programs, data, intermediate values, and results for future use.
+
+The definition applies not only to desktops and laptops, but also to smartphones, ATMs, embedded systems, servers, and many smart devices.
+:::
+
+---
+
+## {data-menu-title="Data and Information"}
+
+[Data and Information]{.slide-title}
+
+<hr>
+
+::: {.body-text-s}
+- **Data:** raw facts, symbols, observations, measurements, or values.
+- **Information:** processed and organized data that has meaning and usefulness.
+- Data becomes information through **processing and context**.
+
+| Context | Data | Information |
+|---|---|---|
+| Student marks | `72, 81, 67, 90` | Average = 77.5; Grade = B+ |
+| Retail sale | Item, quantity, price | Final bill after calculation |
+| Weather | Hourly temperature readings | Daily weather trend |
+:::
+
+---
+
+## {data-menu-title="IPO Model"}
+
+[Input-Process-Output Model]{.slide-title}
+
+<hr>
+
+::: columns
+::: {.column width="55%"}
+```{mermaid}
+flowchart LR
+    A[Input] --> B[Processing]
+    B --> C[Output]
+    B <--> D[Storage]
+    E[Control] -. Coordinates .-> A
+    E -. Coordinates .-> B
+    E -. Coordinates .-> C
+    E -. Coordinates .-> D
+```
+:::
+
+::: {.column width="45%"}
+::: {.incremental .body-text-m}
+- **Input:** data and instructions enter the system.
+- **Processing:** operations transform the input.
+- **Output:** useful results are produced.
+- **Storage:** data and results are retained.
+- **Control:** operations are coordinated in the correct sequence.
+:::
+:::
+:::
+
+---
+
+## {data-menu-title="IPO Example"}
+
+[IPO Example: Student Result Processing]{.slide-title2}
+
+<hr>
+
+::: {.body-text-m}
+- **Input:** marks entered for different subjects.
+- **Processing:** total, percentage, and grade are calculated.
+- **Output:** result sheet and grade are displayed.
+- **Storage:** student result is saved in a database.
+- **Control:** rules determine validation, calculation order, and access permissions.
+
+**Key idea:** a computer does not merely calculate; it performs a coordinated cycle of input, processing, output, storage, and control.
+:::
+
+---
+
+## {data-menu-title="Functional Units"}
+
+[Functional Units of a Computer]{.slide-title}
+
+<hr>
+
+::: {.body-text-m}
+- **Input Unit:** accepts external data and converts it into a machine-usable form.
+- **Central Processing Unit (CPU):** executes program instructions.
+- **Arithmetic Logic Unit (ALU):** performs arithmetic and logical operations.
+- **Control Unit (CU):** directs and coordinates operations.
+- **Memory/Storage Unit:** holds programs, data, and results.
+- **Output Unit:** presents processed results to users or other systems.
+:::
+
+---
+
+## {data-menu-title="Functional Organization"}
+
+[Functional Organization of a Computer]{.slide-title2}
+
+<hr>
+
+::: columns
+::: {.column width="62%"}
+```{mermaid}
+flowchart LR
+    I[Input Unit] --> M[Memory Unit]
+    M <--> CPU[CPU]
+    CPU --> O[Output Unit]
+    CPU --> M
+    M --> O
+
+    subgraph CPU[Central Processing Unit]
+      CU[Control Unit]
+      ALU[Arithmetic Logic Unit]
+      CU <--> ALU
+    end
+```
+:::
+
+::: {.column width="38%"}
+::: {.incremental .body-text-m}
+- Input supplies data.
+- Memory holds data and instructions.
+- CPU performs and coordinates processing.
+- Output presents the result.
+- Storage allows later retrieval.
+:::
+:::
+:::
+
+---
+
+## {data-menu-title="How Units Work Together"}
+
+[How the Functional Units Work Together]{.slide-title2}
+
+<hr>
+
+::: {.body-text-m}
+Consider a program that calculates a student's average marks:
+
+1. Marks enter through the **input unit**.
+2. Instructions and values are held in **memory**.
+3. The **control unit** directs the sequence of operations.
+4. The **ALU** performs addition and division.
+5. The **output unit** displays the average.
+6. The result may be saved for later use.
+
+The CPU and memory will be studied in detail in a later lecture.
+:::
+
+---
+
+## {data-menu-title="Computer System Components"}
+
+[Components of a Computer System]{.slide-title2}
+
+<hr>
+
+::: {.body-text-m}
+A complete computer system contains more than the physical machine:
+
+- **Hardware:** physical electronic and mechanical components.
+- **Software:** programs and instructions that direct the hardware.
+- **Data:** facts and records processed by the system.
+- **Peopleware:** users, developers, administrators, and support personnel.
+- **Procedures:** rules for operation, security, backup, and maintenance.
+- **Connectivity:** communication links, networks, and services connecting systems.
+:::
+
+---
+
+## {data-menu-title="System Components Diagram"}
+
+[Computer System as an Integrated Whole]{.slide-title2}
+
+<hr>
+
+::: columns
+::: {.column width="55%"}
+```{mermaid}
+flowchart TD
+    S[Computer System] --> H[Hardware]
+    S --> SW[Software]
+    S --> D[Data]
+    S --> P[Peopleware]
+    S --> PR[Procedures]
+    S --> N[Connectivity]
+```
+:::
+
+::: {.column width="45%"}
+::: {.incremental .body-text-m}
+- Hardware alone is not a complete system.
+- Software gives instructions to hardware.
+- Data provides content to be processed.
+- People and procedures determine how the system is used.
+- Connectivity enables communication with other systems.
+:::
+:::
+:::
+
+---
+
+## {data-menu-title="Hardware vs Software"}
+
+[Hardware and Software: Introductory Comparison]{.slide-title2}
+
+<hr>
+
+::: {.body-text-s}
+| Feature | Hardware | Software |
+|---|---|---|
+| Nature | Physical, tangible | Logical, intangible |
+| Role | Executes operations | Provides instructions |
+| Failure | Damage or wear | Bugs, corruption, misconfiguration |
+| Change | Replacement or upgrade | Installation or update |
+| Examples | Keyboard, CPU, monitor, storage device | Operating system, browser, application |
+
+**Important:** detailed classification of software will be covered in Lecture 4.
+:::
+
+---
+
+## {data-menu-title="Characteristics I"}
+
+[Characteristics of Computers: Performance]{.slide-title2}
+
+<hr>
+
+::: {.body-text-m}
+- **Speed:** computers perform millions or billions of operations very quickly.
+- **Accuracy:** they can repeatedly perform calculations with high precision.
+- **Diligence:** they do not become tired or bored while repeating tasks.
+- **Consistency:** the same instructions are applied in the same manner repeatedly.
+
+**Example:** a payroll system can apply the same salary formula to thousands of employees consistently.
+:::
+
+---
+
+## {data-menu-title="Characteristics II"}
+
+[Characteristics of Computers: Capability]{.slide-title2}
+
+<hr>
+
+::: {.body-text-m}
+- **Automation:** programs can execute tasks with limited human intervention.
+- **Storage Capacity:** large volumes of data can be stored and retrieved.
+- **Versatility:** one system can perform many different kinds of work.
+- **Reliability:** well-designed systems can operate for long periods with predictable behavior.
+- **Multitasking:** modern operating systems can manage multiple processes and applications.
+
+These strengths make computers useful across almost every field.
+:::
+
+---
+
+## {data-menu-title="Limitations"}
+
+[Limitations of Computers]{.slide-title2}
+
+<hr>
+
+::: {.body-text-m}
+- Computers do not normally choose their own goals; they work according to programs, data, and configuration.
+- They do not possess inherent human emotions, values, or responsibility.
+- They cannot guarantee a correct result when the input data or instructions are wrong.
+- They depend on hardware, software, electricity, storage, networks, and maintenance.
+- Human judgement remains important in interpreting results and making responsible decisions.
+:::
+
+---
+
+## {data-menu-title="GIGO"}
+
+[Garbage In, Garbage Out (GIGO)]{.slide-title2}
+
+<hr>
+
+::: {.body-text-m}
+**GIGO** means that poor-quality input can lead to poor-quality output.
+
+Example:
+
+- A result-processing program may use a perfectly correct formula.
+- If a teacher accidentally enters `95` instead of `59`, the calculated result will still be wrong.
+- The computer may be **accurate in calculation** but the final information may still be **incorrect**.
+
+Therefore, validation and correct data entry are essential.
+:::
+
+---
+
+## {data-menu-title="AI and Limitations"}
+
+[Does Artificial Intelligence Remove These Limitations?]{.slide-title2}
+
+<hr>
+
+::: {.body-text-m}
+- AI systems can recognize patterns, make predictions, generate content, and automate complex tasks.
+- However, AI still depends on **data, algorithms, models, computing resources, and objectives**.
+- Incorrect or biased training data can affect AI output.
+- AI systems may sometimes generate confident but incorrect results.
+- Human oversight, validation, and accountability remain important.
+
+**Conclusion:** AI changes what computers can do, but it does not eliminate the need for correct data, design, and responsible use.
+:::
+
+---
+
+## {data-menu-title="Evolution"}
+
+[Evolution of Computer Technology]{.slide-title2}
+
+<hr>
+
+::: {.body-text-m}
+Computer generations are commonly described according to major changes in the technology used to build computer systems.
+
+```{mermaid}
+flowchart LR
+    V[Vacuum Tubes] --> T[Transistors]
+    T --> IC[Integrated Circuits]
+    IC --> MP[Microprocessors / VLSI]
+    MP --> AI[AI, Parallel and Advanced Computing]
+```
+
+Each technological transition generally improved **size, speed, reliability, cost, and capability**.
+:::
+
+---
+
+## {data-menu-title="Generations I-III"}
+
+[First to Third Generations]{.slide-title2}
+
+<hr>
+
+::: {.body-text-s}
+| Generation | Main Technology | Approx. Period | Major Characteristics | Examples |
+|---|---|---|---|---|
+| First | Vacuum tubes | 1940s-1950s | Very large, high heat, high power consumption | ENIAC, UNIVAC I |
+| Second | Transistors | 1950s-1960s | Smaller, faster, more reliable | IBM 1401 |
+| Third | Integrated Circuits | 1960s-1970s | Greater integration, lower cost, improved efficiency | IBM System/360 |
+:::
+
+---
+
+## {data-menu-title="Generations IV-V"}
+
+[Fourth and Fifth Generations]{.slide-title2}
+
+<hr>
+
+::: {.body-text-s}
+| Generation | Main Technology | Approx. Period | Major Characteristics | Examples |
+|---|---|---|---|---|
+| Fourth | Microprocessors, VLSI | 1970s onward | Personal computers, high integration, lower cost | IBM PC and modern microprocessor-based systems |
+| Fifth and beyond | AI-oriented, parallel and advanced computing | Modern / evolving | Intelligent systems, massive parallelism, specialized accelerators | AI systems, advanced high-performance and emerging computing systems |
+
+**Note:** generation boundaries are approximate and are mainly used as a teaching model to understand technological evolution.
+:::
+
+---
+
+## {data-menu-title="Generation Comparison"}
+
+[Generational Progress: What Changed?]{.slide-title2}
+
+<hr>
+
+::: {.body-text-m}
+Across successive generations, computers generally became:
+
+- **smaller** in physical size;
+- **faster** in processing speed;
+- **more reliable** and energy-efficient;
+- **less expensive** per unit of computing power;
+- **easier to program and use**;
+- capable of handling increasingly complex applications.
+
+This evolution provides the foundation for modern fields such as AI, cloud computing, IoT, and quantum computing.
+:::
+
+---
+
+## {data-menu-title="Applications"}
+
+[Major Applications of Computers]{.slide-title2}
+
+<hr>
+
+::: {.body-text-s}
+| Area | Typical Applications |
+|---|---|
+| Education | Learning systems, digital libraries, assessment, simulation |
+| Business | Accounting, inventory, analytics, automation |
+| Banking | ATMs, online banking, payments, fraud detection |
+| Healthcare | Records, imaging, diagnostics, telemedicine |
+| Science & Engineering | Simulation, modelling, design, research |
+| Communication | Email, messaging, video conferencing |
+| Government | E-governance, taxation, records, citizen services |
+| Transportation | Navigation, ticketing, logistics, traffic systems |
+| Entertainment | Games, streaming, graphics, media production |
+| AI & Smart Systems | Vision, robotics, recommendation, cybersecurity |
+:::
+
+---
+
+## {data-menu-title="ATM Case Study"}
+
+[Integrated Case Study: ATM Transaction]{.slide-title2}
+
+<hr>
+
+::: {.body-text-m}
+An ATM demonstrates how computer-system components work together:
+
+- **Input:** card, PIN, transaction type, and amount.
+- **Processing:** authentication, balance checking, and authorization.
+- **Output:** screen messages, cash, and receipt.
+- **Storage:** account transaction and audit records.
+- **Hardware:** card reader, keypad, display, cash dispenser, printer.
+- **Software:** ATM application, operating software, banking services.
+- **Connectivity:** communication with the bank server.
+- **Procedures:** security rules, transaction limits, timeout, and error handling.
+:::
+
+---
+
+## {data-menu-title="Key Concepts"}
+
+[Important Definitions and Key Terminology]{.slide-title2}
+
+<hr>
+
+::: {.body-text-s}
+- **Computer:** electronic programmable device that processes data.
+- **Data:** raw facts, measurements, or observations.
+- **Information:** processed data with meaning and usefulness.
+- **Program:** organized set of instructions for a computer.
+- **Hardware:** physical components of a computer system.
+- **Software:** programs and instructions that direct hardware.
+- **CPU:** Central Processing Unit.
+- **ALU:** Arithmetic Logic Unit.
+- **CU:** Control Unit.
+- **IPO:** Input-Process-Output.
+- **GIGO:** Garbage In, Garbage Out.
+:::
+
+---
+
+## {data-menu-title="Summary"}
+
+[Lecture Summary]{.slide-title}
+
+<hr>
+
+::: {.body-text-m}
+- A computer is an electronic, programmable device for processing data.
+- Data becomes useful information through processing and context.
+- The IPO model explains input, processing, output, storage, and control.
+- A complete computer system includes hardware, software, data, people, procedures, and connectivity.
+- Computers are fast, accurate, consistent, versatile, reliable, and capable of automation.
+- Computers remain dependent on correct data, instructions, resources, and human judgement.
+- Computer generations show the evolution from vacuum tubes to modern advanced computing systems.
+:::
+
+---
+
+## {data-menu-title="Knowledge Check"}
+
+[Knowledge Check: MCQs]{.slide-title2}
+
+<hr>
+
+::: {.body-text-s}
+1. Which statement best defines a computer?  
+   A. A device that only performs arithmetic  
+   B. An electronic programmable device that processes data  
+   C. A storage device used only for files  
+   D. A machine that thinks exactly like a human  
+   **Answer: B**
+
+2. Which unit performs arithmetic and logical operations?  
+   A. Input Unit  B. Control Unit  C. ALU  D. Output Unit  
+   **Answer: C**
+
+3. GIGO means:  
+   A. Computers are always wrong  B. Poor input can produce poor output  C. Programs cannot change  D. Storage is unlimited  
+   **Answer: B**
+:::
+
+---
+
+## {data-menu-title="Review Questions"}
+
+[Review and Application Questions]{.slide-title2}
+
+<hr>
+
+::: {.body-text-m}
+**Short Answer**
+
+- Define a computer and explain why programmability is important.
+- Differentiate between data and information with an example.
+- Explain any four characteristics of computers.
+- What is GIGO? Give one practical example.
+
+**Application / Descriptive**
+
+- Draw and explain the functional organization of a computer system.
+- Analyze an ATM transaction using the IPO model and computer-system components.
+- Compare the five generations of computers on the basis of core technology and major characteristics.
+:::
+
+---
+
+## {data-menu-title="Next Lecture"}
+
+[Next Lecture Preview]{.slide-title}
+
+<hr>
+
+::: {.body-text-m}
+**Lecture 02: Computer Hardware - Input and Output Devices**
+
+- Functional classification of computer hardware
+- Input devices and input modalities
+- Keyboard, mouse, scanner, OCR, OMR, and MICR
+- Barcode and QR-code readers
+- Touch, biometric, audio, video, and sensor-based input
+- Output devices and their classification
+- Soft-copy vs hard-copy output
+- Selecting appropriate input and output devices for different applications
+:::

@@ -1,0 +1,48 @@
+---
+title: "Course overview"
+navbar: false
+---
+
+## Overview
+
+BMC101 Fundamental of Computers & Emerging Technologies is a 3-credit course (3-0-0) for MCA Semester-I students. The course builds a strong foundation in computer fundamentals, programming concepts, operating systems, computer networks, the internet, and modern emerging technologies.
+
+This course introduces students to the architecture of computers, digital systems, problem-solving approaches, computer languages, internet services, IoT, blockchain, cloud computing, and recent IT trends such as augmented reality, virtual reality, big data, quantum computing, and brain-computer interfaces.
+
+## Learning Outcomes
+
+By the end of this course, students will be able to:
+
+- Demonstrate the basic structure, components, features, and generations of computers.
+- Describe computer languages, language translators, and algorithmic problem-solving methods.
+- Compare operating systems and computer networks in terms of functions, types, and architecture.
+- Explain internet architecture, services, and the fundamentals of IoT.
+- Explore blockchain, cryptocurrencies, cloud computing, and emerging IT technologies.
+
+## Class meetings
+
+The department timetable determines the lecture timing for this course. Please consult the official timetable for the exact class schedule and room allocation.
+
+## Teacher
+
+:::: {.columns .align-items-center}
+
+::: {.column width="25%"}
+![](files/nagpk.jpg){fig-alt="Dr. Prashant Kumar Nag" width=180}
+:::
+
+::: {.column width="75%"}
+| Role | Name | Office hours | Location |
+|---|---|---|---|
+| Instructor | [Dr. Prashant Kumar Nag](https://prashantnag.com) | By appointment | Room A06, Admin Block, GCET |
+
+**Email:** [prashantkumar.nag@galgotiacollege.edu](mailto:prashantkumar.nag@galgotiacollege.edu)
+
+Typical response time: 24–48 hours on weekdays.
+:::
+
+::::
+
+## Course materials
+
+All required materials (lecture notes, lab sheets, assignment instructions) will be posted on this website. Official announcements and submission links are on Moodle.

@@ -1,0 +1,20 @@
+format:
+  revealjs:
+    incremental: false
+    mermaid: {}
+    scrollable: true
+    code-annotations: hover
+    logo: ../files/gcet_logo.png
+    footer: >-
+      <span><a href="https://www.prashantnag.com" target="_blank">Dr. Prashant Kumar Nag, Assistant Professor</a>
+    slide-number: true
+    code-link: true
+    code-copy: false
+    highlight-style: a11y
+    chalkboard: true
+    transition: slide
+    transition-speed: default
+    code-line-numbers: true
+    code-overflow: wrap
+    theme:
+      - ../course-slides-styles.scss

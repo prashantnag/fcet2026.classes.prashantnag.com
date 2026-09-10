@@ -1,0 +1,12 @@
+---
+title: "Lectures"
+subtitle: "BMC101 - Fundamentals of Computers & Emerging Technologies"
+---
+
+## Course Lectures
+
+This course currently includes the first lecture for the semester.
+
+### Lecture 1
+- [Lecture 01: Introduction to Computers and Computer Systems](lecture-01.qmd)
+

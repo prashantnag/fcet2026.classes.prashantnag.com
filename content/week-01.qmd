@@ -1,0 +1,78 @@
+﻿---
+title: "Week 1: Introduction to Computer and Problem Solving"
+subtitle: "Unit I: Fundamentals of Computers"
+---
+
+## Week Overview
+
+This week introduces the foundation of computing, including the basic structure of computers, hardware and software components, problem-solving with algorithms, and the role of computer languages and translators.
+
+**Course Outcome:** CO 1, CO 2  
+**Duration:** 1 week
+
+---
+
+## Lecture 1: Introduction to Computer and Problem Solving {#lecture-1}
+
+::: {.callout-note icon=false}
+## Lecture Materials
+[{{< fa desktop >}} View Lecture](/lectures/lecture-01.qmd){target="_blank" rel="noopener noreferrer"}
+```{=html}
+<div class="ratio ratio-16x9 mb-3">
+	<iframe class="lecture-preview-frame" src="/lectures/lecture-01.html" title="Lecture presentation preview" loading="lazy" style="border: 1px solid #343a40;" allowfullscreen></iframe>
+</div>
+```
+:::
+
+### Learning Objectives
+- Define a computer, data, and information
+- Explain the input-process-output cycle
+- Identify the functional components of a computer system
+- Describe the characteristics and limitations of computers
+- Distinguish hardware, software, data, peopleware, and procedures
+
+### Topics Covered
+- Meaning and formal definition of a computer
+- Data processing and the difference between data and information
+- Input, processing, output, storage, and control
+- Input unit, CPU, ALU, control unit, memory, storage, and output unit
+- Characteristics and limitations of computers
+- Computer-system components and applications
+
+### Key Concepts
+- **Computer**: an electronic programmable device that processes data
+- **Data**: raw facts, symbols, measurements, or observations
+- **Information**: processed data with meaning and usefulness
+- **IPO cycle**: input, processing, and output, supported by storage and control
+- **Hardware**: physical components of a computer system
+- **Software**: instructions that direct hardware
+- **GIGO**: poor input can produce poor output
+
+### Worked Examples
+- Analyze an ATM withdrawal using the IPO cycle
+- Trace marks through a student result processing system
+- Identify system components in an online shopping transaction
+
+---
+
+## Key Takeaways
+
+- A computer accepts data, processes it using instructions, produces output, and stores results.
+- The CPU, memory, input, output, and storage units operate as a coordinated system.
+- Computers are fast, accurate, consistent, versatile, and capable of automation.
+- Computers remain dependent on correct data, instructions, hardware, software, power, and human judgement.
+- A complete computer system includes technical, human, procedural, and communication elements.
+
+---
+
+## Before Next Lecture
+
+By the end of this week, you should be ready to:
+- define the main parts and functions of a computer system;
+- distinguish data from information using practical examples;
+- explain the IPO cycle for a real-world application;
+- identify hardware and software in a modern computing device;
+- explain why AI does not remove all limitations of computers.
+
+Next week, we will study computer hardware, software, memory, storage, computer languages, and language translators in greater detail.
+

@@ -1,0 +1,41 @@
+/*-- scss:defaults --*/
+
+// Color palette
+$orange: #f49b3f;
+$darkblue: #162235;
+$lightblue: #7cc4ff;
+$green: #46c37b;
+$purple: #c3a6ff;
+$red: #ff8f8f;
+$yellow: #f6c453;
+
+// Typography
+$font-size-base: 1.1rem;
+$headings-font-weight: 700;
+$body-font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+
+// Shared style variables (dark)
+$landing-hero-bg: rgba(18, 29, 45, 0.95);
+$profile-photo-border: rgba(143, 195, 255, 0.25);
+$profile-heading-color: #f3f7fd;
+
+$navbar-bg: #101826;
+$navbar-link-color: #f7fbff;
+$navbar-shadow: 0 2px 12px rgba(0, 0, 0, 0.35);
+
+$footer-bg: #0b1320;
+$footer-text: #d7e3f3;
+
+$sidebar-active-bg: rgba(244, 155, 63, 0.18);
+$sidebar-active-fg: #ffffff;
+$sidebar-hover-bg: rgba(255, 255, 255, 0.08);
+$sidebar-tools-color: rgba(215, 227, 243, 0.88);
+$sidebar-tools-hover-bg: rgba(255, 255, 255, 0.08);
+
+$table-head-bg: #15263d;
+$table-head-fg: #f7fbff;
+$table-odd-bg: rgba(18, 29, 45, 0.92);
+
+/*-- scss:rules --*/
+
+@import "custom-base";

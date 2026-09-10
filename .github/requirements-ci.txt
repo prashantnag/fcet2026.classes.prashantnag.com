@@ -1,0 +1,1 @@
+# No notebook or Jupyter dependencies required for this minimal course site.

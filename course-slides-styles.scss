@@ -1,0 +1,446 @@
+/*-- scss:defaults --*/
+
+// Import fonts
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto+Mono:wght@300;400&display=swap");
+
+// fonts
+$font-family-sans-serif: "Open Sans", sans-serif;
+$font-family-serif: "Open Sans", sans-serif;
+$font-family-monospace: "Roboto Mono", monospace;
+
+// colors
+$baby-blue: #d2e3f3;
+$teal: #047c90;
+$dark-blue: #003660;
+$white: #ffffff;
+$green: #78a540;
+$magenta: #900c3f;
+$off-white: #f7f7f7;
+$gray: #adadad;
+$dark-gray: #373a3e;
+$peach: #df8073;
+
+// scss variables
+$presentation-title-slide-text-align: "left";
+$body-bg: $white;
+$link-color: $teal;
+$code-color: $magenta;
+$code-bg: $off-white;
+$code-block-font-size: 0.8em;
+$code-block-bg: $off-white;
+$presentation-font-size-root: 25px;
+
+/*-- scss:rules --*/
+
+body {
+  line-height: 2em;
+}
+
+.reveal {
+  color: $dark-blue;
+}
+
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6 {
+  font-family: $font-family-serif;
+  color: $teal;
+}
+
+// bold styling
+strong,
+b {
+  font-weight: 900;
+}
+
+// table header font size
+th {
+  font-size: 30px;
+}
+
+// table text font size
+td {
+  font-size: 20px;
+}
+
+// horizontal line (default dark blue)
+hr {
+  border: 4px solid $dark-blue;
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+
+// teal horizontal line
+.hr-teal {
+  border: 4px solid $teal;
+}
+
+// custom slide title
+.custom-title {
+  font-family: $font-family-serif;
+  color: $baby-blue;
+  font-size: 2.7em;
+  left: 20px;
+}
+
+// cover slide subtitle (large)
+.custom-subtitle {
+  font-family: $font-family-sans-serif;
+  color: $baby-blue;
+  font-size: 2.2em;
+  left: 20px;
+}
+
+// cover slide subtitle (medium)
+.custom-subtitle2 {
+  font-family: $font-family-sans-serif;
+  color: $baby-blue;
+  font-size: 1.7em;
+  left: 20px;
+}
+
+// cover slide subtitle (small)
+.custom-subtitle3 {
+  font-family: $font-family-sans-serif;
+  color: $baby-blue;
+  font-size: 1.1em;
+  left: 20px;
+}
+
+// cover slide footer text
+.title-footer {
+  text-align: center !important;
+  color: $baby-blue;
+  font-size: 0.8em !important;
+}
+
+// slide title (XL)
+.slide-title-xl {
+  font-family: $font-family-serif;
+  color: $teal;
+  font-size: 3em;
+  font-weight: 700;
+}
+
+// slide title (large)
+.slide-title {
+  font-family: $font-family-serif;
+  color: $teal;
+  font-size: 2em;
+  font-weight: 700;
+}
+
+// slide title (medium)
+.slide-title2 {
+  font-family: $font-family-serif;
+  color: $teal;
+  font-size: 1.7em;
+  font-weight: 700;
+}
+
+// slide title (small)
+.slide-title3 {
+  font-family: $font-family-serif;
+  color: $teal;
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+.large-fa-icon {
+  font-size: 2.5em;
+}
+
+// XL body text
+.body-text-xl {
+  font-family: $font-family-sans-serif;
+  font-size: 2em;
+}
+
+// L body text
+.body-text-l {
+  font-size: 1.5em;
+  line-height: 1.3em;
+  margin-bottom: 0.3em;
+}
+
+// M body text
+.body-text-m {
+  font-size: 1.3em;
+  line-height: 1.3em;
+  margin-bottom: 0.3em;
+}
+
+// S body text
+.body-text-s {
+  font-size: 20px;
+  line-height: 1.2em;
+}
+
+// XS body text
+.body-text-xs {
+  font-size: 0.5em;
+  line-height: 1.8em;
+}
+
+// sanchez font family
+.sanchez-font {
+  font-family: $font-family-serif;
+}
+
+// baby blue text
+.baby-blue-text {
+  color: $baby-blue;
+}
+
+// dark blue text
+.dark-blue-text {
+  color: $dark-blue;
+}
+
+// white text
+.white-text {
+  color: $white;
+}
+
+// teal text
+.teal-text {
+  color: $teal;
+}
+
+// gray text
+.gray-text {
+  color: $gray;
+}
+
+// magenta text
+.magenta-text {
+  color: $magenta;
+}
+
+.pink-highlight {
+  background-color: rgba(217, 178, 189, 0.5);
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 5px;
+  padding-left: 8px;
+  border-radius: 25px;
+}
+
+.blue-underline {
+  text-decoration: underline $dark-blue;
+  text-underline-offset: 10px;
+  text-decoration-thickness: 4px;
+}
+
+// center text (horizontally)
+.center-text {
+  text-align: center;
+}
+
+// right-align text
+.right-align-text {
+  text-align: right;
+}
+
+// left-align text
+.left-align-text {
+  text-align: left;
+}
+
+// center text vertically
+.vertical-center {
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+// center text vertically and horizontally
+.page-center {
+  line-height: 700px;
+  text-align: center;
+}
+
+// extra space above line
+.topbr {
+  display: block;
+  margin-top: 1em;
+}
+
+// extra space below line
+.bottombr {
+  display: block;
+  margin-bottom: 1em;
+}
+
+// smaller break
+.br-smaller {
+  line-height: 6px;
+}
+
+// tab font sizes
+.panel-tabset {
+  font-size: 25px;
+}
+
+// Fragment highlighting for RevealJS
+.reveal .slides section .fragment.highlight-blue {
+  opacity: 1;
+  visibility: inherit;
+}
+
+.reveal .slides section .fragment.highlight-blue.visible {
+  background-color: rgba(2, 124, 144, 0.3);
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.reveal .slides section .fragment.highlight-current-blue.current-fragment {
+  background-color: rgba(2, 124, 144, 0.5);
+  padding: 5px;
+  border-radius: 5px;
+  font-weight: 700;
+}
+
+// Reduce spacing for lists in presentations
+.body-text-xl ul,
+.body-text-xl ol,
+.body-text-l ul,
+.body-text-l ol,
+.body-text-m ul,
+.body-text-m ol,
+.body-text-s ul,
+.body-text-s ol {
+  margin-top: 0.2em;
+  margin-bottom: 0.2em;
+  padding-left: 1.5em;
+}
+
+.body-text-xl li,
+.body-text-l li,
+.body-text-m li,
+.body-text-s li {
+  margin-bottom: 0.1em;
+  line-height: 1.2;
+}
+
+// Incremental lists
+.incremental > ul,
+.incremental > ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 1.5em;
+}
+
+.incremental > ul > li,
+.incremental > ol > li {
+  margin-bottom: 0.15em;
+  line-height: 1.2;
+}
+
+// Coeos-style reveal layout controls for logo/footer/slide number visibility.
+.reveal .footer {
+  bottom: 10px !important;
+  left: 14px !important;
+  right: 150px !important;
+  width: auto !important;
+  color: $dark-blue !important;
+}
+
+.reveal .slide-logo {
+  display: block !important;
+  position: fixed !important;
+  top: 0 !important;
+  right: 10px !important;
+  max-height: 10% !important;
+  height: auto !important;
+  width: auto !important;
+  border-radius: 50% !important;
+  overflow: hidden !important;
+}
+
+.reveal .slide-menu-button {
+  left: 10px !important;
+  bottom: 10px !important;
+}
+
+// Slide menu panel: white background, teal text.
+.slide-menu-wrapper .slide-menu {
+  background: $white !important;
+  color: $teal !important;
+}
+
+.slide-menu-wrapper .slide-menu-toolbar {
+  background: $white !important;
+}
+
+.slide-menu-wrapper .slide-menu-toolbar > li {
+  color: $teal !important;
+}
+
+.slide-menu-wrapper .slide-menu-items li {
+  color: $teal !important;
+}
+
+.slide-menu-wrapper .slide-menu-items li:not(.slide-tool-item).active,
+.slide-menu-wrapper .slide-menu-items li:not(.slide-tool-item):hover {
+  background: $teal !important;
+  color: $white !important;
+}
+
+.slide-menu-wrapper .slide-tool-item.active {
+  background: transparent !important;
+  color: $teal !important;
+}
+
+.slide-menu-wrapper .slide-tool-item.active a {
+  color: $teal !important;
+}
+
+.slide-menu-wrapper .slide-tool-item {
+  color: $teal !important;
+  border-top-color: rgba(4, 124, 144, 0.2) !important;
+}
+
+.slide-menu-wrapper .slide-tool-item a {
+  color: $teal !important;
+}
+
+.slide-menu-wrapper .slide-tool-item:hover {
+  background: $teal !important;
+  color: $white !important;
+}
+
+.slide-menu-wrapper .slide-tool-item:hover a {
+  color: $white !important;
+}
+
+.slide-menu-wrapper .slide-tool-item:hover kbd {
+  color: $baby-blue !important;
+  border-color: $baby-blue !important;
+}
+
+.reveal .slide-number,
+.reveal.has-logo .slide-number {
+  bottom: 10px !important;
+  right: 10px !important;
+  top: unset !important;
+  z-index: 60 !important;
+  color: $dark-blue !important;
+  background: rgba(255, 255, 255, 0.9) !important;
+  border-radius: 4px;
+  padding: 2px 6px;
+}
+
+// Match progress bar color with the hr dark-blue accent.
+.reveal .progress {
+  color: $dark-blue !important;
+}
+
+.reveal .progress span {
+  background-color: $dark-blue !important;
+}

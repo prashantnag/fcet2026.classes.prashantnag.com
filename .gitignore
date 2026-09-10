@@ -1,0 +1,42 @@
+# Quarto
+/.quarto/
+/_site/
+_freeze/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Node
+node_modules/
+
+# Environment
+.env
+.env.local
+*.key
+*.pem
+
+# Archive
+archive_scripts/
+
+# Local files
+local/
+
+# Quarto notebooks
+**/*.quarto_ipynb

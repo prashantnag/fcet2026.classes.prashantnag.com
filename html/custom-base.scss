@@ -1,0 +1,322 @@
+/*-- scss:rules --*/
+
+body {
+  line-height: 1.65;
+}
+
+p {
+  font-family: $body-font-family;
+}
+
+blockquote {
+  font-style: italic;
+}
+
+.navbar,
+.nav-footer,
+footer,
+table,
+.table,
+.nav,
+.breadcrumb,
+.pagination,
+.dropdown-menu,
+.list-group {
+  font-size: 0.9625rem;
+}
+
+// Home page styling
+.home {
+  .landing-hero {
+    margin-bottom: 1.5rem;
+    padding: 1.5rem;
+    background-color: $landing-hero-bg;
+    border-radius: 10px;
+  }
+
+  .profile-card {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .profile-photo {
+    max-width: 220px;
+    width: 100%;
+    border-radius: 10px;
+    border: 3px solid $profile-photo-border;
+  }
+
+  .profile-details h2 {
+    color: $profile-heading-color;
+    border-bottom: 2px solid $orange;
+    padding-bottom: 0.4rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .course-details {
+    margin-bottom: 2rem;
+  }
+}
+
+// Schedule page styling
+.schedule-group {
+  margin-top: 1.8rem;
+}
+
+.schedule-group-title {
+  margin: 1rem 0 0.8rem 0;
+
+  h3 {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+}
+
+// Content page styling
+.content-title {
+  color: $orange;
+  font-weight: 700;
+}
+
+// Navbar customization
+.navbar {
+  min-height: 3.25rem;
+  padding-top: 0.35rem;
+  padding-bottom: 0.35rem;
+  background-color: $navbar-bg;
+  box-shadow: $navbar-shadow;
+
+  .navbar-brand,
+  .nav-link {
+    color: $navbar-link-color !important;
+  }
+
+  .navbar-brand {
+    font-size: 1rem;
+    line-height: 1.25;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    font-weight: 700;
+  }
+
+  .nav-link {
+    font-size: 0.9625rem;
+    line-height: 1.25;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+  }
+
+  .dropdown-item {
+    line-height: 1.25;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+  }
+}
+
+// Button styling
+.btn-primary {
+  background-color: $orange;
+  border-color: $orange;
+
+  &:hover {
+    background-color: darken($orange, 10%);
+    border-color: darken($orange, 10%);
+  }
+}
+
+// Callout boxes
+.callout {
+  border-left-width: 5px;
+  border-left-style: solid;
+
+  &.callout-tip {
+    border-left-color: $green;
+  }
+
+  &.callout-warning {
+    border-left-color: $yellow;
+  }
+
+  &.callout-important {
+    border-left-color: $red;
+  }
+
+  &.callout-note {
+    border-left-color: $lightblue;
+  }
+}
+
+// Footer styling
+.nav-footer {
+  background-color: $footer-bg;
+  color: $footer-text;
+
+  a {
+    color: $orange;
+
+    &:hover {
+      color: lighten($orange, 10%);
+    }
+  }
+}
+
+.lab-page main.content,
+.assignment-page main.content {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.lab-page main.content p,
+.lab-page main.content li,
+.assignment-page main.content p,
+.assignment-page main.content li {
+  margin-bottom: 0.7rem;
+}
+
+.lab-page main.content h1,
+.assignment-page main.content h1 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.8rem;
+}
+
+.lab-page main.content h2,
+.lab-page main.content h3,
+.lab-page main.content h4,
+.assignment-page main.content h2,
+.assignment-page main.content h3,
+.assignment-page main.content h4 {
+  margin-top: 1.4rem;
+  margin-bottom: 0.6rem;
+}
+
+.lab-page main.content .callout,
+.lab-page main.content .panel-tabset .tab-content,
+.assignment-page main.content .callout,
+.assignment-page main.content .panel-tabset .tab-content {
+  margin: 1rem 0;
+}
+
+.lab-page main.content .callout .callout-body,
+.lab-page main.content .panel-tabset .tab-content,
+.assignment-page main.content .callout .callout-body,
+.assignment-page main.content .panel-tabset .tab-content {
+  padding: 0.9rem 1rem;
+}
+
+// Sidebar styling
+.sidebar {
+  nav[role="navigation"] {
+    .sidebar-section {
+      margin-bottom: 1rem;
+
+      .sidebar-link {
+        padding: 0.5rem 1rem;
+
+        &.active {
+          background-color: $sidebar-active-bg !important;
+          color: $sidebar-active-fg !important;
+        }
+
+        &:hover {
+          background-color: $sidebar-hover-bg;
+        }
+      }
+    }
+  }
+}
+
+// Sidebar tools (GitHub icon, etc.) and theme toggle.
+.sidebar-tools-main .quarto-navigation-tool,
+.sidebar-tools-main .quarto-color-scheme-toggle {
+  color: $sidebar-tools-color !important;
+
+  i {
+    color: $sidebar-tools-color !important;
+  }
+
+  &:hover {
+    color: #ffffff !important;
+    background-color: $sidebar-tools-hover-bg;
+    border-radius: 4px;
+
+    i {
+      color: #ffffff !important;
+    }
+  }
+}
+
+// Keep sidebar tools centered under the logo.
+#quarto-sidebar .sidebar-header {
+  text-align: center;
+}
+
+#quarto-sidebar .sidebar-header .sidebar-logo {
+  margin-bottom: 0.35rem;
+}
+
+#quarto-sidebar .sidebar-header .sidebar-tools-main {
+  display: flex;
+  justify-content: center;
+  gap: 0.4rem;
+  margin-top: 0.25rem;
+  width: 100%;
+}
+
+// Theme toggle icon is an SVG background-image; recolor the existing icon via filter.
+.sidebar-navigation .quarto-color-scheme-toggle .bi::before {
+  filter: brightness(0) invert(1);
+  opacity: 0.88;
+}
+
+.sidebar-navigation .quarto-color-scheme-toggle:hover .bi::before {
+  opacity: 1;
+}
+
+// Table styling
+table {
+  font-size: 0.95em;
+
+  thead {
+    background-color: $table-head-bg;
+    color: $table-head-fg;
+  }
+
+  tbody tr:nth-child(odd) {
+    background-color: $table-odd-bg;
+  }
+}
+
+// Icons in content
+.fa-book-open-reader {
+  color: $orange;
+}
+
+.fa-flask {
+  color: $green;
+}
+
+.fa-pen-ruler {
+  color: $purple;
+}
+
+.fa-books {
+  color: $lightblue;
+}
+
+// Responsive adjustments
+@media (max-width: 768px) {
+  .home .course-details {
+    margin-bottom: 1rem;
+    padding: 1rem;
+  }
+
+  h1 {
+    font-size: 1.8em;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+}
