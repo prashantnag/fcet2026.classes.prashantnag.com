@@ -9,7 +9,7 @@ DTSTART;VALUE=DATE:20260128
 DTEND;VALUE=DATE:20260129
 SUMMARY:BMC101: Lecture 1 Introduction to Computer and Problem Solving
 DESCRIPTION:https://fcet2026.classes.prashantnag.com/lectures/lecture-01.html
-DTSTAMP:20260910T195337Z
+DTSTAMP:20260910T203008Z
 END:VEVENT
 BEGIN:VEVENT
 UID:ical-8238ddde-58be-4a69-bd92-b0c0fb679cc8
@@ -17,6 +17,6 @@ DTSTART;VALUE=DATE:20260129
 DTEND;VALUE=DATE:20260130
 SUMMARY:BMC101: Assignment 1 Fundamentals of Computers & Emerging Technologies
 DESCRIPTION:https://fcet2026.classes.prashantnag.com/assignment/01-assignment.html
-DTSTAMP:20260910T195337Z
+DTSTAMP:20260910T203008Z
 END:VEVENT
 END:VCALENDAR
