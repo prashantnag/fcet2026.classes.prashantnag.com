@@ -12,20 +12,6 @@ format:
 
 *This page contains an outline of the topics, content, and assignments for the semester. Note that this schedule will be updated as the semester progresses, with all changes documented here.*
 
-```{r packages-data, include=FALSE}
-library(tidyverse)
-library(knitr)
-library(kableExtra)
-
-withr::with_dir(here::here(), {
-  schedule_nested <- targets::tar_read(schedule_page_data)
-  targets::tar_load(schedule_ical_file)
-})
-
-base_url <- yaml::read_yaml(here::here("_quarto.yml"))$website$`site-url`
-ical_url_absolute <- paste0(base_url, "/", schedule_ical_file)
-```
-
 ::: {.callout-tip}
 ## Subscribe to Calendar
 
@@ -34,33 +20,24 @@ You can subscribe to this calendar URL in Outlook, Google Calendar, or Apple Cal
 ::: {.grid .align-items-center}
 
 ::: {.g-col-12 .g-col-md-3}
-<p class="download-btn"><a class="btn btn-danger" href="/`r schedule_ical_file`" role="button">{{< fa calendar-alt >}} Download ICS</a></p>
+<p class="download-btn"><a class="btn btn-danger" href="/files/schedule.ics" role="button">{{< fa calendar-alt >}} Download ICS</a></p>
 :::
 
 ::: {.g-col-12 .g-col-md-9 .subscribe-url}
-<p><input class="form-control" type="text" value="`r ical_url_absolute`" onclick="this.select()" readonly></p>
+<p><input class="form-control" type="text" value="https://fcet2026.classes.prashantnag.com/files/schedule.ics" onclick="this.select()" readonly></p>
 :::
 
 :::
 :::
 
-```{r build-table, include=FALSE}
-show_table <- function(group_id) {
-  cat(glue::glue("\n\n<div class=\"schedule-group\"><div class=\"schedule-group-title\"><h3>{schedule_nested$group[[group_id]]}</h3></div>\n"))
+::: {.schedule-group}
+::: {.schedule-group-title}
+### Week 1
+:::
 
-  tbl <- schedule_nested$data[[group_id]] |>
-    kbl(escape = FALSE, align = "rlccccc", table.attr = 'class="schedule-table"') |>
-    kable_styling() |>
-    column_spec(1, width = "18%", extra_css = "padding-right: 20px; white-space: nowrap;") |>
-    column_spec(2, width = "42%") |>
-    column_spec(3:7, width = "8%")
-
-  cat(tbl)
-  cat("</div>")
-}
-```
-
-```{r show-table, echo=FALSE, results="asis"}
-walk(seq_len(nrow(schedule_nested)), ~show_table(.x))
-```
+| Date | Topic | Quiz | Lecture | Content | Lab | Assignment |
+|:--|:--|:--:|:--:|:--:|:--:|:--:|
+| January 28 | *Lecture 1* Introduction to Computer and Problem Solving | | [{{< fa desktop >}}](lectures/lecture-01.qmd) | [{{< fa book-open-reader >}}](content/week-01.qmd#lecture-1) | | |
+| January 29 | *Assignment 1* Fundamentals of Computers & Emerging Technologies<br><small>Due by 11:59 PM</small> | | | | | [{{< fa pen-ruler >}}](assignment/01-assignment.qmd) |
+:::
 
