@@ -1,0 +1,82 @@
+---
+title: "Week 10: Augmented Reality and Virtual Reality"
+subtitle: "Unit V: Emerging Technologies"
+---
+
+## Week Overview
+
+This week introduces Augmented Reality (AR), Virtual Reality (VR), and Mixed Reality (MR), covering how each technology works, their hardware and software components, key features, major application areas, and the limitations and ethical concerns surrounding immersive technologies.
+
+**Course Outcome:** CO 5  
+**Duration:** 1 week
+
+---
+
+## Lecture 26: Augmented Reality and Virtual Reality {#lecture-26}
+
+::: {.callout-note icon=false}
+## Lecture Materials
+[{{< fa desktop >}} View Lecture](/lectures/lecture-26.qmd){target="_blank" rel="noopener noreferrer"}
+```{=html}
+<div class="ratio ratio-16x9 mb-3">
+	<iframe class="lecture-preview-frame" src="/lectures/lecture-26.html" title="Lecture presentation preview" loading="lazy" style="border: 1px solid #343a40;" allowfullscreen></iframe>
+</div>
+```
+:::
+
+### Learning Objectives
+- Define Augmented Reality (AR) and Virtual Reality (VR)
+- Distinguish AR, VR, and Mixed Reality (MR)
+- Identify the hardware and software components of AR/VR systems
+- Explain the main features of AR and VR
+- Describe major application areas of AR and VR
+- State the limitations and challenges of AR/VR technologies
+
+### Topics Covered
+- The reality-virtuality continuum and Extended Reality (XR)
+- What is Augmented Reality, how it works, and its types (marker-based, markerless, location-based, projection-based, superimposition-based)
+- What is Virtual Reality, its core concepts, and system architecture
+- Hardware components (displays, sensors, input, processing, feedback, connectivity) and software components (3D modelling, game engines, AR SDKs, WebXR/OpenXR, computer vision, cloud services)
+- AR vs VR comparison and Mixed Reality
+- Applications in education, healthcare, industry, architecture, retail, defence, tourism, and entertainment
+- Advantages, limitations, and privacy/ethical concerns of AR/VR
+- Future trends in immersive technologies
+
+### Key Concepts
+- **AR**: Augmented Reality; digital content overlaid on the real world
+- **VR**: Virtual Reality; fully computer-generated immersive environment
+- **MR**: Mixed Reality; real and virtual objects interact
+- **XR**: Extended Reality; umbrella term for AR, VR, and MR
+- **HMD**: Head-Mounted Display
+- **Immersion**: degree to which the system engages the user's senses
+- **Presence**: feeling of being inside the virtual environment
+- **DoF**: Degrees of Freedom of tracked movement
+- **Latency**: delay between user action and system response
+- **Registration**: alignment of virtual content with the real world
+
+### Case Study
+- Training a Surgeon with VR and AR: practicing procedures on a virtual patient (VR), building 3D models from CT/MRI scans for planning (VR/AR), overlaying key information during surgery (AR), and recording performance for feedback
+
+---
+
+## Key Takeaways
+
+- AR overlays digital content on the real world; VR replaces the real world with a virtual one.
+- MR lets real and virtual objects interact; XR covers AR, VR, and MR.
+- AR works through capture, tracking, registration, rendering, and display.
+- VR depends on tracking, processing, and display with low latency for immersion and presence.
+- Both technologies are used in education, healthcare, industry, defence, retail, tourism, and entertainment.
+- Cost, health effects, hardware limits, content creation, and privacy are major challenges.
+
+---
+
+## Before Next Lecture
+
+By the end of this week, you should be ready to:
+- define AR, VR, MR, and XR with examples;
+- explain how an AR system and a VR system each work;
+- identify the hardware and software components used in AR/VR;
+- compare AR and VR across environment, presence, devices, and purpose;
+- discuss application areas and the limitations of AR/VR technologies.
+
+Next week, we will study Lecture 27: Grid Computing, including its architecture and comparison with cluster and cloud computing.

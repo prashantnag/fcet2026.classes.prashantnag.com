@@ -1,3 +1,4 @@
 ﻿group,session,date,end_date,section_c1_date,section_c2_date,title,flag,deadline,lecture,quiz,content,lab,assignment,note
 Week 1,Lecture 1,28-01-2026,,,,Introduction to Computer and Problem Solving,,,lectures/lecture-01, ,content/week-01,,,
 Week 1,Assignment 1,29-01-2026,,,,Fundamentals of Computers & Emerging Technologies,TRUE,23:59:00,,,,,assignment/01-assignment,Submission deadline
+Week 10,Lecture 26,03-11-2026,,,,Augmented Reality and Virtual Reality,TRUE,,lectures/lecture-26,,content/week-10,,,

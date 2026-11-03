@@ -1,0 +1,587 @@
+---
+title: "Lecture 26: Augmented Reality and Virtual Reality"
+subtitle: "{{< meta course.number >}} - {{< meta course.title >}}"
+author: "{{< meta instructor.name >}}"
+date: "November 3, 2026"
+---
+
+## {#title-slide data-menu-title="Title" background="#053660"}
+
+<div class="custom-title">
+
+[Lecture 26]{.baby-blue-text}
+
+</div>
+
+<div class="custom-subtitle">
+
+[Augmented Reality and Virtual Reality]{.white-text}
+
+</div>
+
+<div class="custom-subtitle3">
+
+Unit V | Emerging Technologies<br>
+{{< meta course.number >}} - {{< meta course.title >}}<br>
+{{< meta instructor.name >}}, {{< meta instructor.title >}}<br>
+{{< meta instructor.office >}}<br>
+{{< meta course.institution >}}
+
+</div>
+
+---
+
+## {data-menu-title="Lecture Map"}
+
+[Lecture Map]{.slide-title}
+
+<hr>
+
+::: {.body-text-m}
+- **Unit:** Unit V - Emerging Technologies
+- **Course Outcome:** CO5 - Illustrate the emerging trends and technologies in the field of Information Technology
+- **Bloom's Levels:** K1 - Remember; K2 - Understand
+- **Central Question:** How do Augmented Reality and Virtual Reality change the way people see, interact with, and learn from digital information?
+:::
+
+---
+
+## {data-menu-title="Learning Objectives"}
+
+[Learning Objectives]{.slide-title}
+
+<hr>
+
+::: {.body-text-m}
+By the end of this lecture, students will be able to:
+
+- define Augmented Reality (AR) and Virtual Reality (VR);
+- distinguish AR, VR, and Mixed Reality (MR);
+- identify the hardware and software components of AR/VR systems;
+- explain the main features of AR and VR;
+- describe major application areas of AR and VR;
+- state the limitations and challenges of AR/VR technologies.
+:::
+
+---
+
+## {data-menu-title="Think About It"}
+
+[Think About It]{.slide-title}
+
+<hr>
+
+::: {.body-text-m}
+- How does a phone camera show a virtual cartoon character standing on your table?
+- Can you "visit" a museum, a surgery room, or a mountain without leaving the classroom?
+- Why do pilots practice in flight simulators before flying real aircraft?
+- Is a 360-degree video on a normal screen the same as being inside a virtual world?
+:::
+
+---
+
+## {data-menu-title="Why Reality Technologies?"}
+
+[Why Do We Need Reality Technologies?]{.slide-title2}
+
+<hr>
+
+::: {.body-text-m}
+- Traditional screens present information on a **flat, separate display**.
+- Many tasks are naturally **three-dimensional and spatial**: surgery, construction, design, navigation, training.
+- Some situations are **costly, dangerous, or impossible** to practice in the real world.
+- AR and VR bring digital content closer to **human perception and interaction**.
+- They are major parts of the broader idea of **immersive computing** or **extended reality (XR)**.
+:::
+
+---
+
+## {data-menu-title="Reality-Virtuality Continuum"}
+
+[The Reality-Virtuality Continuum]{.slide-title2}
+
+<hr>
+
+```{mermaid}
+flowchart LR
+    R[Real Environment] --> AR[Augmented Reality]
+    AR --> AV[Augmented Virtuality]
+    AV --> VR[Virtual Environment]
+    subgraph MR[Mixed Reality]
+      AR
+      AV
+    end
+```
+
+::: {.body-text-m}
+- The continuum runs from the **fully real** world to a **fully virtual** world.
+- **Extended Reality (XR)** is an umbrella term covering AR, VR, and MR.
+:::
+
+---
+
+## {data-menu-title="What Is Augmented Reality?"}
+
+[What Is Augmented Reality (AR)?]{.slide-title2}
+
+<hr>
+
+::: {.body-text-m}
+**Augmented Reality** is a technology that **overlays computer-generated content** such as text, images, 3D models, or audio onto the user's view of the **real world** in real time.
+
+- The user remains **in the real environment**.
+- Digital content is **aligned** with real objects and locations.
+- The system works **interactively and in real time**.
+- AR can be experienced through smartphones, tablets, smart glasses, or head-up displays.
+:::
+
+---
+
+## {data-menu-title="How AR Works"}
+
+[How Does AR Work?]{.slide-title}
+
+<hr>
+
+::: columns
+::: {.column width="55%"}
+```{mermaid}
+flowchart TD
+    A[Camera and Sensors] --> B[Tracking and Scene Understanding]
+    B --> C[Registration: Align Virtual with Real]
+    D[Digital Content] --> C
+    C --> E[Rendering]
+    E --> F[Display: Phone / Glasses]
+    F -. Feedback .-> A
+```
+:::
+
+::: {.column width="45%"}
+::: {.incremental .body-text-m}
+- **Capture:** camera and sensors observe the surroundings.
+- **Track:** the system detects surfaces, markers, or objects and estimates device position.
+- **Register:** virtual content is aligned with the real scene.
+- **Render:** graphics are drawn from the user's viewpoint.
+- **Display:** the combined view is shown to the user.
+:::
+:::
+:::
+
+---
+
+## {data-menu-title="Types of AR"}
+
+[Types of Augmented Reality]{.slide-title2}
+
+<hr>
+
+::: {.body-text-s}
+| Type | How Content Is Triggered | Example |
+|---|---|---|
+| Marker-based | Image, QR code, or fixed pattern is detected | Scanning a printed page to show a 3D model |
+| Markerless | Surfaces and motion are tracked using camera and sensors | Placing virtual furniture in a room |
+| Location-based | GPS, compass, and map data decide what is shown | Pokemon GO, navigation overlays |
+| Projection-based | Light is projected onto real surfaces | Interactive projected keyboards, industrial guidance |
+| Superimposition-based | Part of a real object is replaced or enhanced by a digital view | Medical imaging overlay, car-repair guidance |
+:::
+
+---
+
+## {data-menu-title="AR Examples"}
+
+[AR in Everyday Use]{.slide-title2}
+
+<hr>
+
+::: {.body-text-m}
+- **Camera filters** on social-media applications.
+- **Virtual try-on** for glasses, clothes, and cosmetics.
+- **Furniture preview:** viewing a sofa in your own room before buying.
+- **Navigation:** arrows overlaid on live street view.
+- **Translation:** pointing a phone at a sign to see translated text.
+- **Games:** Pokemon GO and other location-based games.
+:::
+
+---
+
+## {data-menu-title="What Is Virtual Reality?"}
+
+[What Is Virtual Reality (VR)?]{.slide-title2}
+
+<hr>
+
+::: {.body-text-m}
+**Virtual Reality** is a technology that creates a **fully computer-generated, three-dimensional environment** with which the user can interact, giving a sense of **being present** inside it.
+
+- The real world is **blocked out or replaced**.
+- The user is **immersed** through visual, audio, and sometimes haptic feedback.
+- The view **changes with head and body movement**.
+- VR is usually experienced with a **head-mounted display (HMD)** and controllers.
+:::
+
+---
+
+## {data-menu-title="Core Concepts of VR"}
+
+[Key Concepts in VR]{.slide-title2}
+
+<hr>
+
+::: {.body-text-m}
+- **Immersion:** how strongly the system surrounds the user's senses.
+- **Presence:** the feeling of "being there" in the virtual world.
+- **Interactivity:** the ability to act on the environment and see responses.
+- **Degrees of Freedom (DoF):** 3DoF tracks head rotation; 6DoF also tracks movement through space.
+- **Field of View (FoV):** the visible extent of the virtual world.
+- **Latency:** the delay between user movement and display update; high latency can cause discomfort.
+:::
+
+---
+
+## {data-menu-title="VR Architecture"}
+
+[Architecture of a VR System]{.slide-title2}
+
+<hr>
+
+::: columns
+::: {.column width="55%"}
+```{mermaid}
+flowchart LR
+    U[User Movement] --> T[Tracking Sensors]
+    C[Controllers / Gloves] --> P[Processing Unit]
+    T --> P
+    W[3D World and Application] --> P
+    P --> D[Head-Mounted Display]
+    P --> A[Spatial Audio / Haptics]
+    D --> U
+    A --> U
+```
+:::
+
+::: {.column width="45%"}
+::: {.incremental .body-text-m}
+- **Input:** tracking and controllers capture user actions.
+- **Processing:** a computer, console, or standalone headset runs the application.
+- **Output:** display, sound, and touch feedback create immersion.
+- **Loop:** every user movement updates the scene in real time.
+:::
+:::
+:::
+
+---
+
+## {data-menu-title="Hardware Components"}
+
+[Hardware Used in AR and VR]{.slide-title2}
+
+<hr>
+
+::: {.body-text-s}
+| Category | Components | Used In |
+|---|---|---|
+| Display | Head-mounted display, smart glasses, smartphone or tablet screen | AR and VR |
+| Sensors | Camera, gyroscope, accelerometer, depth sensor, GPS | AR and VR |
+| Input | Handheld controllers, gloves, hand and eye tracking, voice | AR and VR |
+| Processing | CPU, GPU, mobile processor, or a connected PC/console | AR and VR |
+| Feedback | Spatial audio, haptic devices, motion platforms | Mostly VR |
+| Connectivity | Wi-Fi, 5G, cloud rendering | AR and VR |
+:::
+
+---
+
+## {data-menu-title="Software Components"}
+
+[Software Used in AR and VR]{.slide-title2}
+
+<hr>
+
+::: {.body-text-m}
+- **3D modelling tools** for creating objects and environments.
+- **Game and real-time engines** such as Unity and Unreal Engine for building applications.
+- **AR frameworks and SDKs** such as ARCore, ARKit, and Vuforia for tracking and scene understanding.
+- **Open standards** such as WebXR and OpenXR to run experiences across devices.
+- **Computer vision and AI** for recognizing objects, gestures, and surroundings.
+- **Cloud services** for storage, rendering, and multi-user experiences.
+:::
+
+---
+
+## {data-menu-title="AR vs VR"}
+
+[Augmented Reality vs Virtual Reality]{.slide-title2}
+
+<hr>
+
+::: {.body-text-s}
+| Feature | Augmented Reality | Virtual Reality |
+|---|---|---|
+| Environment | Real world with digital overlay | Fully virtual world |
+| Presence | User stays aware of the real surroundings | User is isolated from the real surroundings |
+| Typical device | Smartphone, tablet, smart glasses | Head-mounted display with controllers |
+| Immersion level | Partial | High |
+| Mobility | High; used anywhere | Often limited to a safe play area |
+| Main purpose | Enhance real-world tasks | Replace the environment for simulation or experience |
+| Examples | Furniture preview, navigation overlay | Flight simulator, VR games, virtual tours |
+:::
+
+---
+
+## {data-menu-title="Mixed Reality"}
+
+[Mixed Reality (MR)]{.slide-title2}
+
+<hr>
+
+::: {.body-text-m}
+- **Mixed Reality** blends real and virtual worlds so that **digital objects can interact with real objects**.
+- The system understands the physical space, such as walls, tables, and floors.
+- A virtual ball can bounce off a real table; a virtual screen can be pinned to a real wall.
+- MR is commonly delivered through advanced headsets with passthrough cameras or transparent lenses.
+
+**Key idea:** AR *adds* content, VR *replaces* the world, and MR *anchors and interacts* with the world.
+:::
+
+---
+
+## {data-menu-title="Features"}
+
+[Key Features of AR and VR]{.slide-title2}
+
+<hr>
+
+::: {.body-text-m}
+- **Interactivity:** users can act upon and respond to digital content.
+- **Real-time operation:** the display updates instantly with user movement.
+- **3D visualization:** objects can be viewed from any angle and scale.
+- **Immersion and presence:** engaging and memorable experiences.
+- **Safe simulation:** risky or costly tasks can be practiced without real danger.
+- **Personalization:** content can adapt to user needs, location, and context.
+:::
+
+---
+
+## {data-menu-title="Applications I"}
+
+[Applications: Education, Healthcare, Industry]{.slide-title2}
+
+<hr>
+
+::: {.body-text-s}
+| Area | AR Applications | VR Applications |
+|---|---|---|
+| Education | 3D models in textbooks, interactive labs | Virtual field trips, virtual classrooms, history recreation |
+| Healthcare | Vein visualization, surgical guidance | Surgical training, pain management, therapy for phobias |
+| Industry | Assembly and maintenance instructions, remote expert help | Worker safety training, product prototyping |
+| Architecture and Construction | Viewing a building plan on site | Virtual walkthrough before construction |
+:::
+
+---
+
+## {data-menu-title="Applications II"}
+
+[Applications: Business, Defence, Entertainment]{.slide-title2}
+
+<hr>
+
+::: {.body-text-s}
+| Area | AR Applications | VR Applications |
+|---|---|---|
+| Retail and Marketing | Virtual try-on, product preview | Virtual showrooms and stores |
+| Defence and Aviation | Head-up displays, battlefield information | Flight, vehicle, and combat simulators |
+| Tourism | Interactive maps and heritage-site information | Virtual tours of distant destinations |
+| Entertainment | Location-based games, live-event overlays | Immersive games, films, and concerts |
+| Social and Collaboration | Shared annotations on real objects | Virtual meetings and shared worlds |
+:::
+
+---
+
+## {data-menu-title="Benefits"}
+
+[Advantages of AR and VR]{.slide-title2}
+
+<hr>
+
+::: {.body-text-m}
+- Improves **understanding** through visual and experiential learning.
+- Provides **safe training** for dangerous or expensive tasks.
+- Reduces **cost** of physical prototypes and travel.
+- Increases **engagement** and retention.
+- Supports **remote collaboration** and expert assistance.
+- Improves **accessibility** by letting people experience places they cannot physically visit.
+:::
+
+---
+
+## {data-menu-title="Limitations"}
+
+[Limitations and Challenges]{.slide-title2}
+
+<hr>
+
+::: {.body-text-m}
+- **Cost:** quality headsets, sensors, and powerful computers can be expensive.
+- **Health effects:** motion sickness, eye strain, fatigue, and dizziness (often called cybersickness).
+- **Hardware limits:** bulky devices, short battery life, limited field of view.
+- **Content creation:** developing quality 3D content needs time and skill.
+- **Tracking errors:** poor lighting or fast motion can break alignment in AR.
+- **Connectivity:** cloud-based and multi-user experiences need fast networks.
+- **Safety:** users may collide with real objects or lose awareness of their surroundings.
+:::
+
+---
+
+## {data-menu-title="Ethical Issues"}
+
+[Privacy, Security, and Ethical Concerns]{.slide-title2}
+
+<hr>
+
+::: {.body-text-m}
+- Cameras and sensors may capture **personal spaces, faces, and behaviour**.
+- Eye-tracking, movement, and biometric data can reveal **sensitive information**.
+- **Content distraction** while driving or walking can cause accidents.
+- **Addiction and escapism** may arise from prolonged use of immersive worlds.
+- **Digital divide:** costly devices may increase inequality of access.
+- Responsible design needs **consent, data protection, and age-appropriate use**.
+:::
+
+---
+
+## {data-menu-title="Case Study"}
+
+[Case Study: Training a Surgeon with VR and AR]{.slide-title2}
+
+<hr>
+
+::: {.body-text-m}
+- **Before surgery (VR):** the trainee practices a procedure on a virtual patient as many times as needed, without risk.
+- **During planning (VR/AR):** scans such as CT and MRI are turned into a 3D model that can be rotated and examined.
+- **During surgery (AR):** key information or anatomy can be overlaid on the surgeon's view.
+- **After training:** the system records performance for feedback.
+
+**Lesson:** VR gives a safe practice space, while AR supports real-world tasks with timely information.
+:::
+
+---
+
+## {data-menu-title="Future Trends"}
+
+[Future Trends]{.slide-title2}
+
+<hr>
+
+::: {.body-text-m}
+- Lighter, cheaper, and **wireless standalone** headsets.
+- **AR smart glasses** that may gradually replace some phone use.
+- Integration with **AI** for object recognition, assistants, and content generation.
+- **5G and edge computing** for low-latency cloud rendering.
+- **Digital twins and the metaverse** for shared virtual spaces.
+- Better **haptics and eye/hand tracking** for natural interaction.
+:::
+
+---
+
+## {data-menu-title="Key Concepts"}
+
+[Important Definitions and Key Terminology]{.slide-title2}
+
+<hr>
+
+::: {.body-text-s}
+- **AR:** Augmented Reality; digital content overlaid on the real world.
+- **VR:** Virtual Reality; fully computer-generated immersive environment.
+- **MR:** Mixed Reality; real and virtual objects interact.
+- **XR:** Extended Reality; umbrella term for AR, VR, and MR.
+- **HMD:** Head-Mounted Display.
+- **Immersion:** degree to which the system engages the user's senses.
+- **Presence:** feeling of being inside the virtual environment.
+- **DoF:** Degrees of Freedom of tracked movement.
+- **Latency:** delay between user action and system response.
+- **Registration:** alignment of virtual content with the real world.
+:::
+
+---
+
+## {data-menu-title="Summary"}
+
+[Lecture Summary]{.slide-title}
+
+<hr>
+
+::: {.body-text-m}
+- AR overlays digital content on the real world; VR replaces the real world with a virtual one.
+- MR lets real and virtual objects interact; XR covers AR, VR, and MR.
+- AR works through capture, tracking, registration, rendering, and display.
+- VR depends on tracking, processing, and display with low latency for immersion and presence.
+- Both technologies are used in education, healthcare, industry, defence, retail, tourism, and entertainment.
+- Cost, health effects, hardware limits, content creation, and privacy are major challenges.
+:::
+
+---
+
+## {data-menu-title="Knowledge Check"}
+
+[Knowledge Check: MCQs]{.slide-title2}
+
+<hr>
+
+::: {.body-text-s}
+1. Which technology overlays digital content on the real-world view?  
+   A. Virtual Reality  B. Augmented Reality  C. Grid Computing  D. Green Computing  
+   **Answer: B**
+
+2. Which device is most commonly used for full VR immersion?  
+   A. Barcode reader  B. Scanner  C. Head-mounted display  D. Printer  
+   **Answer: C**
+
+3. The delay between user movement and display update in VR is called:  
+   A. Bandwidth  B. Latency  C. Resolution  D. Registration  
+   **Answer: B**
+
+4. Placing virtual furniture in your room using a phone camera is an example of:  
+   A. VR  B. AR  C. Cloud storage  D. Blockchain  
+   **Answer: B**
+:::
+
+---
+
+## {data-menu-title="Review Questions"}
+
+[Review and Application Questions]{.slide-title2}
+
+<hr>
+
+::: {.body-text-m}
+**Short Answer**
+
+- Define AR and VR with one example each.
+- Differentiate between AR, VR, and MR.
+- What are immersion, presence, and latency in VR?
+- List any four limitations of AR/VR.
+
+**Application / Descriptive**
+
+- Explain the working of an AR system with a neat diagram.
+- Describe the architecture and hardware components of a VR system.
+- Discuss the applications of AR and VR in education and healthcare.
+- Propose an AR or VR solution for a college of your choice and identify its benefits and challenges.
+:::
+
+---
+
+## {data-menu-title="Next Lecture"}
+
+[Next Lecture Preview]{.slide-title}
+
+<hr>
+
+::: {.body-text-m}
+**Lecture 27: Grid Computing**
+
+- Introduction and overview of grid computing
+- Features and architecture of a computing grid
+- Grid computing vs cluster and cloud computing
+- Limitations and challenges
+- Application areas
+:::
