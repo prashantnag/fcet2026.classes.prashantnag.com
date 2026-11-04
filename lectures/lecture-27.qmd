@@ -1,0 +1,616 @@
+---
+title: "Lecture 27: Grid Computing"
+subtitle: "{{< meta course.number >}} - {{< meta course.title >}}"
+author: "{{< meta instructor.name >}}"
+date: "November 4, 2026"
+---
+
+## {#title-slide data-menu-title="Title" background="#053660"}
+
+<div class="custom-title">
+
+[Lecture 27]{.baby-blue-text}
+
+</div>
+
+<div class="custom-subtitle">
+
+[Grid Computing]{.white-text}
+
+</div>
+
+<div class="custom-subtitle3">
+
+Unit V | Emerging Technologies<br>
+{{< meta course.number >}} - {{< meta course.title >}}<br>
+{{< meta instructor.name >}}, {{< meta instructor.title >}}<br>
+{{< meta instructor.office >}}<br>
+{{< meta course.institution >}}
+
+</div>
+
+---
+
+## {data-menu-title="Lecture Map"}
+
+[Lecture Map]{.slide-title}
+
+<hr>
+
+::: {.body-text-m}
+- **Unit:** Unit V - Emerging Technologies
+- **Course Outcome:** CO5 - Illustrate the emerging trends and technologies in the field of Information Technology
+- **Bloom's Levels:** K1 - Remember; K2 - Understand
+- **Duration:** 50 minutes
+- **Central Question:** How can thousands of ordinary computers in different places work together like one giant supercomputer?
+:::
+
+---
+
+## {data-menu-title="Learning Objectives"}
+
+[Learning Objectives]{.slide-title}
+
+<hr>
+
+::: {.body-text-m}
+By the end of this lecture, students will be able to:
+
+- define grid computing and explain why it is needed;
+- describe the main features of a computing grid;
+- explain the architecture and working of a grid;
+- compare grid computing with cluster and cloud computing;
+- state the limitations and challenges of grid computing;
+- identify major application areas of grid computing.
+:::
+
+---
+
+## {data-menu-title="Think About It"}
+
+[Think About It]{.slide-title}
+
+<hr>
+
+::: {.body-text-m}
+- A single laptop would need **years** to analyse the data from a large physics experiment. How can the job finish in days?
+- Millions of home computers sit **idle** at night. Could their spare power be put to use?
+- An electricity grid delivers power from many plants to any socket. Could **computing power** be delivered the same way?
+- Would you trust a stranger's computer to process your data?
+:::
+
+---
+
+## {data-menu-title="Why Grid Computing?"}
+
+[Why Do We Need Grid Computing?]{.slide-title2}
+
+<hr>
+
+::: {.body-text-m}
+- Scientific and engineering problems such as climate modelling, genome analysis, and particle physics need **huge computing power and storage**.
+- Buying one **supercomputer** is extremely costly and still has a fixed limit.
+- Most organisations have computers that are **under-utilised**: idle at night, weekends, and holidays.
+- Resources such as data, software, and instruments are **spread across institutions and countries**.
+- Grid computing links these separate resources so that they can be **shared and used together**.
+:::
+
+---
+
+## {data-menu-title="What Is Grid Computing?"}
+
+[What Is Grid Computing?]{.slide-title2}
+
+<hr>
+
+::: {.body-text-m}
+**Grid computing** is a distributed computing model in which **geographically dispersed, heterogeneous computers and resources** are connected through a network and coordinated to work together on a **common large task**.
+
+- Each member of the grid is called a **node**.
+- To the user, the grid appears as **one virtual supercomputer**.
+- Nodes may belong to **different organisations**, each keeping control of its own resources.
+- Resources shared include **processing power, storage, data, software, and instruments**.
+:::
+
+---
+
+## {data-menu-title="Power Grid Analogy"}
+
+[The Electric Power Grid Analogy]{.slide-title2}
+
+<hr>
+
+::: {.body-text-s}
+| Electric Power Grid | Computing Grid |
+|---|---|
+| Many power stations feed one network | Many computers and clusters feed one network |
+| User plugs into a socket | User submits a job through a portal |
+| User does not know which plant supplied the power | User does not know which node ran the job |
+| Pay for the electricity consumed | Use (and often account for) the resources consumed |
+| Power comes on demand | Computing power comes on demand |
+:::
+
+::: {.body-text-m}
+**Key idea:** computing power is treated as a **utility** that is available when needed.
+:::
+
+---
+
+## {data-menu-title="Basic Idea"}
+
+[The Basic Idea: Divide, Distribute, Combine]{.slide-title2}
+
+<hr>
+
+```{mermaid}
+flowchart LR
+    J[Large Job] --> S[Split into Small Tasks]
+    S --> N1[Node 1]
+    S --> N2[Node 2]
+    S --> N3[Node 3]
+    S --> N4[Node N]
+    N1 --> C[Combine Results]
+    N2 --> C
+    N3 --> C
+    N4 --> C
+    C --> R[Final Result]
+```
+
+::: {.body-text-m}
+- A large problem is **divided** into many independent sub-tasks.
+- Sub-tasks run **in parallel** on different nodes.
+- Partial results are **collected and combined**.
+:::
+
+---
+
+## {data-menu-title="Features"}
+
+[Key Features of Grid Computing]{.slide-title2}
+
+<hr>
+
+::: {.body-text-m}
+- **Resource sharing:** processors, storage, data, and software are pooled across organisations.
+- **Distributed and geographically dispersed:** nodes may be in different cities or countries.
+- **Heterogeneity:** different hardware, operating systems, and networks work together.
+- **Scalability:** capacity grows by adding more nodes.
+- **Loose coupling:** nodes are independent and connected over standard networks.
+- **Decentralised administration:** each site controls its own resources and policies.
+- **Transparency:** the user sees one virtual system, not the individual machines.
+:::
+
+---
+
+## {data-menu-title="More Features"}
+
+[More Features of a Grid]{.slide-title2}
+
+<hr>
+
+::: {.body-text-m}
+- **Better utilisation:** idle computing cycles are put to productive use.
+- **Reliability:** if one node fails, its task can be **rescheduled** to another node.
+- **Cost effectiveness:** existing hardware is reused instead of buying a supercomputer.
+- **Dynamic and on-demand:** nodes can join or leave the grid at any time.
+- **Security:** authentication, authorisation, and encryption protect shared resources.
+:::
+
+---
+
+## {data-menu-title="Types of Grids"}
+
+[Types of Grids]{.slide-title2}
+
+<hr>
+
+::: {.body-text-s}
+| Type | Main Purpose | Example |
+|---|---|---|
+| Computational grid | Provide large processing power for compute-heavy tasks | Climate and weather simulation |
+| Data grid | Store, manage, and share very large datasets across sites | Particle-physics experiment data |
+| Collaborative grid | Let distributed teams share tools and work together | Joint research projects |
+| Volunteer grid | Use donated spare cycles from personal computers | SETI@home, Folding@home |
+| Enterprise grid | Share resources within one organisation | Bank or company-wide computation |
+:::
+
+---
+
+## {data-menu-title="Architecture"}
+
+[Architecture of a Computing Grid]{.slide-title2}
+
+<hr>
+
+```{mermaid}
+flowchart TD
+    U[User / Application] --> P[Grid Portal and User Interface]
+    P --> M[Grid Middleware]
+    M --> RM[Resource Management and Scheduler]
+    M --> SEC[Security and Authentication]
+    M --> INF[Information and Monitoring Services]
+    RM --> A[Node: Server]
+    RM --> B[Node: Cluster]
+    RM --> C[Node: Desktop PC]
+    RM --> D[Node: Storage / Instrument]
+```
+
+::: {.body-text-m}
+- The grid is organised as **layers**, from user applications down to the physical resources.
+:::
+
+---
+
+## {data-menu-title="Grid Layers"}
+
+[Layers of the Grid]{.slide-title2}
+
+<hr>
+
+::: {.body-text-s}
+| Layer | Role | Examples |
+|---|---|---|
+| Application and portal layer | Where users submit jobs and see results | Science gateways, web portals, command-line tools |
+| Middleware layer | Hides complexity; provides scheduling, security, data transfer, and monitoring | Globus Toolkit, BOINC, HTCondor |
+| Resource layer | Controls access to individual resources and reports their status | Local resource managers on each site |
+| Fabric layer | The actual physical resources | Servers, clusters, desktops, storage, sensors, instruments |
+| Network | Connects all layers and nodes | Internet, high-speed research networks |
+:::
+
+---
+
+## {data-menu-title="Roles of Nodes"}
+
+[Main Components and Their Roles]{.slide-title2}
+
+<hr>
+
+::: {.body-text-m}
+- **Control (coordinator) node:** accepts jobs, divides them, and keeps track of progress.
+- **Provider (worker) nodes:** contribute CPU, memory, and storage to run the tasks.
+- **User (client) node:** submits the job and receives the result.
+- **Scheduler:** decides which task runs on which node, based on load and availability.
+- **Middleware:** software that glues everything together and hides heterogeneity.
+:::
+
+---
+
+## {data-menu-title="How a Grid Works"}
+
+[How Does a Grid Work?]{.slide-title2}
+
+<hr>
+
+::: columns
+::: {.column width="55%"}
+```{mermaid}
+flowchart TD
+    A[1. User submits job] --> B[2. Authenticate and authorise]
+    B --> C[3. Discover available resources]
+    C --> D[4. Divide job and schedule tasks]
+    D --> E[5. Execute tasks on nodes]
+    E --> F[6. Monitor and handle failures]
+    F --> G[7. Collect and return results]
+```
+:::
+
+::: {.column width="45%"}
+::: {.incremental .body-text-m}
+- **Submit:** job and its requirements are sent to the grid.
+- **Authenticate:** identity and permissions are checked.
+- **Discover:** middleware finds nodes with suitable free resources.
+- **Schedule:** tasks are mapped to nodes.
+- **Execute and monitor:** failed tasks are re-run elsewhere.
+- **Return:** results are merged and given to the user.
+:::
+:::
+:::
+
+---
+
+## {data-menu-title="Middleware"}
+
+[Role of Grid Middleware]{.slide-title2}
+
+<hr>
+
+::: {.body-text-m}
+Middleware sits **between applications and the heterogeneous resources** and provides:
+
+- **Resource discovery and allocation:** find and reserve suitable nodes.
+- **Job scheduling:** queue, prioritise, and place tasks.
+- **Data management:** move and replicate large files between sites.
+- **Security services:** single sign-on, certificates, and access control.
+- **Monitoring and fault handling:** detect failures and restart tasks.
+:::
+
+---
+
+## {data-menu-title="Cluster Computing"}
+
+[Quick Recap: Cluster Computing]{.slide-title2}
+
+<hr>
+
+::: {.body-text-m}
+- A **cluster** is a group of similar computers, usually in **one location**, connected by a fast local network.
+- All nodes are managed **centrally** by a single owner.
+- The cluster works as **one tightly coupled system** for a shared task.
+- Typical use: high-performance computing inside a university lab or data centre.
+
+**Difference in one line:** a cluster is **tightly coupled and homogeneous**; a grid is **loosely coupled and heterogeneous**.
+:::
+
+---
+
+## {data-menu-title="Grid vs Cluster"}
+
+[Grid Computing vs Cluster Computing]{.slide-title2}
+
+<hr>
+
+::: {.body-text-s}
+| Feature | Grid Computing | Cluster Computing |
+|---|---|---|
+| Location | Geographically dispersed | Usually in one location |
+| Hardware | Heterogeneous | Mostly homogeneous |
+| Coupling | Loosely coupled | Tightly coupled |
+| Ownership and control | Many organisations; decentralised | Single organisation; centralised |
+| Network | Wide-area network or internet | Fast local-area network |
+| Task type | Large, independent, parallel jobs | Closely cooperating parallel jobs |
+| Node status | Nodes can join or leave | Fixed set of nodes |
+:::
+
+---
+
+## {data-menu-title="Grid vs Cloud"}
+
+[Grid Computing vs Cloud Computing]{.slide-title2}
+
+<hr>
+
+::: {.body-text-s}
+| Feature | Grid Computing | Cloud Computing |
+|---|---|---|
+| Main goal | Combine resources to solve one very large problem | Provide on-demand services to many users |
+| Ownership | Shared among participating organisations | Owned by a provider (AWS, Google, Microsoft, IBM) |
+| Resource model | Resources pooled and shared | Resources virtualised and rented |
+| Typical users | Scientists and research communities | Businesses, developers, and general users |
+| Billing | Usually based on sharing agreements | Pay-as-you-go |
+| Access | Through grid middleware and certificates | Through web portals and APIs |
+| Scaling | Add more partner nodes | Elastic scaling on demand |
+:::
+
+---
+
+## {data-menu-title="Three-Way Comparison"}
+
+[Grid, Cluster, and Cloud at a Glance]{.slide-title2}
+
+<hr>
+
+::: {.body-text-s}
+| Aspect | Cluster | Grid | Cloud |
+|---|---|---|---|
+| Control | Single owner | Multiple owners | Provider |
+| Distance | Same site | Worldwide | Worldwide data centres |
+| Coupling | Tight | Loose | Loosely coupled services |
+| Best for | High-performance tasks in one place | Large collaborative science | Everyday business and applications |
+| Memory aid | "One room" | "Many organisations" | "Rent a service" |
+:::
+
+---
+
+## {data-menu-title="Advantages"}
+
+[Advantages of Grid Computing]{.slide-title2}
+
+<hr>
+
+::: {.body-text-m}
+- Solves **very large problems** that a single machine cannot handle.
+- **Reduces cost** by reusing existing, idle hardware.
+- Provides **high throughput** through parallel execution.
+- **Scales** easily by adding nodes.
+- Gives **fault tolerance**: failed tasks can be moved to other nodes.
+- Encourages **collaboration** and data sharing between institutions.
+:::
+
+---
+
+## {data-menu-title="Limitations"}
+
+[Limitations and Challenges]{.slide-title2}
+
+<hr>
+
+::: {.body-text-m}
+- **Security and trust:** data and code run on machines owned by others.
+- **Complex setup:** installing, configuring, and maintaining middleware needs expertise.
+- **Heterogeneity:** different systems make compatibility and standardisation difficult.
+- **Network dependence:** slow or unreliable links delay tasks and data transfer.
+- **Not suited to every job:** tightly coupled tasks that need constant communication run poorly.
+- **Unpredictable availability:** nodes may leave mid-task, especially in volunteer grids.
+- **Scheduling and policy issues:** fair sharing among organisations is hard to manage.
+- **Administrative and legal barriers:** differing policies, data-protection rules, and ownership.
+:::
+
+---
+
+## {data-menu-title="Applications"}
+
+[Application Areas of Grid Computing]{.slide-title2}
+
+<hr>
+
+::: {.body-text-s}
+| Area | Use of Grid Computing |
+|---|---|
+| Scientific research | Particle physics, astronomy, and climate modelling |
+| Healthcare and life sciences | Genome analysis, protein folding, drug discovery |
+| Engineering | Aircraft and automobile design simulations, crash testing |
+| Finance | Risk analysis, portfolio simulation, fraud detection |
+| Weather and earth sciences | Weather forecasting, earthquake and flood modelling |
+| Entertainment | Rendering animation and visual effects |
+| Education and e-science | Sharing data, tools, and instruments among universities |
+| Big data and analytics | Processing very large datasets in parallel |
+:::
+
+---
+
+## {data-menu-title="Real Examples"}
+
+[Well-Known Grid Projects]{.slide-title2}
+
+<hr>
+
+::: {.body-text-m}
+- **Worldwide LHC Computing Grid (WLCG):** shares and analyses data from CERN's Large Hadron Collider across hundreds of computing centres.
+- **SETI@home:** volunteers donated idle PC time to analyse radio-telescope signals.
+- **Folding@home:** volunteer computers simulate protein folding to support disease research.
+- **BOINC:** an open platform used by many volunteer-computing science projects.
+- **National research grids:** academic networks that link supercomputing and data resources, such as India's research-computing initiatives.
+:::
+
+---
+
+## {data-menu-title="Case Study"}
+
+[Case Study: Analysing Particle-Physics Data]{.slide-title2}
+
+<hr>
+
+::: {.body-text-m}
+- **Problem:** a large physics experiment produces **petabytes of data every year**, far beyond any one institution.
+- **Grid solution:** data is stored and replicated across **many computing centres worldwide**, and analysis jobs are sent to where the data and free processors are.
+- **Benefit:** thousands of researchers in different countries analyse the same data at once, using shared resources.
+- **Challenge:** moving huge datasets, keeping data secure, and coordinating many organisations.
+
+**Lesson:** the grid turns separate institutional resources into one shared scientific infrastructure.
+:::
+
+---
+
+## {data-menu-title="Activity"}
+
+[Quick Activity (3 minutes)]{.slide-title2}
+
+<hr>
+
+::: {.body-text-m}
+Decide whether each situation suits **cluster**, **grid**, or **cloud**, and justify your choice:
+
+1. A university lab runs a weather simulation on 32 identical servers in one room.
+2. Universities in five countries pool computers to process a shared genome dataset.
+3. A start-up rents servers by the hour to host its mobile-app backend.
+4. Volunteers donate idle PC time to search for signals from space.
+:::
+
+---
+
+## {data-menu-title="Key Concepts"}
+
+[Important Definitions and Key Terminology]{.slide-title2}
+
+<hr>
+
+::: {.body-text-s}
+- **Grid computing:** a network of dispersed, heterogeneous resources working together as one virtual supercomputer.
+- **Node:** an individual computer or resource in the grid.
+- **Middleware:** software layer that manages resources, scheduling, and security.
+- **Scheduler:** component that assigns tasks to suitable nodes.
+- **Virtual organisation:** a group of people and institutions sharing grid resources under agreed rules.
+- **Heterogeneous:** made up of different types of hardware and software.
+- **Loosely coupled:** nodes are independent and communicate over a network.
+- **Volunteer computing:** donating idle computer time to a project.
+- **Utility computing:** providing computing power on demand like electricity.
+:::
+
+---
+
+## {data-menu-title="Summary"}
+
+[Lecture Summary]{.slide-title}
+
+<hr>
+
+::: {.body-text-m}
+- Grid computing links dispersed, heterogeneous computers into one virtual supercomputer.
+- Its key features are resource sharing, scalability, heterogeneity, loose coupling, and decentralised control.
+- A grid has application, middleware, resource, and fabric layers; middleware handles scheduling, security, and monitoring.
+- A cluster is tightly coupled and local, a grid is loosely coupled and multi-organisational, and a cloud offers on-demand rented services.
+- Major challenges are security, complex setup, network dependence, and unpredictable node availability.
+- Grids are widely used in science, healthcare, engineering, finance, and weather forecasting.
+:::
+
+---
+
+## {data-menu-title="Knowledge Check"}
+
+[Knowledge Check: MCQs]{.slide-title2}
+
+<hr>
+
+::: {.body-text-s}
+1. Grid computing mainly combines:  
+   A. Only identical computers in one room  B. Dispersed and heterogeneous resources  C. Only printers  D. Only mobile phones  
+   **Answer: B**
+
+2. Software that manages scheduling, security, and resource discovery in a grid is called:  
+   A. Middleware  B. Firmware  C. Spreadsheet  D. Compiler  
+   **Answer: A**
+
+3. Which statement about a cluster is correct?  
+   A. Loosely coupled and worldwide  B. Usually tightly coupled and in one location  C. Always volunteer-based  D. Needs no network  
+   **Answer: B**
+
+4. SETI@home is an example of:  
+   A. Volunteer grid computing  B. Augmented reality  C. Blockchain mining only  D. A word processor  
+   **Answer: A**
+
+5. A major limitation of grid computing is:  
+   A. It cannot use parallel processing  B. Security and trust across organisations  C. It works only with one computer  D. It has no applications  
+   **Answer: B**
+:::
+
+---
+
+## {data-menu-title="Review Questions"}
+
+[Review and Application Questions]{.slide-title2}
+
+<hr>
+
+::: {.body-text-m}
+**Short Answer**
+
+- Define grid computing and explain the term *node*.
+- List any four features of grid computing.
+- What is the role of middleware in a grid?
+- State any four limitations of grid computing.
+
+**Application / Descriptive**
+
+- Explain the architecture of a computing grid with a neat diagram.
+- Differentiate between grid computing and cluster computing.
+- Compare grid computing and cloud computing.
+- Discuss the application areas of grid computing with examples.
+:::
+
+---
+
+## {data-menu-title="Next Lecture"}
+
+[Next Lecture Preview]{.slide-title}
+
+<hr>
+
+::: {.body-text-m}
+**Lecture 28: Green Computing**
+
+- Introduction and overview of green computing
+- Features and need for energy-efficient computing
+- Green IT practices and technologies
+- Limitations and challenges
+- Application areas
+:::

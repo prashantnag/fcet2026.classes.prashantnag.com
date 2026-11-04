@@ -1,11 +1,11 @@
 ---
-title: "Week 10: Augmented Reality and Virtual Reality"
+title: "Week 10: Augmented Reality, Virtual Reality, and Grid Computing"
 subtitle: "Unit V: Emerging Technologies"
 ---
 
 ## Week Overview
 
-This week introduces Augmented Reality (AR), Virtual Reality (VR), and Mixed Reality (MR), covering how each technology works, their hardware and software components, key features, major application areas, and the limitations and ethical concerns surrounding immersive technologies.
+This week introduces Augmented Reality (AR), Virtual Reality (VR), and Mixed Reality (MR), covering how each technology works, their hardware and software components, key features, major application areas, and the limitations and ethical concerns surrounding immersive technologies. It then introduces Grid Computing, its features, architecture, comparison with cluster and cloud computing, limitations, and application areas.
 
 **Course Outcome:** CO 5  
 **Duration:** 1 week
@@ -57,9 +57,7 @@ This week introduces Augmented Reality (AR), Virtual Reality (VR), and Mixed Rea
 ### Case Study
 - Training a Surgeon with VR and AR: practicing procedures on a virtual patient (VR), building 3D models from CT/MRI scans for planning (VR/AR), overlaying key information during surgery (AR), and recording performance for feedback
 
----
-
-## Key Takeaways
+### Key Takeaways
 
 - AR overlays digital content on the real world; VR replaces the real world with a virtual one.
 - MR lets real and virtual objects interact; XR covers AR, VR, and MR.
@@ -70,6 +68,58 @@ This week introduces Augmented Reality (AR), Virtual Reality (VR), and Mixed Rea
 
 ---
 
+## Lecture 27: Grid Computing {#lecture-27}
+
+::: {.callout-note icon=false}
+## Lecture Materials
+[{{< fa desktop >}} View Lecture](/lectures/lecture-27.qmd){target="_blank" rel="noopener noreferrer"}
+```{=html}
+<div class="ratio ratio-16x9 mb-3">
+	<iframe class="lecture-preview-frame" src="/lectures/lecture-27.html" title="Lecture presentation preview" loading="lazy" style="border: 1px solid #343a40;" allowfullscreen></iframe>
+</div>
+```
+:::
+
+### Learning Objectives
+- Define grid computing and explain why it is needed
+- Describe the main features of a computing grid
+- Explain the architecture and working of a grid
+- Compare grid computing with cluster and cloud computing
+- State the limitations and challenges of grid computing
+- Identify major application areas of grid computing
+
+### Topics Covered
+- Need for grid computing and the electric power grid analogy
+- Definition of grid computing and the divide, distribute, and combine idea
+- Key features: resource sharing, heterogeneity, scalability, loose coupling, decentralised control, and reliability
+- Types of grids: computational, data, collaborative, volunteer, and enterprise
+- Grid architecture: application, middleware, resource, and fabric layers, and how a job runs on a grid
+- Grid vs cluster computing and grid vs cloud computing
+- Advantages, limitations, and challenges
+- Application areas and well-known projects such as WLCG, SETI@home, Folding@home, and BOINC
+
+### Key Concepts
+- **Grid computing**: dispersed, heterogeneous resources working together as one virtual supercomputer
+- **Node**: an individual computer or resource in the grid
+- **Middleware**: software layer for resource discovery, scheduling, security, and monitoring
+- **Scheduler**: assigns tasks to suitable nodes
+- **Virtual organisation**: group of institutions sharing grid resources under agreed rules
+- **Volunteer computing**: donating idle computer time to a project
+
+### Case Study
+- Analysing Particle-Physics Data: petabytes of experiment data are stored and processed across many computing centres worldwide so thousands of researchers can analyse it together
+
+### Key Takeaways
+
+- Grid computing links dispersed, heterogeneous computers into one virtual supercomputer.
+- Its key features are resource sharing, scalability, heterogeneity, loose coupling, and decentralised control.
+- A grid has application, middleware, resource, and fabric layers; middleware handles scheduling, security, and monitoring.
+- A cluster is tightly coupled and local, a grid is loosely coupled and multi-organisational, and a cloud offers on-demand rented services.
+- Major challenges are security, complex setup, network dependence, and unpredictable node availability.
+- Grids are widely used in science, healthcare, engineering, finance, and weather forecasting.
+
+---
+
 ## Before Next Lecture
 
 By the end of this week, you should be ready to:
@@ -77,6 +127,9 @@ By the end of this week, you should be ready to:
 - explain how an AR system and a VR system each work;
 - identify the hardware and software components used in AR/VR;
 - compare AR and VR across environment, presence, devices, and purpose;
-- discuss application areas and the limitations of AR/VR technologies.
+- discuss application areas and the limitations of AR/VR technologies;
+- define grid computing and explain its architecture and features;
+- compare grid computing with cluster and cloud computing;
+- discuss the limitations and application areas of grid computing.
 
-Next week, we will study Lecture 27: Grid Computing, including its architecture and comparison with cluster and cloud computing.
+Next, we will study Lecture 28: Green Computing.

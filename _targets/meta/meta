@@ -1,8 +1,4 @@
 name|type|data|command|depend|seed|path|time|size|bytes|format|repository|iteration|parent|children|seconds|warnings|error
-schedule_file|stem|76924b2c4c9dab6c|8984d3bb8e8d37d5|ac038c6577e35fc5|852839339|data/schedule.csv|t20760.2908327627s|s511b|511|file|local|vector|||0.05||
-schedule_page_data|stem|26f649c68dba7869|e3714e309fb4e2aa|ec061a118d20e33a|210088857||t20760.2944678303s|s658b|658|rds|local|vector|||0.1||
-schedule_ical_data|stem|106f27a597e92b49|1e6b586efd90da8e|bc38417e74263e82|1548321548||t20760.2944691151s|s696b|696|rds|local|vector|||0.04||
-schedule_ical_file|stem|186ebee2397987ad|64be6f8f8641163a|293fa861ee3761c8|-639372039|files/schedule.ics|t20760.2944695344s|s1033b|1033|file|local|vector|||0.01||
 base_url|object|1e30d497171dd019
 icon_link|function|4203388fb0a25662
 read_schedule_csv|function|d07c0d8c6971dcea
@@ -13,4 +9,8 @@ save_ical|function|20b0c87f02a92f3a
 .First|function|c93dbd2b69d7f578
 build_schedule_for_page|function|b67581df067ef478
 build_ical|function|69fb4f7ac922cd53
-site|stem|f621dd62300ea04e|ce3ac6cde3c54517|88580f7882d06d5d|-1157844207|_site*assignment/01-assignment.qmd*assignment/index.qmd*content/index.qmd*content/week-01.qmd*content/week-10.qmd*course-overview.qmd*index.qmd*lectures/index.qmd*lectures/lecture-01.qmd*lectures/lecture-26.qmd*syllabus.qmd*_quarto.yml*CNAME|t20760.3014835488s|s16870532b|16870532|file|local|vector|||12.68||
+schedule_file|stem|1e17f885192d263c|8984d3bb8e8d37d5|ac038c6577e35fc5|852839339|data/schedule.csv|t20761.3230065135s|s606b|606|file|local|vector|||0.13||
+schedule_page_data|stem|a876a956c7668e34|e3714e309fb4e2aa|d07e2483410dc011|210088857||t20761.3269078746s|s681b|681|rds|local|vector|||0.17||
+schedule_ical_data|stem|5ccde6fddf6279a5|1e6b586efd90da8e|2a1f0ebd35a0b34c|1548321548||t20761.3269098515s|s753b|753|rds|local|vector|||0.1||
+schedule_ical_file|stem|4598ce808cc89353|64be6f8f8641163a|c0a3b1fee35aefac|-639372039|files/schedule.ics|t20761.326910285s|s1310b|1310|file|local|vector|||0||
+site|stem|23d007c466a8bc3a|49c0d997a5816f4e|bad3f43e9c1cf199|-1157844207|_site*assignment/01-assignment.qmd*assignment/index.qmd*content/index.qmd*content/week-01.qmd*content/week-10.qmd*course-overview.qmd*index.qmd*lectures/index.qmd*lectures/lecture-01.qmd*lectures/lecture-26.qmd*lectures/lecture-27.qmd*syllabus.qmd*_quarto.yml*CNAME|t20761.3273473868s|s17132172b|17132172|file|local|vector|||37.9||

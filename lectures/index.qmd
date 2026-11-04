@@ -13,3 +13,5 @@ This course currently includes the following lecture slide decks.
 ### Lecture 26
 - [Lecture 26: Augmented Reality and Virtual Reality](lecture-26.qmd)
 
+### Lecture 27
+- [Lecture 27: Grid Computing](lecture-27.qmd)

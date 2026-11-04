@@ -9,12 +9,13 @@ This course currently includes content pages for Week 1 and Week 10, along with 
 | Week | Content Page | Lecture |
 |------|--------------|---------|
 | Week 1 | [Introduction to Computer and Problem Solving](/content/week-01.qmd) | [Lecture 1](/lectures/lecture-01.qmd) |
-| Week 10 | [Augmented Reality and Virtual Reality](/content/week-10.qmd) | [Lecture 26](/lectures/lecture-26.qmd) |
+| Week 10 | [Augmented Reality, Virtual Reality, and Grid Computing](/content/week-10.qmd) | [Lecture 26](/lectures/lecture-26.qmd), [Lecture 27](/lectures/lecture-27.qmd) |
 
 ## Course Materials
 
 - [Lecture 1: Introduction to Computer and Problem Solving](/lectures/lecture-01.qmd)
 - [Lecture 26: Augmented Reality and Virtual Reality](/lectures/lecture-26.qmd)
+- [Lecture 27: Grid Computing](/lectures/lecture-27.qmd)
 - [Assignment 1: Fundamentals of Computers & Emerging Technologies](/assignment/01-assignment.qmd)
 
 ## Notes

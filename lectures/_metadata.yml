@@ -8,6 +8,8 @@ format:
     footer: >-
       <span><a href="https://www.prashantnag.com" target="_blank">Dr. Prashant Kumar Nag, Assistant Professor</a>
     slide-number: true
+    controls: true
+    progress: true
     code-link: true
     code-copy: false
     highlight-style: a11y
