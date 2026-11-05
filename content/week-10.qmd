@@ -1,11 +1,11 @@
 ---
-title: "Week 10: Augmented Reality, Virtual Reality, and Grid Computing"
+title: "Week 10: Augmented Reality, Virtual Reality, Grid Computing, and Green Computing"
 subtitle: "Unit V: Emerging Technologies"
 ---
 
 ## Week Overview
 
-This week introduces Augmented Reality (AR), Virtual Reality (VR), and Mixed Reality (MR), covering how each technology works, their hardware and software components, key features, major application areas, and the limitations and ethical concerns surrounding immersive technologies. It then introduces Grid Computing, its features, architecture, comparison with cluster and cloud computing, limitations, and application areas.
+This week introduces Augmented Reality (AR), Virtual Reality (VR), and Mixed Reality (MR), covering how each technology works, their hardware and software components, key features, major application areas, and the limitations and ethical concerns surrounding immersive technologies. It then introduces Grid Computing, its features, architecture, comparison with cluster and cloud computing, limitations, and application areas. The week closes with Green Computing, covering energy-efficient IT practices, e-waste management, and the challenges of sustainable computing.
 
 **Course Outcome:** CO 5  
 **Duration:** 1 week
@@ -120,6 +120,54 @@ This week introduces Augmented Reality (AR), Virtual Reality (VR), and Mixed Rea
 
 ---
 
+## Lecture 28: Green Computing {#lecture-28}
+
+::: {.callout-note icon=false}
+## Lecture Materials
+[{{< fa desktop >}} View Lecture](/lectures/lecture-28.qmd){target="_blank" rel="noopener noreferrer"}
+```{=html}
+<div class="ratio ratio-16x9 mb-3">
+	<iframe class="lecture-preview-frame" src="/lectures/lecture-28.html" title="Lecture presentation preview" loading="lazy" style="border: 1px solid #343a40;" allowfullscreen></iframe>
+</div>
+```
+:::
+
+### Learning Objectives
+- Define green computing and explain why it is needed
+- Describe the features and the four paths of green computing
+- Explain common green IT practices and technologies
+- Describe the e-waste problem and the 3R approach
+- State the limitations and application areas of green computing
+
+### Topics Covered
+- Need for green computing and the environmental impact of IT across its life cycle
+- Features and the four paths: green use, green disposal, green design, and green manufacturing
+- Green IT practices: power management, virtualisation, cloud computing, greener data centres, and paperless work
+- E-waste, the 3R approach, and standards such as Energy Star and RoHS
+- Advantages, limitations, and challenges including the rebound effect
+- Application areas of green computing
+
+### Key Concepts
+- **Green computing**: environmentally responsible and energy-efficient use of IT
+- **Carbon footprint**: total greenhouse-gas emissions caused by an activity or product
+- **E-waste**: discarded electronic devices and components
+- **Virtualisation**: running several virtual machines on one physical machine
+- **PUE**: ratio of total data-centre energy to IT-equipment energy
+- **3R**: Reduce, Reuse, Recycle
+
+### Case Study
+- A Green Computer Lab: power management, energy-rated hardware, digital submissions, and authorised e-waste recycling cut cost and environmental impact
+
+### Key Takeaways
+
+- Green computing reduces the energy use and environmental impact of IT across its whole life cycle.
+- Its four paths are green use, green disposal, green design, and green manufacturing.
+- Virtualisation, cloud computing, efficient data centres, and paperless work save energy and resources.
+- E-waste is handled through the 3R approach and authorised recycling.
+- Challenges include high initial cost, low awareness, rapid obsolescence, and the rebound effect.
+
+---
+
 ## Before Next Lecture
 
 By the end of this week, you should be ready to:
@@ -130,6 +178,7 @@ By the end of this week, you should be ready to:
 - discuss application areas and the limitations of AR/VR technologies;
 - define grid computing and explain its architecture and features;
 - compare grid computing with cluster and cloud computing;
-- discuss the limitations and application areas of grid computing.
+- discuss the limitations and application areas of grid computing;
+- explain green computing practices, e-waste management, and their limitations.
 
-Next, we will study Lecture 28: Green Computing.
+Next, we will study Lecture 29: Big Data Analytics.

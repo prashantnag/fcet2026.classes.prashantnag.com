@@ -1,0 +1,553 @@
+---
+title: "Lecture 29: Big Data Analytics"
+subtitle: "{{< meta course.number >}} - {{< meta course.title >}}"
+author: "{{< meta instructor.name >}}"
+date: "November 10, 2026"
+---
+
+## {#title-slide data-menu-title="Title" background="#053660"}
+
+<div class="custom-title">
+
+[Lecture 29]{.baby-blue-text}
+
+</div>
+
+<div class="custom-subtitle">
+
+[Big Data Analytics]{.white-text}
+
+</div>
+
+<div class="custom-subtitle3">
+
+Unit V | Emerging Technologies<br>
+{{< meta course.number >}} - {{< meta course.title >}}<br>
+{{< meta instructor.name >}}, {{< meta instructor.title >}}<br>
+{{< meta instructor.office >}}<br>
+{{< meta course.institution >}}
+
+</div>
+
+---
+
+## {data-menu-title="Lecture Map"}
+
+[Lecture Map]{.slide-title}
+
+<hr>
+
+::: {.body-text-m}
+- **Unit:** Unit V - Emerging Technologies
+- **Course Outcome:** CO5 - Illustrate the emerging trends and technologies in the field of Information Technology
+- **Bloom's Levels:** K1 - Remember; K2 - Understand
+- **Duration:** 50 minutes, including a 3-minute activity and 5-minute knowledge check; reference slides are for self-study
+- **Central Question:** How do organisations turn enormous, fast-growing, and messy data into useful decisions?
+:::
+
+---
+
+## {data-menu-title="Learning Objectives"}
+
+[Learning Objectives]{.slide-title}
+
+<hr>
+
+::: {.body-text-m}
+By the end of this lecture, students will be able to:
+
+- define big data and big data analytics;
+- explain the 5 Vs of big data;
+- distinguish structured, semi-structured, and unstructured data;
+- describe the big data analytics process and the types of analytics;
+- name common big data technologies and explain how they work;
+- state the limitations and challenges of big data analytics;
+- identify major application areas of big data analytics.
+:::
+
+---
+
+## {data-menu-title="Think About It"}
+
+[Think About It]{.slide-title}
+
+<hr>
+
+::: {.body-text-m}
+- Every minute, millions of searches, messages, videos, and payments are generated. Where does all that data go?
+- How does an online shop know what you may want to buy **next**?
+- Can a spreadsheet handle **a billion rows**?
+- Could data help predict **traffic jams, diseases, or loan defaults** before they happen?
+:::
+
+---
+
+## {data-menu-title="Why Big Data?"}
+
+[Why Has Data Become "Big"?]{.slide-title2}
+
+<hr>
+
+::: {.body-text-m}
+- **Internet and social media:** billions of users create posts, photos, and videos.
+- **Smartphones and IoT:** sensors continuously generate readings.
+- **Digital payments and e-commerce:** every transaction is recorded.
+- **Cheaper storage and computing:** keeping and processing data is now affordable.
+- **Digital government and healthcare:** records, scans, and services move online.
+- A single database server **may become impractical** when volume, speed, variety, or cost exceeds its capabilities; distributed systems are one response.
+:::
+
+---
+
+## {data-menu-title="What Is Big Data?"}
+
+[What Is Big Data?]{.slide-title2}
+
+<hr>
+
+::: {.body-text-m}
+**Big data** refers to datasets that are so **large, fast-growing, and varied** that traditional tools cannot easily store, process, or analyse them.
+
+**Big data analytics** is the process of examining such data to discover **patterns, trends, correlations, and useful insights** that support better decisions.
+
+- Sources: social media, sensors and IoT devices, online transactions, mobile apps, logs, medical records, and satellite images.
+:::
+
+---
+
+## {data-menu-title="Data Units"}
+
+[How Big Is Big?]{.slide-title2}
+
+<hr>
+
+::: {.body-text-s}
+| Unit | Approximate Size | Example |
+|---|---|---|
+| Gigabyte (GB) | 1,000 MB | A movie file |
+| Terabyte (TB) | 1,000 GB | A large personal hard disk |
+| Petabyte (PB) | 1,000 TB | Data of a large company in a day |
+| Exabyte (EB) | 1,000 PB | Internet traffic of a region |
+| Zettabyte (ZB) | 1,000 EB | Global data created in a year |
+:::
+
+---
+
+## {data-menu-title="The 5 Vs"}
+
+[The 5 Vs of Big Data]{.slide-title2}
+
+<hr>
+
+::: {.body-text-s}
+| V | Meaning | Example |
+|---|---|---|
+| Volume | Very large amount of data | Petabytes of video and transaction data |
+| Velocity | Speed at which data is generated and processed | Live stock prices, sensor streams |
+| Variety | Many formats and sources | Text, images, audio, logs, sensor data |
+| Veracity | Accuracy and trustworthiness of data | Fake reviews, missing or noisy values |
+| Value | Useful insight gained from the data | Better decisions, new services, higher profit |
+:::
+
+---
+
+## {data-menu-title="Types of Data"}
+
+[Structured, Semi-Structured, and Unstructured Data]{.slide-title2}
+
+<hr>
+
+::: {.body-text-s}
+| Type | Description | Examples |
+|---|---|---|
+| Structured | Fixed format in rows and columns | Bank records, student marks tables |
+| Semi-structured | Has tags or keys but flexible layout | JSON, XML, email headers, log files |
+| Unstructured | No predefined tabular schema | Text, images, audio, video, social media posts |
+:::
+
+::: {.body-text-m}
+Big data can include **all three types**; their proportions depend on the application. Text and media can be stored as database values or files, but analysing their content needs suitable tools.
+:::
+
+---
+
+## {data-menu-title="Features of Big Data Analytics"}
+
+[Key Features of Big Data Analytics]{.slide-title2}
+
+<hr>
+
+::: {.body-text-m}
+- **Handles huge data:** works on data too large for a single machine.
+- **Distributed processing:** data and computation are spread across many machines in parallel.
+- **Real-time and batch analysis:** can analyse streams with low latency or process stored data later.
+- **Works with all data types:** structured, semi-structured, and unstructured.
+- **Scalable and flexible:** capacity grows by adding more nodes, often in the cloud.
+- **Supports prediction:** uncovers hidden patterns and forecasts future trends.
+:::
+
+---
+
+## {data-menu-title="Analytics Process"}
+
+[The Big Data Analytics Process]{.slide-title2}
+
+<hr>
+
+```{mermaid}
+flowchart LR
+    A[1. Collect Data] --> B[2. Store Data]
+    B --> C[3. Clean and Prepare]
+    C --> D[4. Process and Analyse]
+    D --> E[5. Visualise and Interpret]
+    E --> F[6. Decide and Act]
+```
+
+::: {.body-text-s}
+- **Collect and store:** gather data from many sources into distributed storage.
+- **Clean and prepare:** correct errors, handle duplicates, and treat missing values appropriately.
+- **Process and analyse:** apply statistics, data mining, and machine learning.
+- **Visualise and act:** show results as dashboards and charts to support decisions.
+:::
+
+---
+
+## {data-menu-title="Types of Analytics"}
+
+[Types of Big Data Analytics]{.slide-title2}
+
+<hr>
+
+::: {.body-text-s}
+| Type | Question Answered | Example |
+|---|---|---|
+| Descriptive | What happened? | Monthly sales report |
+| Diagnostic | Why did it happen? | Finding why sales fell in one region |
+| Predictive | What is likely to happen? | Forecasting customer churn |
+| Prescriptive | What should we do? | Recommending the best delivery route |
+:::
+
+---
+
+## {data-menu-title="Batch vs Stream"}
+
+[Batch Processing vs Stream Processing]{.slide-title2}
+
+<hr>
+
+::: {.body-text-s}
+| Feature | Batch Processing | Stream (Real-Time) Processing |
+|---|---|---|
+| Data | Large stored datasets | Continuous flow of data |
+| Timing | Results after the job finishes | Results within seconds or milliseconds |
+| Example | Monthly billing, yearly sales analysis | Fraud alerts, live traffic updates |
+| Typical tools | Hadoop MapReduce | Spark Structured Streaming, Kafka Streams |
+:::
+
+---
+
+## {data-menu-title="Hadoop and MapReduce"}
+
+[How Big Data Is Processed: Hadoop and MapReduce]{.slide-title2}
+
+<hr>
+
+```{mermaid}
+flowchart LR
+    D[Huge Dataset] --> S[Split into blocks across many nodes]
+    S --> M1[Map task 1]
+    S --> M2[Map task 2]
+    S --> M3[Map task 3]
+    M1 --> R[Shuffle and Reduce]
+    M2 --> R
+    M3 --> R
+    R --> O[Final Result]
+```
+
+::: {.body-text-s}
+- **HDFS** stores data in blocks, replicated across nodes for fault tolerance.
+- **Map** transforms input records into key-value pairs; **shuffle** groups values by key; **Reduce** aggregates each group. Tasks run across nodes.
+- The idea is the same as in grid computing: **divide, distribute, combine**.
+:::
+
+---
+
+## {data-menu-title="Big Data Tools"}
+
+[Technologies Used for Big Data]{.slide-title2}
+
+<hr>
+
+::: {.body-text-m}
+- **Hadoop and HDFS:** distributed storage and batch processing across clusters.
+- **MapReduce:** splits a job into map and reduce steps that run in parallel.
+- **Apache Spark:** distributed processing for batch and streams; can cache data in memory and also use disk.
+- **Apache Kafka:** publishes, stores, and delivers event streams; **Kafka Streams** provides stream-processing operations.
+- **NoSQL databases:** document, wide-column, and other non-relational stores; schema flexibility and scaling depend on the system.
+- **Data warehouses and data lakes:** central stores for analysis.
+- **Visualisation tools:** Power BI, Tableau, and similar dashboards.
+:::
+
+---
+
+## {data-menu-title="Warehouse vs Lake"}
+
+[Data Warehouse vs Data Lake]{.slide-title2}
+
+<hr>
+
+::: {.body-text-s}
+| Feature | Data Warehouse | Data Lake |
+|---|---|---|
+| Data stored | Usually curated data for analysis | Raw or processed data in many formats |
+| Schema | Usually defined before loading | Often applied when reading |
+| Users | Business analysts | Data scientists and engineers |
+| Purpose | Reports and dashboards | Exploration, machine learning, big analysis |
+:::
+
+---
+
+## {data-menu-title="Big Data and Cloud"}
+
+[Big Data, Cloud, and Machine Learning]{.slide-title2}
+
+<hr>
+
+::: {.body-text-m}
+- **Cloud computing** supplies storage and processing on demand, so organisations need not own huge clusters. (Recall Unit IV: AWS, Google, Microsoft, IBM.)
+- **IoT** (Unit III) produces much of the streaming data.
+- **Machine learning and AI** find patterns in big data to predict and recommend.
+- **Grid and cluster computing** (Lecture 27) supply the parallel processing power behind large analysis jobs.
+:::
+
+---
+
+## {data-menu-title="Advantages"}
+
+[Advantages of Big Data Analytics]{.slide-title2}
+
+<hr>
+
+::: {.body-text-m}
+- **Better decisions** based on evidence rather than guesswork.
+- **Personalisation:** tailored products, offers, and recommendations.
+- **Early detection:** fraud, faults, and disease outbreaks spotted sooner.
+- **Operational efficiency:** optimised supply chains, energy use, and routes.
+- **New products and revenue** created from data insights.
+:::
+
+---
+
+## {data-menu-title="Big Data Limitations"}
+
+[Limitations and Challenges of Big Data Analytics]{.slide-title2}
+
+<hr>
+
+::: {.body-text-m}
+- **Privacy and security:** large collections of personal data can be misused or leaked.
+- **Data quality:** noisy, biased, or incomplete data leads to wrong conclusions.
+- **Storage and processing cost:** infrastructure and skilled staff are expensive.
+- **Shortage of skills:** data scientists and engineers are in high demand.
+- **Integration problems:** combining data from different formats and systems is hard.
+- **Ethical issues:** algorithmic bias and unfair decisions.
+- **Governance and compliance:** follow applicable data-protection requirements, obtain appropriate permissions, and limit collection and retention.
+:::
+
+---
+
+## {data-menu-title="Big Data Applications"}
+
+[Application Areas of Big Data Analytics]{.slide-title2}
+
+<hr>
+
+::: {.body-text-s}
+| Area | Use of Big Data Analytics |
+|---|---|
+| Business and retail | Customer behaviour, recommendations, demand forecasting |
+| Banking and finance | Fraud detection, credit scoring, risk analysis |
+| Healthcare | Disease prediction, patient monitoring, drug research |
+| Transport and logistics | Route optimisation, traffic prediction |
+| Social media and marketing | Sentiment analysis, targeted advertising |
+| Government and smart cities | Policy planning, crime prevention, utility management |
+| Agriculture | Crop yield prediction and weather-based advice |
+| Telecom | Churn prediction and network optimisation |
+:::
+
+---
+
+## {data-menu-title="Case Study"}
+
+[Illustrative Case: Recommendations on an Online Store]{.slide-title2}
+
+<hr>
+
+::: {.body-text-m}
+- **Data collected:** clicks, searches, purchases, ratings, and time spent on each page from millions of users.
+- **Processing:** the data is stored in a distributed system and analysed with Spark and machine-learning models.
+- **Insight:** customers who buy a phone often buy a cover and a charger soon after.
+- **Action:** the site shows personalised suggestions and sends timely offers.
+- **Concern:** how much personal data should be tracked, and how should it be protected?
+
+**Lesson:** value comes not from the data itself but from the **insight and action** derived from it.
+:::
+
+---
+
+## {data-menu-title="Activity"}
+
+[Quick Activity (3 minutes)]{.slide-title2}
+
+<hr>
+
+::: {.body-text-m}
+Identify the type of analytics (descriptive, diagnostic, predictive, or prescriptive):
+
+1. A report shows total monthly electricity use of a city.
+2. Analysis shows demand rose because of an unusually hot week.
+3. A model forecasts next month's demand.
+4. A system recommends when to start extra power plants to meet demand.
+:::
+
+---
+
+## {data-menu-title="Interactive Demo"}
+
+[Interactive Demo: Big data pipeline]{.slide-title2}
+
+<hr>
+
+::: {.body-text-m}
+[Open the lecture 29 browser demo](../demos/index.html?lecture=29){target="_blank" rel="noopener"}
+
+Change data quality and worker count; follow collection, cleaning, map, shuffle, and reduce.
+
+- Predict the result, change one input, and explain what happened.
+- Read the model assumptions before relating the result to real systems.
+:::
+
+---
+
+## {data-menu-title="Summary"}
+
+[Lecture Summary]{.slide-title}
+
+<hr>
+
+::: {.body-text-m}
+- Big data is characterised by the 5 Vs: Volume, Velocity, Variety, Veracity, and Value.
+- Data may be structured, semi-structured, or unstructured; the mix depends on the use case.
+- The process runs from collection and storage to cleaning, analysis, visualisation, and decision.
+- Analytics may be descriptive, diagnostic, predictive, or prescriptive.
+- Hadoop, MapReduce, Spark, Kafka, and NoSQL databases are common technologies.
+- Challenges include privacy, data quality, cost, skills, and ethics.
+:::
+
+---
+
+## {data-menu-title="Knowledge Check"}
+
+[Knowledge Check: MCQs]{.slide-title2}
+
+<hr>
+
+::: {.body-text-s}
+1. Which of these is NOT one of the 5 Vs of big data?  
+   A. Volume  B. Velocity  C. Veracity  D. Vulnerability  
+   **Answer: D**
+
+2. Photos, audio, and videos are examples of:  
+   A. Structured data  B. Unstructured data  C. Only metadata  D. Source code  
+   **Answer: B**
+
+3. Predictive analytics mainly answers:  
+   A. What happened?  B. Why did it happen?  C. What is likely to happen?  D. Who is responsible?  
+   **Answer: C**
+
+4. HDFS is used in Hadoop for:  
+   A. Distributed file storage  B. Drawing graphics  C. Editing documents  D. Playing music  
+   **Answer: A**
+
+5. A major challenge of big data analytics is:  
+   A. Privacy and data quality  B. Data never grows  C. It needs no computers  D. It has no applications  
+   **Answer: A**
+:::
+
+---
+
+## {data-menu-title="Next Lecture"}
+
+[Next Lecture Preview]{.slide-title}
+
+<hr>
+
+::: {.body-text-m}
+**Lecture 30: Quantum Computing**
+
+- Classical bits and quantum bits (qubits)
+- Superposition, entanglement, and interference
+- How a quantum computer works
+- Limitations and application areas
+:::
+
+
+---
+
+## {data-menu-title="Reference Material"}
+
+[Reference Material and Further Reading]{.slide-title2}
+
+<hr>
+
+::: {.body-text-m}
+The following slides provide definitions and extended revision questions for self-study.
+
+- [Apache Kafka: Introduction](https://kafka.apache.org/documentation/)
+- [Apache Spark: Overview](https://spark.apache.org/docs/latest/)
+:::
+
+---
+
+## {data-menu-title="Key Concepts"}
+
+[Important Definitions and Key Terminology]{.slide-title2}
+
+<hr>
+
+::: {.body-text-s}
+- **Big data:** very large, fast, and varied data that needs special tools to process.
+- **5 Vs:** Volume, Velocity, Variety, Veracity, and Value.
+- **Structured / semi-structured / unstructured:** data with fixed, partial, or no predefined format.
+- **Hadoop and HDFS:** framework and file system for distributed storage and processing.
+- **MapReduce:** programming model that splits work into map and reduce steps.
+- **Apache Spark:** distributed analytics engine with in-memory caching capabilities.
+- **NoSQL:** non-relational databases for flexible, large-scale data.
+- **Data warehouse / data lake:** stores for structured or raw data.
+- **Data mining:** discovering patterns in large datasets.
+:::
+
+---
+
+## {data-menu-title="Review Questions"}
+
+[Review and Application Questions]{.slide-title2}
+
+<hr>
+
+::: {.body-text-m}
+**Short Answer**
+
+- Define big data and big data analytics.
+- Explain the 5 Vs of big data with examples.
+- Differentiate between structured and unstructured data.
+- What is MapReduce?
+
+**Application / Descriptive**
+
+- Explain the big data analytics process with a neat diagram.
+- Describe the four types of analytics with examples.
+- Discuss the limitations and challenges of big data analytics.
+- Discuss the application areas of big data analytics.
+:::
+

@@ -1,0 +1,525 @@
+---
+title: "Lecture 31: Brain-Computer Interface"
+subtitle: "{{< meta course.number >}} - {{< meta course.title >}}"
+author: "{{< meta instructor.name >}}"
+date: "November 12, 2026"
+---
+
+## {#title-slide data-menu-title="Title" background="#053660"}
+
+<div class="custom-title">
+
+[Lecture 31]{.baby-blue-text}
+
+</div>
+
+<div class="custom-subtitle">
+
+[Brain-Computer Interface]{.white-text}
+
+</div>
+
+<div class="custom-subtitle3">
+
+Unit V | Emerging Technologies<br>
+{{< meta course.number >}} - {{< meta course.title >}}<br>
+{{< meta instructor.name >}}, {{< meta instructor.title >}}<br>
+{{< meta instructor.office >}}<br>
+{{< meta course.institution >}}
+
+</div>
+
+---
+
+## {data-menu-title="Lecture Map"}
+
+[Lecture Map]{.slide-title}
+
+<hr>
+
+::: {.body-text-m}
+- **Unit:** Unit V - Emerging Technologies
+- **Course Outcome:** CO5 - Illustrate the emerging trends and technologies in the field of Information Technology
+- **Bloom's Levels:** K1 - Remember; K2 - Understand
+- **Duration:** 50 minutes, including a 3-minute activity and 5-minute knowledge check; reference slides are for self-study
+- **Central Question:** Can a person control a computer, a wheelchair, or an artificial limb using only brain activity?
+:::
+
+---
+
+## {data-menu-title="Learning Objectives"}
+
+[Learning Objectives]{.slide-title}
+
+<hr>
+
+::: {.body-text-m}
+By the end of this lecture, students will be able to:
+
+- define a brain-computer interface and explain why it is needed;
+- describe the stages of how a BCI works;
+- distinguish invasive, partially invasive, and non-invasive BCIs;
+- name common brain-signal recording methods and control paradigms;
+- state the features, limitations, and ethical concerns of BCI;
+- identify major application areas of BCI.
+:::
+
+---
+
+## {data-menu-title="Think About It"}
+
+[Think About It]{.slide-title}
+
+<hr>
+
+::: {.body-text-m}
+- A person with paralysis cannot move but can still **think about moving**. Could that thought move a machine?
+- Is it acceptable for a company to **read or store your brain data**?
+- Would you accept a brain implant to **improve memory or speed**, not just to treat illness?
+- Can a computer really "read your mind"?
+:::
+
+---
+
+## {data-menu-title="Why BCI?"}
+
+[Why Do We Need Brain-Computer Interfaces?]{.slide-title2}
+
+<hr>
+
+::: {.body-text-m}
+- Millions of people live with **paralysis, spinal-cord injury, stroke, ALS, or loss of limbs**.
+- Their brains may still **plan movement and speech**, but the path to muscles is broken.
+- A BCI **bypasses the damaged pathway** and links the brain directly to a machine.
+- It also opens new ways of **human-computer interaction** for everyone.
+:::
+
+---
+
+## {data-menu-title="What Is BCI?"}
+
+[What Is a Brain-Computer Interface?]{.slide-title2}
+
+<hr>
+
+::: {.body-text-m}
+A **Brain-Computer Interface (BCI)**, also called a brain-machine interface, is a system that creates a **direct communication pathway between the brain and an external device**, without relying on normal peripheral nerve and muscle output pathways.
+
+- It **reads brain signals**, interprets them, and converts them into **commands** for a computer, wheelchair, prosthetic limb, or software.
+- Some systems also **send signals back** to the brain, for example to restore sensation.
+- The main goal is to **help people with disabilities** and extend human-computer interaction.
+:::
+
+---
+
+## {data-menu-title="Brain Basics"}
+
+[Brain Basics Behind BCI]{.slide-title2}
+
+<hr>
+
+::: {.body-text-m}
+- The brain contains about **86 billion neurons** that communicate with tiny **electrical signals**.
+- Thinking, moving, or seeing makes groups of neurons **fire together**, producing recognisable electrical patterns.
+- Different brain regions have different roles; for example, the **motor cortex** plans voluntary movement.
+- A BCI **records these patterns** and learns which pattern corresponds to which intention.
+:::
+
+---
+
+## {data-menu-title="How BCI Works"}
+
+[How Does a BCI Work?]{.slide-title2}
+
+<hr>
+
+```{mermaid}
+flowchart LR
+    A[Brain Activity] --> B[Signal Acquisition]
+    B --> C[Signal Processing and Feature Extraction]
+    C --> D[Decoding with Machine Learning]
+    D --> E[Device Command]
+    E --> F[External Device]
+    F --> G[Feedback to the User]
+    G --> A
+```
+
+::: {.body-text-s}
+- **Acquire:** sensors record brain-related electrical, magnetic, or blood-oxygen signals, depending on the method.
+- **Process:** noise and artefacts are reduced and useful features are extracted.
+- **Decode:** trained models or other decoding algorithms map patterns to commands.
+- **Act and feedback:** the device responds, and the user sees the result and adapts.
+:::
+
+---
+
+## {data-menu-title="BCI Components"}
+
+[Main Components of a BCI]{.slide-title2}
+
+<hr>
+
+::: {.body-text-s}
+| Component | Role | Example |
+|---|---|---|
+| Signal acquisition | Records brain signals using electrodes or sensors | EEG cap, implanted electrode array |
+| Pre-processing | Amplifies and filters out noise and artefacts | Removing eye-blink and muscle noise |
+| Feature extraction | Picks out useful patterns from the signal | Power in certain frequency bands |
+| Classification / decoding | Translates features into commands | Machine-learning classifier |
+| Output device | Carries out the command | Cursor, wheelchair, robotic arm, speller |
+| Feedback | Shows the user the result so they can adjust | Screen display, vibration, sound |
+:::
+
+---
+
+## {data-menu-title="Types of BCI"}
+
+[Types of Brain-Computer Interfaces]{.slide-title2}
+
+<hr>
+
+::: {.body-text-s}
+| Type | Description | Example | Trade-off |
+|---|---|---|---|
+| Non-invasive | Sensors on the scalp; no surgery | EEG headset | Lower procedural risk, but weaker and noisier signals |
+| Partially invasive | Electrodes placed on the brain surface, inside the skull | ECoG (electrocorticography) | Better signals, needs surgery |
+| Invasive | Electrodes implanted in the brain tissue | Microelectrode array implants | Detailed local signals; surgical and long-term implant risks |
+:::
+
+::: {.body-text-s}
+By direction: **output BCIs** decode brain activity to control devices; **input interfaces** stimulate the brain to provide information (e.g., experimental cortical sensory feedback); **bidirectional BCIs** combine recording and stimulation. Terminology varies: ECoG is also commonly classified as invasive because it requires surgery.
+:::
+
+---
+
+## {data-menu-title="Recording Methods"}
+
+[Brain-Signal Recording Methods]{.slide-title2}
+
+<hr>
+
+::: {.body-text-s}
+| Method | What It Measures | Notes |
+|---|---|---|
+| EEG (electroencephalography) | Electrical activity from the scalp | Cheap, portable, most common non-invasive method |
+| ECoG | Electrical activity from the brain surface | Higher quality than EEG; requires surgery |
+| Intracortical electrodes | Spikes from neurons and/or local field potentials | Detailed local recordings; invasive |
+| fNIRS | Blood oxygen changes using light | Non-invasive; slower response |
+| MEG / fMRI | Magnetic fields / blood-oxygen-level-dependent signals | Used mainly in research; large and costly equipment |
+:::
+
+---
+
+## {data-menu-title="Control Paradigms"}
+
+[How Does the User Send Commands?]{.slide-title2}
+
+<hr>
+
+::: {.body-text-m}
+- **Motor imagery:** the user *imagines* moving a hand or foot, which creates a detectable pattern.
+- **P300 speller:** the brain gives a characteristic response when the user sees the letter they want in a flashing grid.
+- **SSVEP:** looking at a flickering light at a certain frequency produces a matching brain response.
+- **Attention or relaxation level:** focus or calm states control simple devices or games.
+- **Speech decoding:** newer research decodes the brain activity of attempted speech into text or voice.
+:::
+
+---
+
+## {data-menu-title="BCI Features"}
+
+[Key Features of BCI]{.slide-title2}
+
+<hr>
+
+::: {.body-text-m}
+- **Direct brain-to-device communication:** no keyboard, mouse, or muscle movement needed.
+- **Online operation:** some BCIs provide continuous control; latency ranges from fractions of a second to several seconds or longer, depending on sensing and task.
+- **Adaptive:** both the user and the system learn and improve with practice.
+- **Uses signals such as EEG:** electrical activity of the brain is recorded.
+- **Supports feedback:** visual, auditory, or sensory feedback closes the loop.
+- **Assistive and enhancing:** restores lost abilities and can support new ways of interaction.
+:::
+
+---
+
+## {data-menu-title="Role of AI"}
+
+[Role of AI and Machine Learning in BCI]{.slide-title2}
+
+<hr>
+
+::: {.body-text-m}
+- Brain signals are **weak, noisy, and different for each person**, so decoding often needs user-specific calibration and careful validation.
+- **Machine learning** learns each user's patterns during a **calibration session**.
+- **Deep learning** can support movement and speech decoding when suitable training data are available; simpler methods can also be effective.
+- Some systems **adapt** as signals change; others require periodic recalibration.
+- Link to earlier topics: BCI generates a **stream of data** that is processed using signal processing, big data techniques, and AI.
+:::
+
+---
+
+## {data-menu-title="Advantages"}
+
+[Advantages of BCI]{.slide-title2}
+
+<hr>
+
+::: {.body-text-m}
+- **Restores independence** to people with severe disabilities.
+- **Enables communication** for people who cannot speak or move.
+- **Hands-free control** of devices and software.
+- **Rehabilitation support:** helps retrain the brain after stroke.
+- **Research value:** improves understanding of the brain.
+:::
+
+---
+
+## {data-menu-title="BCI Limitations"}
+
+[Limitations and Challenges of BCI]{.slide-title2}
+
+<hr>
+
+::: {.body-text-m}
+- **Weak and noisy signals:** brain signals are small and mixed with other electrical activity.
+- **Surgical risk:** invasive implants can cause infection and tissue damage.
+- **Accuracy and speed:** much slower and less reliable than natural movement.
+- **Training and calibration:** requirements vary by person, recording method, and control paradigm.
+- **Cost and availability:** advanced implanted systems are largely investigational; simpler non-invasive systems have different capabilities.
+- **Long-term stability:** implants may degrade or move over time.
+- **Privacy and security:** brain data is highly personal and could be hacked or misused.
+:::
+
+---
+
+## {data-menu-title="Ethics"}
+
+[Ethical and Legal Concerns]{.slide-title2}
+
+<hr>
+
+::: {.body-text-m}
+- **Mental privacy:** who owns and can use brain data?
+- **Informed consent:** especially for patients who cannot easily communicate.
+- **Safety and responsibility:** who is responsible if a BCI-controlled device causes harm?
+- **Identity and autonomy:** does an implant change how a person acts or feels?
+- **Fairness and access:** enhancement could widen the gap between those who can and cannot afford it.
+- **Regulation:** clear laws and medical standards are still developing; the term **neurorights** is used for proposed protection of mental privacy.
+:::
+
+---
+
+## {data-menu-title="BCI Applications"}
+
+[Application Areas of BCI]{.slide-title2}
+
+<hr>
+
+::: {.body-text-s}
+| Area | Use of BCI |
+|---|---|
+| Healthcare and rehabilitation | Supporting communication, device control, and rehabilitation; outcomes vary |
+| Prosthetics | Thought-controlled artificial limbs |
+| Communication | Letting patients with locked-in syndrome type or speak |
+| Assistive devices | Controlling wheelchairs and smart-home devices |
+| Gaming and entertainment | Hands-free control and immersive experiences |
+| Neuroscience research | Studying brain activity and cognition |
+| Education and training | Research into workload estimates; attention is not measured directly or reliably in every setting |
+| Defence and safety | Monitoring pilot or driver alertness |
+:::
+
+---
+
+## {data-menu-title="Related Technologies"}
+
+[BCI and Other Unit V Technologies]{.slide-title2}
+
+<hr>
+
+::: {.body-text-m}
+- **AR/VR:** BCI can control virtual environments and help rehabilitation inside VR.
+- **IoT and smart homes:** thought-based commands can switch devices on or off.
+- **Big data and AI:** decode large volumes of brain-signal data.
+- **Cloud:** stores and processes data for training decoders.
+- **Green computing:** implants and wearables must be **energy efficient** and have long battery life.
+:::
+
+---
+
+## {data-menu-title="Case Study"}
+
+[Illustrative Research Scenario: Restoring Communication]{.slide-title2}
+
+<hr>
+
+::: {.body-text-m}
+- **Problem:** a person with paralysis due to brain-stem stroke cannot speak or move.
+- **BCI solution:** electrodes record activity from the brain region that controls speech or hand movement; a machine-learning decoder converts attempted speech or imagined handwriting into text on a screen.
+- **Potential outcome:** communication without normal muscle output. Performance varies; BCI is not universally faster or more suitable than eye tracking, and it does not read arbitrary private thoughts.
+- **Concerns:** surgery risk, device lifetime, cost, and protection of brain data.
+
+**Lesson:** BCI can restore lost abilities, but safety, privacy, and ethics must be addressed together with technology.
+:::
+
+---
+
+## {data-menu-title="Activity"}
+
+[Quick Activity (3 minutes)]{.slide-title2}
+
+<hr>
+
+::: {.body-text-m}
+Suggest a recording approach and justify its trade-offs. These are discussion scenarios, not clinical recommendations:
+
+1. A student playing a focus-controlled game for fun.
+2. A research lab recording good-quality signals from the brain surface during epilepsy surgery.
+3. A research participant with paralysis is considering a robotic-arm BCI: what capability, surgical-risk, and alternative-access questions should be assessed?
+4. A company proposes an EEG headband to estimate classroom attention: what consent, validity, and privacy issues arise?
+:::
+
+---
+
+## {data-menu-title="Interactive Demo"}
+
+[Interactive Demo: Brain–computer interface simulator]{.slide-title2}
+
+<hr>
+
+::: {.body-text-m}
+[Open the lecture 31 browser demo](../demos/index.html?lecture=31){target="_blank" rel="noopener"}
+
+Adjust synthetic noise, filtering, and a decision threshold; follow the signal-to-command feedback loop.
+
+- Predict the result, change one input, and explain what happened.
+- Read the model assumptions before relating the result to real systems.
+:::
+
+---
+
+## {data-menu-title="Summary"}
+
+[Lecture Summary]{.slide-title}
+
+<hr>
+
+::: {.body-text-m}
+- A BCI creates a direct link between the brain and an external device.
+- It works by acquiring signals, processing them, decoding them with algorithms, often machine learning, controlling a device, and giving feedback.
+- BCIs can be non-invasive (EEG), partially invasive (ECoG), or invasive (implanted electrodes).
+- Applications include rehabilitation, prosthetics, communication, assistive devices, gaming, and research.
+- Challenges include noisy signals, surgical risk, limited accuracy, cost, privacy, and ethics.
+:::
+
+---
+
+## {data-menu-title="Knowledge Check"}
+
+[Knowledge Check: MCQs]{.slide-title2}
+
+<hr>
+
+::: {.body-text-s}
+1. A BCI provides:  
+   A. A direct link between the brain and a device  B. A faster hard disk  C. A new programming language  D. A type of printer  
+   **Answer: A**
+
+2. An EEG headset used as a BCI is an example of:  
+   A. Invasive BCI  B. Non-invasive BCI  C. Cloud computing  D. Virtual reality only  
+   **Answer: B**
+
+3. Imagining a hand movement to control a cursor is called:  
+   A. Motor imagery  B. Data mining  C. Virtualisation  D. Encryption  
+   **Answer: A**
+
+4. Which is a major concern with BCIs?  
+   A. Mental privacy of brain data  B. They need no power  C. They never make errors  D. They cannot be used in medicine  
+   **Answer: A**
+
+5. The step that converts processed brain features into commands is:  
+   A. Decoding or classification  B. Printing  C. Compiling  D. Paging  
+   **Answer: A**
+:::
+
+---
+
+## {data-menu-title="Unit Wrap-Up"}
+
+[Unit V Wrap-Up]{.slide-title}
+
+<hr>
+
+::: {.body-text-m}
+With this lecture, we have covered all topics of **Unit V: Emerging Technologies**:
+
+- Augmented Reality and Virtual Reality (Lecture 26)
+- Grid Computing (Lecture 27)
+- Green Computing (Lecture 28)
+- Big Data Analytics (Lecture 29)
+- Quantum Computing (Lecture 30)
+- Brain-Computer Interface (Lecture 31)
+
+**Next step:** revise Unit V and prepare for the unit-wise assessment.
+:::
+
+
+---
+
+## {data-menu-title="Reference Material"}
+
+[Reference Material and Further Reading]{.slide-title2}
+
+<hr>
+
+::: {.body-text-m}
+The following slides provide definitions and extended revision questions for self-study.
+
+- [Wolpaw and colleagues: EEG-Based Brain-Computer Interfaces](https://pmc.ncbi.nlm.nih.gov/articles/PMC5839510/)
+- [NIH/NIDCD: Cochlear Implants](https://www.nidcd.nih.gov/health/cochlear-implants)
+:::
+
+---
+
+## {data-menu-title="Key Concepts"}
+
+[Important Definitions and Key Terminology]{.slide-title2}
+
+<hr>
+
+::: {.body-text-s}
+- **BCI:** a direct communication link between the brain and an external device.
+- **Neuron:** a nerve cell that carries electrical signals.
+- **EEG:** recording of the brain's electrical activity from the scalp.
+- **ECoG:** recording from the surface of the brain, under the skull.
+- **Motor imagery:** imagining a movement to generate a control signal.
+- **P300 / SSVEP:** brain responses used to select letters or commands.
+- **Decoding:** translating brain signals into commands using algorithms.
+- **Neurofeedback:** showing users their brain activity so they can learn to control it.
+- **Neurorights:** proposed rights protecting mental privacy and identity.
+:::
+
+---
+
+## {data-menu-title="Review Questions"}
+
+[Review and Application Questions]{.slide-title2}
+
+<hr>
+
+::: {.body-text-m}
+**Short Answer**
+
+- Define a brain-computer interface.
+- Name the three types of BCI and give one example of each.
+- What is EEG? What is motor imagery?
+- State any four limitations of BCI.
+
+**Application / Descriptive**
+
+- Explain the working of a BCI with a block diagram.
+- Compare invasive and non-invasive BCIs.
+- Discuss the ethical and privacy concerns of BCI.
+- Describe the application areas of BCI with examples.
+:::
+

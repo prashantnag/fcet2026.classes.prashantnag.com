@@ -1,0 +1,562 @@
+---
+title: "Lecture 30: Quantum Computing"
+subtitle: "{{< meta course.number >}} - {{< meta course.title >}}"
+author: "{{< meta instructor.name >}}"
+date: "November 11, 2026"
+---
+
+## {#title-slide data-menu-title="Title" background="#053660"}
+
+<div class="custom-title">
+
+[Lecture 30]{.baby-blue-text}
+
+</div>
+
+<div class="custom-subtitle">
+
+[Quantum Computing]{.white-text}
+
+</div>
+
+<div class="custom-subtitle3">
+
+Unit V | Emerging Technologies<br>
+{{< meta course.number >}} - {{< meta course.title >}}<br>
+{{< meta instructor.name >}}, {{< meta instructor.title >}}<br>
+{{< meta instructor.office >}}<br>
+{{< meta course.institution >}}
+
+</div>
+
+---
+
+## {data-menu-title="Lecture Map"}
+
+[Lecture Map]{.slide-title}
+
+<hr>
+
+::: {.body-text-m}
+- **Unit:** Unit V - Emerging Technologies
+- **Course Outcome:** CO5 - Illustrate the emerging trends and technologies in the field of Information Technology
+- **Bloom's Levels:** K1 - Remember; K2 - Understand
+- **Duration:** 50 minutes, including a 3-minute activity and 5-minute knowledge check; reference slides are for self-study
+- **Central Question:** What if a computer could use the laws of quantum physics to tackle problems that are too hard for today's supercomputers?
+:::
+
+---
+
+## {data-menu-title="Learning Objectives"}
+
+[Learning Objectives]{.slide-title}
+
+<hr>
+
+::: {.body-text-m}
+By the end of this lecture, students will be able to:
+
+- define quantum computing and explain why it is needed;
+- differentiate between a classical bit and a qubit;
+- explain superposition, entanglement, interference, and decoherence;
+- describe how a quantum computer works, including quantum gates;
+- list the main ways of building qubits;
+- state the limitations and challenges of quantum computing;
+- identify major application areas of quantum computing.
+:::
+
+---
+
+## {data-menu-title="Think About It"}
+
+[Think About It]{.slide-title}
+
+<hr>
+
+::: {.body-text-m}
+- Some problems would take today's best supercomputer **thousands of years**. Could a different kind of computer solve them in minutes?
+- Can something be **0 and 1 at the same time**?
+- If future quantum computers threaten widely used public-key cryptography, how will we stay **secure**?
+- Will quantum computers replace your **laptop**?
+:::
+
+---
+
+## {data-menu-title="Why Quantum?"}
+
+[Why Do We Need Quantum Computing?]{.slide-title2}
+
+<hr>
+
+::: {.body-text-m}
+- Classical computers are approaching the **physical limits** of how small transistors can be made.
+- Exact general quantum-state simulation can require exponentially growing classical resources. For integer factoring, no efficient classical algorithm is known; exponential difficulty is **not proven**.
+- Nature itself works by quantum rules, so a **quantum machine** is a natural way to simulate it.
+- Quantum computing offers a **different way of computing**, not just a faster version of the old one.
+:::
+
+---
+
+## {data-menu-title="What Is Quantum Computing?"}
+
+[What Is Quantum Computing?]{.slide-title2}
+
+<hr>
+
+::: {.body-text-m}
+**Quantum computing** is a type of computing that uses the principles of **quantum mechanics** to process information in ways that classical computers cannot.
+
+- Classical computers use **bits**, which are either **0 or 1**.
+- Quantum computers use **qubits** (quantum bits), which can represent **0, 1, or a combination of both**.
+- It does not replace everyday computers; it is aimed at **specific, very hard problems**.
+:::
+
+---
+
+## {data-menu-title="Bit vs Qubit"}
+
+[Classical Bit vs Quantum Qubit]{.slide-title2}
+
+<hr>
+
+::: {.body-text-s}
+| Feature | Classical Computer | Quantum Computer |
+|---|---|---|
+| Basic unit | Bit | Qubit |
+| State | Exactly 0 or 1 | 0, 1, or a superposition of both |
+| Hardware | Transistors and silicon chips | Superconducting circuits, trapped ions, photons |
+| Operating conditions | Room temperature | Platform-dependent: superconducting qubits need extreme cooling; other platforms differ |
+| Best at | Everyday tasks, general-purpose computing | Selected problems with suitable algorithms, such as quantum simulation and factoring |
+| Error rate | Very low | High; error correction is difficult |
+| Maturity | Fully established | Experimental and developing |
+:::
+
+---
+
+## {data-menu-title="Quantum Concepts"}
+
+[Core Quantum Concepts]{.slide-title2}
+
+<hr>
+
+::: {.body-text-m}
+- **Qubit:** the basic unit of quantum information.
+- **Superposition:** a qubit can be in a combination of 0 and 1 at the same time.
+- **Entanglement:** two or more qubits become linked so that the state of one is connected to the state of the other, even at a distance.
+- **Interference:** amplitudes reinforce or cancel; suitable algorithms use this to increase the chance of useful outcomes.
+- **Measurement:** reading a qubit collapses it to a definite 0 or 1.
+- **Decoherence:** qubits lose their quantum state due to heat or noise, causing errors.
+:::
+
+---
+
+## {data-menu-title="Superposition"}
+
+[Superposition: The Spinning Coin Idea]{.slide-title2}
+
+<hr>
+
+::: {.body-text-m}
+- A classical bit is like a coin lying flat: **heads (0)** or **tails (1)**.
+- A qubit is like a coin **spinning in the air**: it is neither heads nor tails until it lands.
+- When we **measure** the qubit, it "lands" as either 0 or 1, with probabilities set by its state.
+- Before measurement, the qubit carries **both possibilities together**.
+
+**Remember:** this is only an analogy. A real qubit's state is described by mathematical *amplitudes*, not by a hidden choice.
+:::
+
+---
+
+## {data-menu-title="Entanglement"}
+
+[Entanglement: Linked Qubits]{.slide-title2}
+
+<hr>
+
+::: {.body-text-m}
+- When two qubits are **entangled**, they form a single shared system.
+- Measurement outcomes can be strongly correlated, even when the qubits are separated; the pattern depends on the shared state and measurement basis.
+- Example: an entangled pair may give **matching results** when both are measured in the same specified basis.
+- Entanglement lets quantum computers build **correlations** that classical bits cannot.
+- It is a key resource for quantum algorithms, **quantum communication**, and **quantum teleportation of states**.
+
+**Note:** entanglement does **not** allow faster-than-light messaging.
+:::
+
+---
+
+## {data-menu-title="Why Qubits Matter"}
+
+[Why Are Qubits So Powerful?]{.slide-title2}
+
+<hr>
+
+::: {.body-text-m}
+- **N classical bits** hold **one** of 2^N^ values at a time.
+- A general **N-qubit state** has amplitudes for **2^N^ basis states**.
+- 10 qubits have 1,024 basis states; 50 have over a **quadrillion**. One measurement returns only one N-bit outcome.
+- Algorithms manipulate amplitudes through gates and interference; they cannot read out all possibilities at once.
+
+**Note:** a quantum computer does not simply try every answer; careful algorithms are needed to extract the correct one.
+:::
+
+---
+
+## {data-menu-title="Quantum Gates"}
+
+[Quantum Gates and Circuits]{.slide-title2}
+
+<hr>
+
+::: {.body-text-s}
+| Gate | Role |
+|---|---|
+| Hadamard (H) | Maps an initial 0 or 1 state to an equal-magnitude superposition |
+| Pauli-X | Quantum version of NOT: flips 0 and 1 |
+| Pauli-Z | Changes the phase of the qubit |
+| CNOT | Two-qubit gate that flips the target qubit if the control qubit is 1; used to create entanglement |
+:::
+
+::: {.body-text-m}
+- A **quantum circuit** is a sequence of gates followed by measurement.
+- Quantum gates are **reversible**, unlike many classical logic gates.
+:::
+
+---
+
+## {data-menu-title="How a Quantum Computer Works"}
+
+[How Does a Quantum Computer Work?]{.slide-title2}
+
+<hr>
+
+```{mermaid}
+flowchart LR
+    A[Initialise Qubits] --> B[Apply Quantum Gates]
+    B --> C[Superposition and Entanglement]
+    C --> D[Interference Amplifies Right Answers]
+    D --> E[Measure Qubits]
+    E --> F[Classical Result]
+```
+
+::: {.body-text-s}
+- Qubits are prepared in a known state, then changed using **quantum gates**.
+- Superposition, entanglement, and interference let the algorithm explore many paths at once.
+- Measurement gives a **classical 0/1 result**, and the process may be repeated for confidence.
+:::
+
+---
+
+## {data-menu-title="Quantum Features"}
+
+[Key Features of Quantum Computing]{.slide-title2}
+
+<hr>
+
+::: {.body-text-m}
+- **Quantum parallelism:** many possibilities handled together through superposition.
+- **Algorithm-specific speed-up:** factoring and search have theoretical advantages under suitable assumptions; practical gains depend on hardware and overhead.
+- **Natural simulation of nature:** models molecules and materials directly.
+- **Probabilistic results:** answers are obtained with probability and often repeated.
+- **Needs controlled conditions:** isolation from noise and precise control; cooling requirements depend on the hardware.
+:::
+
+---
+
+## {data-menu-title="Quantum Hardware"}
+
+[Ways of Building Qubits]{.slide-title2}
+
+<hr>
+
+::: {.body-text-s}
+| Approach | Idea |
+|---|---|
+| Superconducting qubits | Tiny circuits cooled near absolute zero |
+| Trapped ions | Charged atoms held and controlled by lasers |
+| Photonic qubits | Particles of light used as qubits |
+| Neutral atoms | Atoms arranged and controlled with laser tweezers |
+| Spin qubits (silicon) | Electron spins in semiconductor devices |
+:::
+
+::: {.body-text-s}
+Companies and labs working on quantum computers include IBM, Google, Microsoft, Intel, and national research programmes such as India's National Quantum Mission.
+:::
+
+---
+
+## {data-menu-title="Quantum Algorithms"}
+
+[Famous Quantum Algorithms]{.slide-title2}
+
+<hr>
+
+::: {.body-text-s}
+| Algorithm | What It Does | Impact |
+|---|---|---|
+| Shor's algorithm | Factors integers in polynomial time on a sufficiently capable quantum computer | Could threaten RSA with large fault-tolerant hardware |
+| Grover's algorithm | Searches an unstructured space using about square-root-of-N oracle queries | Quadratic speed-up in searching |
+| Quantum simulation | Models quantum systems such as molecules | Drug and material discovery |
+| Quantum optimisation approaches | Explore candidate solutions | Research in logistics and finance; general practical speed-up is not established |
+:::
+
+---
+
+## {data-menu-title="Quantum Supremacy"}
+
+[Milestones, NISQ, and Quantum Advantage]{.slide-title2}
+
+<hr>
+
+::: {.body-text-m}
+- **Quantum advantage:** demonstrated benefit over an appropriate classical baseline for a specified task. The term **supremacy** is often used for classically difficult benchmark tasks; such a result does not imply broad practical usefulness.
+- **NISQ:** *Noisy Intermediate-Scale Quantum* describes devices whose noise limits useful circuit depth. Physical qubit count alone does not establish computational capability.
+- **Goal:** **fault-tolerant** quantum computers that use many physical qubits to form reliable **logical qubits**.
+- **Quantum cloud services:** companies such as IBM, Amazon, and Microsoft let students and researchers run small programs on real quantum hardware over the cloud.
+:::
+
+---
+
+## {data-menu-title="Quantum Limitations"}
+
+[Limitations and Challenges of Quantum Computing]{.slide-title2}
+
+<hr>
+
+::: {.body-text-m}
+- **Decoherence and noise:** qubits are fragile and lose information quickly.
+- **High error rates:** large-scale error correction is still under development.
+- **Scalability:** building machines with many stable qubits is very difficult.
+- **Special infrastructure:** precise control and isolation; some platforms also require extreme cooling.
+- **Limited algorithms:** only some problems gain a clear speed-up.
+- **Skill shortage:** few experts in quantum algorithms and hardware.
+- **Security threat:** future quantum computers could break today's public-key encryption.
+:::
+
+---
+
+## {data-menu-title="Post-Quantum"}
+
+[Preparing for the Quantum Threat]{.slide-title2}
+
+<hr>
+
+::: {.body-text-m}
+- **Post-quantum cryptography (PQC):** algorithms for key establishment and signatures designed to resist classical and quantum attacks; they run on classical computers.
+- **Harvest now, decrypt later:** attackers may store encrypted data today and decrypt it once quantum machines mature.
+- **Quantum key distribution (QKD):** uses quantum properties to share encryption keys so that eavesdropping can be detected.
+- Organisations are advised to **plan early** to move to quantum-safe security.
+:::
+
+---
+
+## {data-menu-title="Quantum Applications"}
+
+[Application Areas of Quantum Computing]{.slide-title2}
+
+<hr>
+
+::: {.body-text-s}
+| Area | Use of Quantum Computing |
+|---|---|
+| Cryptanalysis | Future fault-tolerant systems could threaten RSA and elliptic-curve cryptography; PQC itself runs on classical computers |
+| Drug discovery and chemistry | Simulating molecules and reactions |
+| Materials science | Designing new batteries and superconductors |
+| Optimisation | Research into logistics and scheduling; advantage depends on the problem |
+| Finance | Research into portfolio optimisation and risk estimation |
+| Artificial intelligence | Experimental algorithms; data loading and practical speed-up remain challenges |
+| Search | Faster unstructured search (Grover's algorithm) |
+| Weather and climate | Exploratory research; no general forecasting advantage established |
+:::
+
+---
+
+## {data-menu-title="Classical vs Quantum Use"}
+
+[Will Quantum Computers Replace Classical Computers?]{.slide-title2}
+
+<hr>
+
+::: {.body-text-m}
+- **No.** Quantum computers are **specialised accelerators** for certain hard problems.
+- Everyday tasks such as browsing, word processing, and email run better on **classical computers**.
+- The future is **hybrid**: classical computers prepare problems, quantum processors handle the hard core, and classical computers read and use the result.
+:::
+
+---
+
+## {data-menu-title="Case Study"}
+
+[Research Scenario: Quantum Computing for Drug Discovery]{.slide-title2}
+
+<hr>
+
+::: {.body-text-m}
+- **Problem:** to design a new medicine, scientists must understand how molecules behave. Exact simulation is far too hard for classical computers as molecules grow.
+- **Quantum approach:** qubits follow quantum rules, so they can model the electrons of a molecule directly.
+- **Potential benefit:** better estimates of molecular properties could support drug research; faster development and lower costs are not guaranteed.
+- **Challenge:** today's noisy machines can handle only **small molecules**; large, error-corrected machines are still being developed.
+
+**Lesson:** quantum computing is promising for problems that are themselves quantum in nature.
+:::
+
+---
+
+## {data-menu-title="Activity"}
+
+[Quick Activity (3 minutes)]{.slide-title2}
+
+<hr>
+
+::: {.body-text-m}
+State whether each statement is **true** or **false** and correct the false ones:
+
+1. A qubit can be only 0 or only 1.
+2. Measuring a qubit gives a definite 0 or 1.
+3. Quantum computers will replace all laptops soon.
+4. Decoherence is a major source of errors in qubits.
+5. A quantum computer works by simply trying all answers one after another.
+:::
+
+---
+
+## {data-menu-title="Interactive Demo"}
+
+[Interactive Demo: Quantum circuit playground]{.slide-title2}
+
+<hr>
+
+::: {.body-text-m}
+[Open the lecture 30 browser demo](../demos/index.html?lecture=30){target="_blank" rel="noopener"}
+
+Apply H, X, Z, and CNOT gates; compare amplitudes, probabilities, and measurement outcomes.
+
+- Predict the result, change one input, and explain what happened.
+- Read the model assumptions before relating the result to real systems.
+:::
+
+---
+
+## {data-menu-title="Summary"}
+
+[Lecture Summary]{.slide-title}
+
+<hr>
+
+::: {.body-text-m}
+- Quantum computing uses qubits and quantum mechanics to solve certain problems far faster than classical computers.
+- Superposition, entanglement, and interference are its core ideas; decoherence is its main enemy.
+- A quantum program applies gates to qubits and then measures them to get a classical result.
+- Qubits can be built from superconducting circuits, trapped ions, photons, neutral atoms, or spins.
+- Challenges include noise, errors, scalability, cost, and the threat to current encryption.
+- Application research includes molecular simulation, materials, optimisation, finance, and AI; practical advantage must be established for each task.
+:::
+
+---
+
+## {data-menu-title="Knowledge Check"}
+
+[Knowledge Check: MCQs]{.slide-title2}
+
+<hr>
+
+::: {.body-text-s}
+1. A qubit differs from a bit because it can be in:  
+   A. Only state 0  B. Only state 1  C. A superposition of 0 and 1  D. No state  
+   **Answer: C**
+
+2. The linking of qubits so that their states are correlated is called:  
+   A. Entanglement  B. Compression  C. Encryption  D. Virtualisation  
+   **Answer: A**
+
+3. Loss of a qubit's quantum state due to noise is called:  
+   A. Interference  B. Decoherence  C. Superposition  D. Measurement  
+   **Answer: B**
+
+4. Shor's algorithm is mainly associated with:  
+   A. Factoring large numbers  B. Sorting songs  C. Compressing video  D. Printing documents  
+   **Answer: A**
+
+5. Which statement is correct?  
+   A. Quantum computers will replace all classical computers  B. Quantum computers are specialised for certain hard problems  C. Quantum computers need no error correction  D. Qubits never make errors  
+   **Answer: B**
+:::
+
+---
+
+## {data-menu-title="Next Lecture"}
+
+[Next Lecture Preview]{.slide-title}
+
+<hr>
+
+::: {.body-text-m}
+**Lecture 31: Brain-Computer Interface**
+
+- Introduction and overview of BCI
+- How a BCI works and its types
+- Features, limitations, and ethics
+- Application areas
+:::
+
+
+---
+
+## {data-menu-title="Reference Material"}
+
+[Reference Material and Further Reading]{.slide-title2}
+
+<hr>
+
+::: {.body-text-m}
+The following slides provide definitions and extended revision questions for self-study.
+
+- [NIST: Quantum Computing Explained](https://www.nist.gov/quantum-information-science/quantum-computing-explained)
+- [IBM: Grover's Algorithm](https://quantum.cloud.ibm.com/learning/en/modules/computer-science/grovers)
+- [NIST: Post-Quantum Cryptography](https://www.nist.gov/pqc)
+:::
+
+---
+
+## {data-menu-title="Key Concepts"}
+
+[Important Definitions and Key Terminology]{.slide-title2}
+
+<hr>
+
+::: {.body-text-s}
+- **Qubit:** the basic unit of quantum information.
+- **Superposition:** a qubit being in a combination of 0 and 1.
+- **Entanglement:** a link between qubits so that their states are correlated.
+- **Interference:** reinforcement or cancellation of quantum amplitudes.
+- **Quantum gate:** an operation that changes qubit states.
+- **Decoherence:** loss of quantum state due to noise.
+- **NISQ:** Noisy Intermediate-Scale Quantum devices.
+- **Shor's / Grover's algorithm:** quantum algorithms for factoring and for search.
+- **Post-quantum cryptography:** classical cryptographic algorithms designed to resist quantum attacks.
+:::
+
+---
+
+## {data-menu-title="Review Questions"}
+
+[Review and Application Questions]{.slide-title2}
+
+<hr>
+
+::: {.body-text-m}
+**Short Answer**
+
+- Define quantum computing.
+- Differentiate between a bit and a qubit.
+- Explain superposition and entanglement in brief.
+- What is decoherence?
+
+**Application / Descriptive**
+
+- Explain how a quantum computer works with a neat diagram.
+- Discuss the features and limitations of quantum computing.
+- Discuss the impact of quantum computing on cryptography.
+- Describe the application areas of quantum computing.
+:::
+

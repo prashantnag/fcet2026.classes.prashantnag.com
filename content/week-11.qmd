@@ -1,0 +1,167 @@
+---
+title: "Week 11: Big Data Analytics, Quantum Computing, and Brain-Computer Interface"
+subtitle: "Unit V: Emerging Technologies"
+---
+
+## Week Overview
+
+This week completes Unit V. It introduces Big Data Analytics, covering the 5 Vs, the analytics process, and common tools. It then explains Quantum Computing, including qubits, superposition, entanglement, and applications. Finally, it covers the Brain-Computer Interface (BCI), its working, types, applications, and ethical concerns.
+
+**Course Outcome:** CO 5  
+**Duration:** 1 week
+
+---
+
+## Lecture 29: Big Data Analytics {#lecture-29}
+
+::: {.callout-note icon=false}
+## Lecture Materials
+[{{< fa desktop >}} View Lecture](/lectures/lecture-29.qmd){target="_blank" rel="noopener noreferrer"}
+```{=html}
+<div class="ratio ratio-16x9 mb-3">
+	<iframe class="lecture-preview-frame" src="/lectures/lecture-29.html" title="Lecture presentation preview" loading="lazy" style="border: 1px solid #343a40;" allowfullscreen></iframe>
+</div>
+```
+:::
+
+### Learning Objectives
+- Define big data and big data analytics
+- Explain the 5 Vs of big data
+- Distinguish structured, semi-structured, and unstructured data
+- Describe the analytics process and the types of analytics
+- Name common big data technologies
+- State the limitations and application areas of big data analytics
+
+### Topics Covered
+- Why data has become "big" and how big it is
+- The 5 Vs: Volume, Velocity, Variety, Veracity, and Value
+- Structured, semi-structured, and unstructured data
+- The analytics process: collect, store, clean, analyse, visualise, and act
+- Descriptive, diagnostic, predictive, and prescriptive analytics
+- Batch vs stream processing; Hadoop, HDFS, MapReduce, Spark, Kafka, and NoSQL; data warehouse vs data lake
+- Advantages, limitations, challenges, and application areas
+
+### Key Concepts
+- **Big data**: very large, fast, and varied data that needs special tools to process
+- **5 Vs**: Volume, Velocity, Variety, Veracity, and Value
+- **Hadoop / HDFS**: framework and file system for distributed storage and processing
+- **MapReduce**: programming model that splits work into map and reduce steps
+- **Data warehouse / data lake**: stores for structured or raw data
+
+### Case Study
+- Recommendations on an Online Store: clicks, searches, and purchases are analysed with distributed tools to personalise suggestions, raising privacy questions
+
+### Key Takeaways
+
+- Big data is described by the 5 Vs and is mostly unstructured.
+- The analytics process runs from collection and storage to cleaning, analysis, visualisation, and decision.
+- Analytics may be descriptive, diagnostic, predictive, or prescriptive.
+- Hadoop, Spark, Kafka, and NoSQL databases are common technologies.
+- Challenges include privacy, data quality, cost, skills, and ethics.
+
+---
+
+## Lecture 30: Quantum Computing {#lecture-30}
+
+::: {.callout-note icon=false}
+## Lecture Materials
+[{{< fa desktop >}} View Lecture](/lectures/lecture-30.qmd){target="_blank" rel="noopener noreferrer"}
+```{=html}
+<div class="ratio ratio-16x9 mb-3">
+	<iframe class="lecture-preview-frame" src="/lectures/lecture-30.html" title="Lecture presentation preview" loading="lazy" style="border: 1px solid #343a40;" allowfullscreen></iframe>
+</div>
+```
+:::
+
+### Learning Objectives
+- Define quantum computing and explain why it is needed
+- Differentiate between a classical bit and a qubit
+- Explain superposition, entanglement, interference, and decoherence
+- Describe how a quantum computer works
+- State the limitations and application areas of quantum computing
+
+### Topics Covered
+- Need for quantum computing
+- Bit vs qubit; superposition and entanglement
+- Quantum gates and circuits
+- How a quantum computer works; ways of building qubits
+- Famous algorithms: Shor's and Grover's
+- NISQ devices, quantum advantage, and post-quantum cryptography
+- Limitations and application areas
+
+### Key Concepts
+- **Qubit**: basic unit of quantum information
+- **Superposition**: a qubit in a combination of 0 and 1
+- **Entanglement**: correlation between qubits
+- **Decoherence**: loss of quantum state due to noise
+- **Post-quantum cryptography**: encryption designed to resist quantum attacks
+
+### Case Study
+- Quantum Computing for Drug Discovery: qubits model molecules directly, though today's noisy machines handle only small molecules
+
+### Key Takeaways
+
+- Quantum computers use qubits to solve certain problems far faster than classical computers.
+- Superposition, entanglement, and interference are the core ideas; decoherence causes errors.
+- They are specialised accelerators and will not replace classical computers.
+- Noise, error correction, scalability, and threats to current encryption are major challenges.
+
+---
+
+## Lecture 31: Brain-Computer Interface {#lecture-31}
+
+::: {.callout-note icon=false}
+## Lecture Materials
+[{{< fa desktop >}} View Lecture](/lectures/lecture-31.qmd){target="_blank" rel="noopener noreferrer"}
+```{=html}
+<div class="ratio ratio-16x9 mb-3">
+	<iframe class="lecture-preview-frame" src="/lectures/lecture-31.html" title="Lecture presentation preview" loading="lazy" style="border: 1px solid #343a40;" allowfullscreen></iframe>
+</div>
+```
+:::
+
+### Learning Objectives
+- Define a brain-computer interface and explain why it is needed
+- Describe how a BCI works
+- Distinguish invasive, partially invasive, and non-invasive BCIs
+- Name brain-signal recording methods and control paradigms
+- State the features, limitations, ethical concerns, and applications of BCI
+
+### Topics Covered
+- Brain basics and the need for BCI
+- BCI components and working: acquisition, processing, decoding, output, and feedback
+- Types of BCI and recording methods: EEG, ECoG, intracortical electrodes, and fNIRS
+- Control paradigms: motor imagery, P300, and SSVEP
+- Role of AI, advantages, limitations, and ethical concerns
+- Application areas and links with other Unit V technologies
+
+### Key Concepts
+- **BCI**: direct communication link between the brain and an external device
+- **EEG / ECoG**: recording brain activity from the scalp or the brain surface
+- **Motor imagery**: imagining a movement to generate a control signal
+- **Decoding**: translating brain signals into commands using algorithms
+- **Neurorights**: proposed rights protecting mental privacy and identity
+
+### Case Study
+- Restoring Communication for a Paralysed Person: a decoder converts attempted speech or imagined handwriting into text
+
+### Key Takeaways
+
+- A BCI links the brain and a device by acquiring, decoding, and acting on brain signals.
+- BCIs may be non-invasive, partially invasive, or invasive, with a trade-off between signal quality and risk.
+- Applications include rehabilitation, prosthetics, communication, assistive devices, and research.
+- Noisy signals, surgical risk, privacy, and ethics are key challenges.
+
+---
+
+## Before Next Lecture
+
+By the end of this week, you should be ready to:
+- define big data and explain the 5 Vs;
+- describe the big data analytics process and its types;
+- differentiate a bit from a qubit and explain superposition and entanglement;
+- discuss the limitations and applications of quantum computing;
+- explain the working and types of a brain-computer interface;
+- discuss the ethical concerns of BCI.
+
+Unit V is now complete. Next, revise Unit V and prepare for the unit-wise assessment.

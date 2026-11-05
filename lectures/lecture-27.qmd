@@ -528,6 +528,23 @@ Decide whether each situation suits **cluster**, **grid**, or **cloud**, and jus
 
 ---
 
+## {data-menu-title="Interactive Demo"}
+
+[Interactive Demo: Follow the Data]{.slide-title2}
+
+<hr>
+
+::: {.body-text-m}
+[Open the grid computing demo](../demos/index.html?lecture=27){target="_blank" rel="noopener"}
+
+- Follow input chunks from storage to worker nodes at three independent institutions.
+- Step through scheduling, transfer, parallel execution, and result collection.
+- Fail a worker while it is computing and observe the unfinished task being reassigned.
+- Explain why transferring data and recovering from failure take extra steps.
+:::
+
+---
+
 ## {data-menu-title="Summary"}
 
 [Lecture Summary]{.slide-title}

@@ -2,20 +2,25 @@
 title: "Course Content"
 ---
 
-This course currently includes content pages for Week 1 and Week 10, along with the first assignment.
+This course currently includes content pages for Week 1, Week 10, and Week 11, along with the first assignment.
 
 ## Quick Access
 
 | Week | Content Page | Lecture |
 |------|--------------|---------|
 | Week 1 | [Introduction to Computer and Problem Solving](/content/week-01.qmd) | [Lecture 1](/lectures/lecture-01.qmd) |
-| Week 10 | [Augmented Reality, Virtual Reality, and Grid Computing](/content/week-10.qmd) | [Lecture 26](/lectures/lecture-26.qmd), [Lecture 27](/lectures/lecture-27.qmd) |
+| Week 10 | [AR/VR, Grid Computing, and Green Computing](/content/week-10.qmd) | [Lecture 26](/lectures/lecture-26.qmd), [Lecture 27](/lectures/lecture-27.qmd), [Lecture 28](/lectures/lecture-28.qmd) |
+| Week 11 | [Big Data Analytics, Quantum Computing, and Brain-Computer Interface](/content/week-11.qmd) | [Lecture 29](/lectures/lecture-29.qmd), [Lecture 30](/lectures/lecture-30.qmd), [Lecture 31](/lectures/lecture-31.qmd) |
 
 ## Course Materials
 
 - [Lecture 1: Introduction to Computer and Problem Solving](/lectures/lecture-01.qmd)
 - [Lecture 26: Augmented Reality and Virtual Reality](/lectures/lecture-26.qmd)
 - [Lecture 27: Grid Computing](/lectures/lecture-27.qmd)
+- [Lecture 28: Green Computing](/lectures/lecture-28.qmd)
+- [Lecture 29: Big Data Analytics](/lectures/lecture-29.qmd)
+- [Lecture 30: Quantum Computing](/lectures/lecture-30.qmd)
+- [Lecture 31: Brain-Computer Interface](/lectures/lecture-31.qmd)
 - [Assignment 1: Fundamentals of Computers & Emerging Technologies](/assignment/01-assignment.qmd)
 
 ## Notes

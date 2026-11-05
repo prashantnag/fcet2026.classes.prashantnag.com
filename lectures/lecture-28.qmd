@@ -1,0 +1,543 @@
+---
+title: "Lecture 28: Green Computing"
+subtitle: "{{< meta course.number >}} - {{< meta course.title >}}"
+author: "{{< meta instructor.name >}}"
+date: "November 5, 2026"
+---
+
+## {#title-slide data-menu-title="Title" background="#053660"}
+
+<div class="custom-title">
+
+[Lecture 28]{.baby-blue-text}
+
+</div>
+
+<div class="custom-subtitle">
+
+[Green Computing]{.white-text}
+
+</div>
+
+<div class="custom-subtitle3">
+
+Unit V | Emerging Technologies<br>
+{{< meta course.number >}} - {{< meta course.title >}}<br>
+{{< meta instructor.name >}}, {{< meta instructor.title >}}<br>
+{{< meta instructor.office >}}<br>
+{{< meta course.institution >}}
+
+</div>
+
+---
+
+## {data-menu-title="Lecture Map"}
+
+[Lecture Map]{.slide-title}
+
+<hr>
+
+::: {.body-text-m}
+- **Unit:** Unit V - Emerging Technologies
+- **Course Outcome:** CO5 - Illustrate the emerging trends and technologies in the field of Information Technology
+- **Bloom's Levels:** K1 - Remember; K2 - Understand
+- **Duration:** 50 minutes, including a 3-minute activity and 5-minute knowledge check; reference slides are for self-study
+- **Central Question:** How can we keep enjoying the benefits of computing while reducing its energy use and harm to the environment?
+:::
+
+---
+
+## {data-menu-title="Learning Objectives"}
+
+[Learning Objectives]{.slide-title}
+
+<hr>
+
+::: {.body-text-m}
+By the end of this lecture, students will be able to:
+
+- define green computing and explain why it is needed;
+- describe the main features and the four paths of green computing;
+- explain common green IT practices and technologies;
+- describe the e-waste problem and the 3R approach;
+- state the limitations and challenges of green computing;
+- identify major application areas of green computing.
+:::
+
+---
+
+## {data-menu-title="Think About It"}
+
+[Think About It]{.slide-title}
+
+<hr>
+
+::: {.body-text-m}
+- A large data centre can use as much electricity as a small town. How can IT be made **greener**?
+- What happens to your old phone or laptop when you stop using it?
+- Is a computer that is **switched on but idle** really "doing nothing"?
+- Can using the **cloud** or **video meetings** reduce pollution?
+:::
+
+---
+
+## {data-menu-title="What Is Green Computing?"}
+
+[What Is Green Computing?]{.slide-title2}
+
+<hr>
+
+::: {.body-text-m}
+**Green computing** (green IT) is the study and practice of **designing, manufacturing, using, and disposing of computers and related systems efficiently and with minimum harm to the environment**.
+
+- It aims to **reduce energy consumption**, carbon emissions, and electronic waste.
+- It covers the **entire life cycle** of IT equipment: design, production, use, and disposal.
+- It supports **sustainable development** while keeping computing useful and affordable.
+:::
+
+---
+
+## {data-menu-title="Need for Green Computing"}
+
+[Why Do We Need Green Computing?]{.slide-title2}
+
+<hr>
+
+::: {.body-text-m}
+- **Rising energy use:** data centres, servers, and networks consume large amounts of electricity.
+- **Carbon footprint:** much electricity still comes from fossil fuels, which adds to climate change.
+- **E-waste:** old computers and phones contain hazardous materials such as lead and mercury.
+- **Cost saving:** lower power use reduces electricity and cooling bills.
+- **Regulation and responsibility:** governments and organisations set energy and environmental standards.
+- **Limited resources:** rare metals used in electronics can be recovered and reused.
+:::
+
+---
+
+## {data-menu-title="IT and the Environment"}
+
+[How Does IT Harm the Environment?]{.slide-title2}
+
+<hr>
+
+```{mermaid}
+flowchart LR
+    A[Manufacturing: raw materials, water, energy] --> B[Use: electricity for devices, servers, networks]
+    B --> C[Cooling of data centres]
+    C --> D[Disposal: e-waste, toxic materials]
+    B --> E[Carbon emissions]
+    D --> F[Soil and water pollution]
+```
+
+::: {.body-text-s}
+- Impact occurs at **every stage** of the life cycle, not only when the computer is running.
+- A large part of a device's energy cost can arise **before** it is ever switched on (manufacturing).
+:::
+
+---
+
+## {data-menu-title="Features of Green Computing"}
+
+[Key Features of Green Computing]{.slide-title2}
+
+<hr>
+
+::: {.body-text-m}
+- **Energy efficiency:** more work done per unit of electricity.
+- **Reduced carbon footprint:** lower greenhouse-gas emissions from IT use.
+- **Resource conservation:** longer equipment life, reuse, and refurbishment.
+- **Reduced e-waste:** safe disposal and recycling of old hardware.
+- **Use of renewable energy:** solar, wind, and hydro power for IT infrastructure.
+- **Eco-friendly design:** less hazardous materials and recyclable components.
+:::
+
+---
+
+## {data-menu-title="The 4 Paths"}
+
+[Four Paths of Green Computing]{.slide-title2}
+
+<hr>
+
+::: {.body-text-s}
+| Path | Meaning | Example |
+|---|---|---|
+| Green use | Reduce the energy used by computers and peripherals | Sleep mode, power-saving settings |
+| Green disposal | Reuse or recycle old equipment responsibly | E-waste recycling, refurbished PCs |
+| Green design | Build energy-efficient, eco-friendly hardware | Low-power processors, recyclable casing |
+| Green manufacturing | Reduce waste and pollution during production | Fewer hazardous materials in production |
+:::
+
+---
+
+## {data-menu-title="Traditional vs Green"}
+
+[Traditional IT vs Green IT]{.slide-title2}
+
+<hr>
+
+::: {.body-text-s}
+| Aspect | Traditional IT | Green IT |
+|---|---|---|
+| Energy | Devices often left on and idle | Power management and efficient hardware |
+| Servers | One application per physical server | Virtualised, shared servers |
+| Paper | Heavy printing and paper records | Digital, paperless workflows |
+| Meetings | Frequent travel | Video conferencing and remote work |
+| Old equipment | Discarded as ordinary waste | Reused, refurbished, or recycled |
+| Power source | Mostly conventional grid power | Growing share of renewable energy |
+:::
+
+---
+
+## {data-menu-title="Green IT Practices"}
+
+[Green IT Practices and Technologies]{.slide-title2}
+
+<hr>
+
+::: {.body-text-s}
+| Practice or Technology | How It Helps |
+|---|---|
+| Power management | Puts devices into sleep or hibernate automatically after inactivity |
+| Energy-efficient hardware | Energy Star-rated devices, LED monitors, SSDs, low-power CPUs |
+| Virtualisation | Several virtual servers share one physical server, so fewer machines are needed |
+| Cloud computing | Shared infrastructure can reduce energy per workload; savings depend on utilisation, power sources, and demand |
+| Efficient data centres | Better cooling, hot/cold aisle layout, and renewable power |
+| Telecommuting and video conferencing | Less travel, so lower fuel use and emissions |
+| Paperless office | Digital documents reduce paper and printing |
+| Recycling and refurbishing | Recover valuable materials and keep devices out of landfills |
+:::
+
+---
+
+## {data-menu-title="Virtualisation Example"}
+
+[Example: Virtualisation Saves Energy]{.slide-title2}
+
+<hr>
+
+::: columns
+::: {.column width="50%"}
+```{mermaid}
+flowchart TD
+    subgraph Before
+    A1[Server 1 - 10% used]
+    A2[Server 2 - 15% used]
+    A3[Server 3 - 10% used]
+    A4[Server 4 - 20% used]
+    end
+```
+:::
+
+::: {.column width="50%"}
+```{mermaid}
+flowchart TD
+    subgraph After
+    B1[One equivalent-capacity server - about 55% used]
+    B1 --> V1[VM 1]
+    B1 --> V2[VM 2]
+    B1 --> V3[VM 3]
+    B1 --> V4[VM 4]
+    end
+```
+:::
+:::
+
+::: {.body-text-m}
+- **Illustrative assumption:** equal-capacity servers, non-overlapping resource bottlenecks, and negligible overhead. Consolidation can reduce power and cooling when unused servers are switched off; allow headroom and redundancy.
+:::
+
+---
+
+## {data-menu-title="Data Centres"}
+
+[Greener Data Centres]{.slide-title2}
+
+<hr>
+
+::: {.body-text-m}
+- **Efficient cooling:** hot/cold aisle design, free-air cooling, and liquid cooling.
+- **Server consolidation:** virtualisation raises utilisation and removes idle machines.
+- **Renewable energy:** solar and wind power used to run facilities.
+- **Efficient power supply:** high-efficiency power units and low-power chips.
+- **PUE (Power Usage Effectiveness):** total facility energy divided by IT equipment energy. A value **close to 1.0** means low non-IT overhead relative to IT energy. PUE does **not** measure useful computing work, carbon emissions, or water use.
+:::
+
+---
+
+## {data-menu-title="E-Waste"}
+
+[E-Waste and the 3R Approach]{.slide-title2}
+
+<hr>
+
+::: {.body-text-m}
+**E-waste** is discarded electrical and electronic equipment, such as computers, phones, and monitors. Depending on the product, it may contain hazardous substances (lead, mercury, cadmium) and valuable metals (gold, copper). Batteries need suitable separate collection.
+
+- **Reduce:** buy only what is needed; choose durable, upgradeable devices.
+- **Reuse:** repair, upgrade, resell, or donate working equipment.
+- **Recycle:** hand over to authorised recyclers who recover materials safely.
+:::
+
+---
+
+## {data-menu-title="Standards"}
+
+[Standards, Labels, and Policies]{.slide-title2}
+
+<hr>
+
+::: {.body-text-m}
+- **Energy Star:** label for energy-efficient computers, monitors, and appliances.
+- **BEE Star rating (India):** Bureau of Energy Efficiency ratings for electrical appliances.
+- **RoHS:** limits hazardous substances in electronic products.
+- **Extended producer responsibility (EPR):** producers have responsibilities for end-of-life electronics under applicable e-waste rules; use authorised collection and recycling channels.
+- **EPEAT and similar ecolabels:** rate the environmental performance of IT products.
+:::
+
+---
+
+## {data-menu-title="Green Practices for Users"}
+
+[What Can We Do as Users?]{.slide-title2}
+
+<hr>
+
+::: {.body-text-m}
+- **Switch off** or sleep devices when not in use; enable automatic power management.
+- Use **power-saving mode** and lower screen brightness.
+- **Print only when necessary** and print on both sides.
+- Prefer **laptops and energy-rated devices** over power-hungry desktops where suitable.
+- **Repair and upgrade** instead of replacing; donate or recycle old devices through authorised e-waste centres.
+- Use **cloud storage and e-documents** wisely and delete unneeded files.
+:::
+
+---
+
+## {data-menu-title="Advantages"}
+
+[Advantages of Green Computing]{.slide-title2}
+
+<hr>
+
+::: {.body-text-m}
+- **Lower electricity and cooling costs** for organisations and individuals.
+- **Reduced pollution** and carbon emissions.
+- **Less e-waste** going to landfills.
+- **Longer equipment life** and better use of resources.
+- **Better corporate image** and compliance with regulations.
+- **Healthier workplaces** through fewer toxic materials.
+:::
+
+---
+
+## {data-menu-title="Green Computing Limitations"}
+
+[Limitations and Challenges of Green Computing]{.slide-title2}
+
+<hr>
+
+::: {.body-text-m}
+- **High initial cost:** energy-efficient equipment and renewable systems can be expensive to set up.
+- **Lack of awareness:** many users and organisations do not know or care about energy use.
+- **Performance trade-offs:** power saving can reduce speed or availability in some cases.
+- **Poor e-waste infrastructure:** recycling facilities are limited in many regions.
+- **Rapid obsolescence:** frequent product upgrades keep generating waste.
+- **Measurement difficulty:** the true carbon footprint of IT is hard to calculate.
+- **Rebound effect:** cheaper, more efficient computing can lead to *more* total usage.
+:::
+
+---
+
+## {data-menu-title="Green Computing Applications"}
+
+[Application Areas of Green Computing]{.slide-title2}
+
+<hr>
+
+::: {.body-text-s}
+| Area | Use of Green Computing |
+|---|---|
+| Data centres | Efficient cooling, virtualisation, and renewable energy |
+| Corporate offices | Power policies, paperless workflows, remote work |
+| Education | Energy-efficient labs, e-learning, digital submissions |
+| Government | Green procurement and e-governance reducing paperwork |
+| Manufacturing of electronics | Low-toxicity materials and recyclable designs |
+| Smart buildings and cities | IoT-based energy monitoring and control |
+| Cloud service providers | Large-scale efficient data centres powered by clean energy |
+| Artificial intelligence | Efficient models and hardware to cut the energy of training |
+:::
+
+---
+
+## {data-menu-title="Case Study"}
+
+[Illustrative Case: A Green Computer Lab]{.slide-title2}
+
+<hr>
+
+::: {.body-text-m}
+- **Problem:** a college lab of 60 desktops stays powered on all day, uses a lot of paper, and sends old PCs to scrap dealers.
+- **Green actions:** automatic sleep after 10 minutes, repair and retain suitable PCs; assess energy-rated replacements at end of life, including server costs for thin clients, digital submission of assignments, and a tie-up with an authorised e-waste recycler.
+- **Expected outcome:** lower energy use, less printing, and responsible disposal. Compare meter readings and costs before and after; include manufacturing impacts when considering replacements.
+
+**Lesson:** simple policies combined with efficient hardware can cut both cost and environmental impact.
+:::
+
+---
+
+## {data-menu-title="Activity"}
+
+[Quick Activity (3 minutes)]{.slide-title2}
+
+<hr>
+
+::: {.body-text-m}
+Classify each action under **green use**, **green disposal**, **green design**, or **green manufacturing**:
+
+1. Setting laptops to sleep after five minutes of inactivity.
+2. Handing old monitors to an authorised e-waste recycler.
+3. Designing a computer case from recyclable materials.
+4. Producing chips with fewer hazardous chemicals.
+5. Replacing a printed circular with an emailed PDF.
+:::
+
+---
+
+## {data-menu-title="Interactive Demo"}
+
+[Interactive Demo: Green computing lab]{.slide-title2}
+
+<hr>
+
+::: {.body-text-m}
+[Open the lecture 28 browser demo](../demos/index.html?lecture=28){target="_blank" rel="noopener"}
+
+Adjust active hours, sleep policies, and PUE; compare daily electricity use.
+
+- Predict the result, change one input, and explain what happened.
+- Read the model assumptions before relating the result to real systems.
+:::
+
+---
+
+## {data-menu-title="Summary"}
+
+[Lecture Summary]{.slide-title}
+
+<hr>
+
+::: {.body-text-m}
+- Green computing reduces the energy use and environmental impact of IT across its whole life cycle.
+- Its four paths are green use, green disposal, green design, and green manufacturing.
+- Key practices include power management, efficient hardware, virtualisation, cloud computing, greener data centres, and paperless work.
+- E-waste is handled through the 3R approach and authorised recycling.
+- Challenges include high initial cost, low awareness, rapid obsolescence, and the rebound effect.
+- Applications range from data centres and offices to education, government, and smart cities.
+:::
+
+---
+
+## {data-menu-title="Knowledge Check"}
+
+[Knowledge Check: MCQs]{.slide-title2}
+
+<hr>
+
+::: {.body-text-s}
+1. Which practice is an example of green computing?  
+   A. Leaving computers on all night  B. Virtualisation of servers  C. Printing every email  D. Discarding old PCs in household waste  
+   **Answer: B**
+
+2. The 3R approach to e-waste stands for:  
+   A. Read, Write, Run  B. Reduce, Reuse, Recycle  C. Repair, Replace, Remove  D. Record, Restore, Retrieve  
+   **Answer: B**
+
+3. A PUE value close to 1.0 in a data centre means:  
+   A. Very high wasted energy  B. Low non-IT overhead relative to IT energy  C. The data centre is switched off  D. No IT equipment  
+   **Answer: B**
+
+4. Which is a limitation of green computing?  
+   A. It always increases e-waste  B. High initial cost of efficient equipment  C. It cannot save energy  D. It has no applications  
+   **Answer: B**
+
+5. Which hazardous material is commonly found in e-waste?  
+   A. Lead  B. Water  C. Sand  D. Oxygen  
+   **Answer: A**
+:::
+
+---
+
+## {data-menu-title="Next Lecture"}
+
+[Next Lecture Preview]{.slide-title}
+
+<hr>
+
+::: {.body-text-m}
+**Lecture 29: Big Data Analytics**
+
+- Introduction and overview of big data
+- The 5 Vs and big data analytics process
+- Types of analytics and big data tools
+- Limitations and application areas
+:::
+
+
+---
+
+## {data-menu-title="Reference Material"}
+
+[Reference Material and Further Reading]{.slide-title2}
+
+<hr>
+
+::: {.body-text-m}
+The following slides provide definitions and extended revision questions for self-study.
+
+- [The Green Grid: PUE](https://www.thegreengrid.org/node/372)
+:::
+
+---
+
+## {data-menu-title="Key Concepts"}
+
+[Important Definitions and Key Terminology]{.slide-title2}
+
+<hr>
+
+::: {.body-text-s}
+- **Green computing:** reducing environmental harm across IT design, manufacture, use, and end-of-life management.
+- **Carbon footprint:** total greenhouse-gas emissions caused by an activity or product.
+- **E-waste:** discarded electronic devices and components.
+- **Virtualisation:** running several virtual machines on one physical machine.
+- **Energy Star:** label for energy-efficient products.
+- **PUE:** ratio of total data-centre energy to IT-equipment energy.
+- **3R:** Reduce, Reuse, Recycle.
+- **Telecommuting:** working remotely instead of travelling to an office.
+:::
+
+---
+
+## {data-menu-title="Review Questions"}
+
+[Review and Application Questions]{.slide-title2}
+
+<hr>
+
+::: {.body-text-m}
+**Short Answer**
+
+- Define green computing and state its four paths.
+- What is e-waste? State the 3R approach.
+- List any four green IT practices.
+- What is virtualisation and how does it save energy?
+
+**Application / Descriptive**
+
+- Discuss the need and features of green computing.
+- Explain how data centres can be made greener.
+- Discuss the limitations and challenges of green computing.
+- Describe application areas of green computing with examples.
+:::
+

@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Interactive computing virtual labs for lectures 27–31">
+  <title>Computing Virtual Labs</title>
+  <link rel="stylesheet" href="styles.css">
+  <script type="module" src="app.js"></script>
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap header-row">
+    <div><div class="eyebrow">EMERGING COMPUTING TECHNOLOGIES</div><h1 id="title">Computing Virtual Labs</h1><p id="description"></p></div>
+    <nav aria-label="Lecture navigation"><label for="lecture-select">Choose lecture</label><select id="lecture-select">
+      <option value="27">27 · Grid computing</option><option value="28">28 · Green computing</option><option value="29">29 · Big data</option><option value="30">30 · Quantum computing</option><option value="31">31 · Brain–computer interface</option>
+    </select><a id="back" href="../lectures/lecture-27.html">Back to lecture ↗</a></nav>
+  </div>
+</header>
+<main class="wrap">
+  <section class="learning" aria-label="Learning challenge"><h2>Predict before you experiment</h2><p id="prompt"></p></section>
+  <div class="layout">
+    <aside class="panel"><h2>Experiment controls</h2><div id="controls"></div><h3>Model assumptions</h3><p id="assumptions" class="muted small"></p></aside>
+    <section class="panel output" aria-label="Simulation results"><div id="result" aria-live="polite"></div></section>
+  </div>
+  <section class="panel"><h2>Follow the concept</h2><div class="concept-flow" id="concept-flow"></div></section>
+  <section class="panel"><h2>Experiment notes</h2><p class="muted">Record what you changed and what you observed. The notes remain on this page until you navigate away.</p><textarea id="notes" rows="3" placeholder="My prediction, observation, and explanation..."></textarea><div class="actions"><button id="export" type="button">Download observations (.txt)</button><button id="clear-notes" type="button" class="secondary">Clear notes</button></div></section>
+</main>
+<footer class="wrap footer">Synthetic educational simulations. These are not production grid, Hadoop, quantum hardware, energy audits, or medical/EEG systems.</footer>
+</body></html>

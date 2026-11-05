@@ -15,3 +15,20 @@ This course currently includes the following lecture slide decks.
 
 ### Lecture 27
 - [Lecture 27: Grid Computing](lecture-27.qmd)
+- [Interactive browser demo](../demos/index.html?lecture=27)
+
+### Lecture 28
+- [Lecture 28: Green Computing](lecture-28.qmd)
+- [Interactive browser demo](../demos/index.html?lecture=28)
+
+### Lecture 29
+- [Lecture 29: Big Data Analytics](lecture-29.qmd)
+- [Interactive browser demo](../demos/index.html?lecture=29)
+
+### Lecture 30
+- [Lecture 30: Quantum Computing](lecture-30.qmd)
+- [Interactive browser demo](../demos/index.html?lecture=30)
+
+### Lecture 31
+- [Lecture 31: Brain-Computer Interface](lecture-31.qmd)
+- [Interactive browser demo](../demos/index.html?lecture=31)
